@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MT2-Relay
+D TE Connectivity DPDT Non-Latching Relay PCB Mount
+$ENDCMP
+#
+$CMP TPL7407LA
+D TPL7407LA 30-V 7-Channel Low Side Driver
+$ENDCMP
+#
+#End Doc Library

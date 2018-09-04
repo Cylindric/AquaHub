@@ -1,0 +1,227 @@
+Cmp-Mod V01 Created by PcbNew   date = 28/08/2018 00:23:55
+
+BeginCmp
+TimeStamp = 5B9CB916
+Path = /5B87FB45
+Reference = R2;
+ValeurCmp = 2.2K;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA9402F
+Path = /5B858EFB
+Reference = J4;
+ValeurCmp = Screw_Terminal_01x03;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B92A6A9
+Path = /5B89B223
+Reference = J5;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B927229
+Path = /5B89B22A
+Reference = J6;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9272B2
+Path = /5B88684A
+Reference = J7;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9272BE
+Path = /5B89B24E
+Reference = K4;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B927106
+Path = /5B852D5C
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9290B4
+Path = /5B85020F
+Reference = C2;
+ValeurCmp = 1nF;
+IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B92969C
+Path = /5B84CA24
+Reference = U2;
+ValeurCmp = ACS723;
+IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B92A47D
+Path = /5B886855
+Reference = K6;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B92AC49
+Path = /5B85C2BF
+Reference = R1;
+ValeurCmp = 4.7K;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9272CA
+Path = /5B89B25D
+Reference = K5;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA92B87
+Path = /5B84F663
+Reference = U1;
+ValeurCmp = ESP32-WROVER-I;
+IdModule  = AquaFootprints:ESP32-WROVER;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA92FCB
+Path = /5B850570
+Reference = J1;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA93054
+Path = /5B8508CA
+Reference = J2;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA930DD
+Path = /5B853F62
+Reference = J3;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B928EB7
+Path = /5B869114
+Reference = K1;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC157BE
+Path = /5B869168
+Reference = K2;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC157C9
+Path = /5B8691A6
+Reference = K3;
+ValeurCmp = HF64F-G;
+IdModule  = AquaFootprints:Relay_HF46F;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CB8EE
+Path = /5B930F72
+Reference = J8;
+ValeurCmp = ISP;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CB905
+Path = /5B857A53
+Reference = J9;
+ValeurCmp = FLOW;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CBCBA
+Path = /5B8891DE
+Reference = R3;
+ValeurCmp = 3.3K;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CB93D
+Path = /5B8EAC54
+Reference = U3;
+ValeurCmp = AP1117-33;
+IdModule  = Package_TO_SOT_SMD:SOT-223-3_TabPin2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CB94A
+Path = /5B8D3CBA
+Reference = V1;
+ValeurCmp = VCE05;
+IdModule  = AquaFootprints:VCE05;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CD6A9
+Path = /5B95551D
+Reference = MH1;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_4.3mm_M4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CD6B1
+Path = /5B95544F
+Reference = MH2;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_4.3mm_M4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CD6B9
+Path = /5B955565
+Reference = MH3;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_4.3mm_M4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9CD6C1
+Path = /5B9555B9
+Reference = MH4;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_4.3mm_M4;
+EndCmp
+
+EndListe

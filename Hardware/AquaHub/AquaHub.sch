@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "AquaHub"
 Date "2018-08-28"
 Rev "1"
@@ -14,65 +14,41 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 2400 3400
-Wire Wire Line
-	2000 3200 1850 3200
-Wire Wire Line
-	1850 3200 1850 3350
 $Comp
 L power:GND #PWR0101
 U 1 1 5B84F71E
-P 1850 3350
-F 0 "#PWR0101" H 1850 3100 50  0001 C CNN
-F 1 "GND" H 1855 3177 50  0000 C CNN
-F 2 "" H 1850 3350 50  0001 C CNN
-F 3 "" H 1850 3350 50  0001 C CNN
-	1    1850 3350
+P 2400 3550
+F 0 "#PWR0101" H 2400 3300 50  0001 C CNN
+F 1 "GND" H 2405 3377 50  0000 C CNN
+F 2 "" H 2400 3550 50  0001 C CNN
+F 3 "" H 2400 3550 50  0001 C CNN
+	1    2400 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1575 1350 1575 1200
+	1575 900  1575 850 
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5B84F851
-P 1575 1200
-F 0 "#PWR0102" H 1575 1050 50  0001 C CNN
-F 1 "+3V3" H 1590 1373 50  0000 C CNN
-F 2 "" H 1575 1200 50  0001 C CNN
-F 3 "" H 1575 1200 50  0001 C CNN
-	1    1575 1200
+P 1575 850
+F 0 "#PWR0102" H 1575 700 50  0001 C CNN
+F 1 "+3V3" H 1590 1023 50  0000 C CNN
+F 2 "" H 1575 850 50  0001 C CNN
+F 3 "" H 1575 850 50  0001 C CNN
+	1    1575 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J8
 U 1 1 5B858EFB
-P 4400 5900
-F 0 "J8" H 4400 6100 50  0000 C CNN
-F 1 "Screw_Terminal" H 4480 5851 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 4400 5900 50  0001 C CNN
-F 3 "~" H 4400 5900 50  0001 C CNN
-	1    4400 5900
+P 4400 5700
+F 0 "J8" H 4400 5900 50  0000 C CNN
+F 1 "Screw_Terminal" H 4480 5651 50  0001 L CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 4400 5700 50  0001 C CNN
+F 3 "~" H 4400 5700 50  0001 C CNN
+	1    4400 5700
 	-1   0    0    1   
 $EndComp
-$Comp
-L AquaParts:ESP32-WROVER-I U1
-U 1 1 5B84F663
-P 2600 2250
-F 0 "U1" H 2600 3350 50  0000 C CNN
-F 1 "ESP32-WROVER-I" H 2600 3250 50  0000 C CNN
-F 2 "AquaFootprints:ESP32-WROVER" H 2450 2800 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/datasheet/2/891/esp32-wrover_datasheet_en-1223875.pdf" V 1600 2250 50  0001 C CNN
-F 4 "https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-WROVER?qs=sGAEpiMZZMve4%2fbfQkoj%252bAHtY6NxmdO7OI28pxTaRVM%3d" H 2600 2250 50  0001 C CNN "Source"
-F 5 "3.18" H 2600 2250 50  0001 C CNN "Price"
-	1    2600 2250
-	1    0    0    -1  
-$EndComp
-Text GLabel 5850 3650 0    50   Input ~ 0
-POW3
-Text GLabel 5850 3550 0    50   Input ~ 0
-POW2
-Text GLabel 5850 3450 0    50   Input ~ 0
-POW1
 Wire Wire Line
 	5200 5500 5250 5500
 $Comp
@@ -195,8 +171,6 @@ Text Notes 10500 4300 2    50   ~ 0
 Light A Power
 Text Notes 10500 5400 2    50   ~ 0
 Light B Power
-Text GLabel 5850 3950 0    50   Input ~ 0
-POW6
 Text Notes 8900 5400 2    50   ~ 0
 Air Pump Power
 Wire Notes Line style dotted
@@ -209,15 +183,11 @@ U 1 1 5B89B223
 P 2300 5950
 F 0 "J2" H 2300 5750 50  0000 C CNN
 F 1 "Screw_Terminal" H 2100 5750 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 2300 5950 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 2300 5950 50  0001 C CNN
 F 3 "~" H 2300 5950 50  0001 C CNN
 	1    2300 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 5850 3850 0    50   Input ~ 0
-POW5
-Text GLabel 5850 3750 0    50   Input ~ 0
-POW4
 Text Notes 8900 3250 2    50   ~ 0
 CO2 Power
 Text Notes 8900 4300 2    50   ~ 0
@@ -246,12 +216,10 @@ Wire Notes Line
 	4150 6400 4150 4600
 Text Notes 4150 4600 0    50   ~ 0
 Input Current Sensing
-Text GLabel 4700 5900 2    50   Output ~ 0
+Text GLabel 4675 5700 2    50   Output ~ 0
 EARTH
-Text GLabel 4700 6000 2    50   Output ~ 0
+Text GLabel 4675 5600 2    50   Output ~ 0
 NEUTRAL
-Wire Wire Line
-	4700 5900 4600 5900
 $Comp
 L Connector_Generic:Conn_01x04 J10
 U 1 1 5B930F72
@@ -297,18 +265,14 @@ F 3 "" H 10850 2300 50  0001 C CNN
 	1    10850 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 10900 2500 2    50   Input ~ 0
-TX
 Text GLabel 10900 2600 2    50   Input ~ 0
-RX
-Text GLabel 3300 1700 2    50   Input ~ 0
 TX
-Text GLabel 3300 1800 2    50   Input ~ 0
+Text GLabel 10900 2500 2    50   Input ~ 0
 RX
-Wire Wire Line
-	3300 1800 3150 1800
-Wire Wire Line
-	3300 1700 3150 1700
+Text GLabel 1950 2000 0    50   Output ~ 0
+TX
+Text GLabel 1950 1900 0    50   Input ~ 0
+RX
 Wire Notes Line
 	10400 2000 11100 2000
 Wire Notes Line
@@ -319,17 +283,6 @@ Wire Notes Line
 	10400 3050 10400 2000
 Text Notes 10400 2000 0    50   ~ 0
 ISP
-NoConn ~ 2000 2500
-NoConn ~ 3150 2700
-NoConn ~ 3150 2800
-NoConn ~ 3150 2900
-NoConn ~ 3150 2300
-Text Notes 3250 2850 0    50   ~ 0
-23-25\nstrapping pins
-Text Notes 3200 2350 0    50   ~ 0
-29 strapping pin
-Text Notes 1950 2550 2    50   ~ 0
-13 strapping pin
 $Comp
 L Connector_Generic:Conn_01x03 J9
 U 1 1 5B857A53
@@ -349,8 +302,6 @@ Wire Wire Line
 	9200 2600 9300 2600
 Wire Wire Line
 	9200 2500 9350 2500
-Text GLabel 9750 2500 2    50   Input ~ 0
-FLOW_SENSE
 $Comp
 L power:+5V #PWR05
 U 1 1 5B86C495
@@ -415,19 +366,19 @@ Wire Wire Line
 	9700 2700 9650 2700
 Connection ~ 9700 2500
 Wire Wire Line
-	9700 2500 9750 2500
+	9700 2500 10125 2500
 Wire Wire Line
 	9350 2700 9300 2700
 Connection ~ 9300 2700
 Wire Wire Line
 	9300 2700 9300 2800
 $Comp
-L AquaParts:RAC01-GB V1
+L Converter_ACDC:RAC01-05SGB V1
 U 1 1 5B8D3CBA
 P 7150 2350
-F 0 "V1" H 7150 2550 50  0000 C CNN
-F 1 "RAC01-12SGB" H 7150 2150 50  0000 C CNN
-F 2 "AquaFootprints:RAC01-GB" H 7000 2350 50  0001 C CNN
+F 0 "V1" H 7150 2600 50  0000 C CNN
+F 1 "RAC01-12SGB" H 7150 2100 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_RECOM_RAC01-xxSGB_THT" H 7000 2350 50  0001 C CNN
 F 3 "" H 7000 2350 50  0001 C CNN
 	1    7150 2350
 	1    0    0    -1  
@@ -446,11 +397,11 @@ $EndComp
 Wire Notes Line
 	8750 1650 8750 3050
 Wire Notes Line
-	8750 3050 6050 3050
+	8750 3050 6000 3050
 Wire Notes Line
-	6050 3050 6050 1650
+	6000 3050 6000 1650
 Wire Notes Line
-	6050 1650 8750 1650
+	6000 1650 8750 1650
 Text Notes 6050 1650 0    50   ~ 0
 Power Input
 $Comp
@@ -464,85 +415,15 @@ F 3 "" H 8450 1800 50  0001 C CNN
 	1    8450 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3300 1500 2    50   Input ~ 0
-FLOW_SENSE
-Text GLabel 1850 2600 0    50   Input ~ 0
+Text GLabel 3725 1450 2    50   Input ~ 0
 POWER_SENSE
-Text GLabel 1850 2000 0    50   Input ~ 0
-POW3
-Text GLabel 1850 1900 0    50   Input ~ 0
-POW2
-Text GLabel 1850 2300 0    50   Input ~ 0
-POW6
-Text GLabel 1850 2200 0    50   Input ~ 0
-POW5
-Text GLabel 1850 2100 0    50   Input ~ 0
-POW4
-Wire Wire Line
-	1850 1800 2000 1800
-Wire Wire Line
-	1850 1900 2000 1900
-Wire Wire Line
-	1850 2000 2000 2000
-Wire Wire Line
-	2000 2100 1850 2100
-Wire Wire Line
-	2000 2200 1850 2200
-Text GLabel 1850 1800 0    50   Input ~ 0
-POW1
-Wire Wire Line
-	2000 2300 1850 2300
-$Comp
-L Mechanical:MountingHole MH2
-U 1 1 5B95544F
-P 5700 7400
-F 0 "MH2" H 5800 7446 50  0001 L CNN
-F 1 "MountingHole" H 5800 7355 50  0001 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5700 7400 50  0001 C CNN
-F 3 "~" H 5700 7400 50  0001 C CNN
-	1    5700 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH1
-U 1 1 5B95551D
-P 5700 7200
-F 0 "MH1" H 5800 7246 50  0001 L CNN
-F 1 "MountingHole" H 5800 7155 50  0001 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5700 7200 50  0001 C CNN
-F 3 "~" H 5700 7200 50  0001 C CNN
-	1    5700 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH3
-U 1 1 5B955565
-P 5900 7200
-F 0 "MH3" H 6000 7246 50  0001 L CNN
-F 1 "MountingHole" H 6000 7155 50  0001 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5900 7200 50  0001 C CNN
-F 3 "~" H 5900 7200 50  0001 C CNN
-	1    5900 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH4
-U 1 1 5B9555B9
-P 5900 7400
-F 0 "MH4" H 6000 7446 50  0001 L CNN
-F 1 "MountingHole" H 6000 7355 50  0001 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4" H 5900 7400 50  0001 C CNN
-F 3 "~" H 5900 7400 50  0001 C CNN
-	1    5900 7400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J7
 U 1 1 5B859C87
 P 10900 1650
 F 0 "J7" H 10900 1450 50  0000 C CNN
 F 1 "Screw_Terminal" H 10700 1450 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 10900 1650 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 10900 1650 50  0001 C CNN
 F 3 "~" H 10900 1650 50  0001 C CNN
 	1    10900 1650
 	1    0    0    -1  
@@ -553,11 +434,11 @@ Wire Wire Line
 	10700 1650 10600 1650
 Wire Wire Line
 	10700 1550 10600 1550
-Text GLabel 10600 1750 0    50   Input ~ 0
+Text GLabel 10600 1550 0    50   Input ~ 0
 LIVE
 Text GLabel 10600 1650 0    50   Input ~ 0
 EARTH
-Text GLabel 10600 1550 0    50   Input ~ 0
+Text GLabel 10600 1750 0    50   Input ~ 0
 NEUTRAL
 Wire Notes Line
 	10150 1400 11100 1400
@@ -571,22 +452,9 @@ Text Notes 10150 1400 0    50   ~ 0
 Main Pump Power
 Text Notes 9750 2350 0    39   ~ 0
 Simple voltage\ndivider to get the\n5V signal to 3.3V.
-Text Notes 4350 6100 1    39   ~ 0
+Text Notes 4325 5875 1    39   ~ 0
 Utility Supply
-NoConn ~ 3150 3200
-NoConn ~ 3150 3100
-NoConn ~ 3150 3000
-NoConn ~ 3150 2600
-NoConn ~ 3150 2100
-NoConn ~ 3150 1600
-NoConn ~ 2000 1600
-NoConn ~ 2000 1700
-NoConn ~ 3150 2200
-NoConn ~ 2000 2800
-NoConn ~ 2000 2900
-NoConn ~ 2000 3000
-NoConn ~ 2000 3100
-Text Notes 2350 3650 0    39   ~ 0
+Text Notes 2650 3525 0    39   ~ 0
 Not using the\ncomponent GND\npad
 $Comp
 L AquaParts:TPL7407LA U4
@@ -637,17 +505,17 @@ Wire Wire Line
 	5850 3850 5900 3850
 Wire Wire Line
 	5850 3950 5900 3950
-Text GLabel 6800 3450 2    50   Input ~ 0
-RE1
-Text GLabel 6800 3550 2    50   Input ~ 0
-RE2
-Text GLabel 6800 3650 2    50   Input ~ 0
-RE3
-Text GLabel 6800 3750 2    50   Input ~ 0
-RE4
-Text GLabel 6800 3850 2    50   Input ~ 0
-RE5
 Text GLabel 6800 3950 2    50   Input ~ 0
+RE1
+Text GLabel 6800 3850 2    50   Input ~ 0
+RE2
+Text GLabel 6800 3750 2    50   Input ~ 0
+RE3
+Text GLabel 6800 3650 2    50   Input ~ 0
+RE4
+Text GLabel 6800 3550 2    50   Input ~ 0
+RE5
+Text GLabel 6800 3450 2    50   Input ~ 0
 RE6
 Wire Wire Line
 	6700 3450 6800 3450
@@ -704,17 +572,6 @@ F 3 "" H 7600 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
-U 1 1 5B9ED260
-P 8100 2900
-F 0 "#PWR0104" H 8100 2650 50  0001 C CNN
-F 1 "GND" H 8250 2850 50  0000 C CNN
-F 2 "" H 8100 2900 50  0001 C CNN
-F 3 "" H 8100 2900 50  0001 C CNN
-	1    8100 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L AquaParts:5V-Reg U5
 U 1 1 5B9ED31F
 P 8100 2650
@@ -730,12 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 2250 7750 2550
 Wire Wire Line
-	7500 2250 7600 2250
-Wire Wire Line
 	7600 2250 7750 2250
-Connection ~ 7600 2250
-Wire Wire Line
-	7600 2450 7500 2450
 Wire Wire Line
 	8100 2200 8100 2150
 $Comp
@@ -750,20 +602,7 @@ F 3 "" H 8100 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2450 7600 2550
-Wire Wire Line
 	8100 2900 8100 2850
-$Comp
-L power:GND #PWR0106
-U 1 1 5BAE34F8
-P 7600 2550
-F 0 "#PWR0106" H 7600 2300 50  0001 C CNN
-F 1 "GND" H 7600 2400 50  0000 C CNN
-F 2 "" H 7600 2550 50  0001 C CNN
-F 3 "" H 7600 2550 50  0001 C CNN
-	1    7600 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 2550 8450 2550
 Wire Wire Line
@@ -796,30 +635,6 @@ Wire Wire Line
 	7800 3450 7850 3450
 Wire Wire Line
 	7600 2200 7600 2250
-$Comp
-L power:GND #PWR0107
-U 1 1 5BD92F07
-P 4800 6850
-F 0 "#PWR0107" H 4800 6600 50  0001 C CNN
-F 1 "GND" H 4805 6677 50  0000 C CNN
-F 2 "" H 4800 6850 50  0001 C CNN
-F 3 "" H 4800 6850 50  0001 C CNN
-	1    4800 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5BD92F48
-P 4800 6800
-F 0 "#FLG0103" H 4800 6875 50  0001 C CNN
-F 1 "PWR_FLAG" H 4800 6974 50  0000 C CNN
-F 2 "" H 4800 6800 50  0001 C CNN
-F 3 "~" H 4800 6800 50  0001 C CNN
-	1    4800 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 6800 4800 6850
 Text GLabel 4800 7150 2    50   Output ~ 0
 LIVE1
 $Comp
@@ -850,11 +665,9 @@ F 3 "~" H 4750 7350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 7350 4800 7350
-Wire Wire Line
-	4600 6000 4700 6000
-Text GLabel 6450 2200 0    50   Input ~ 0
+Text GLabel 6400 2200 0    50   Input ~ 0
 LIVE
-Text GLabel 6450 2500 0    50   Input ~ 0
+Text GLabel 6400 2500 0    50   Input ~ 0
 NEUTRAL
 $Comp
 L AquaParts:MT2-C93402 K1
@@ -877,11 +690,11 @@ NoConn ~ 8450 3950
 NoConn ~ 8450 3700
 Text GLabel 7800 3750 0    50   Input ~ 0
 NEUTRAL
-Text GLabel 2050 6050 0    50   Input ~ 0
+Text GLabel 2050 5850 0    50   Input ~ 0
 NEUTRAL2
 Text GLabel 2050 5950 0    50   Input ~ 0
 EARTH
-Text GLabel 2050 5850 0    50   Input ~ 0
+Text GLabel 2050 6050 0    50   Input ~ 0
 LIVE2
 Wire Wire Line
 	2100 5850 2050 5850
@@ -895,16 +708,16 @@ U 1 1 5B9F63F4
 P 2300 6400
 F 0 "J4" H 2300 6200 50  0000 C CNN
 F 1 "Screw_Terminal" H 2100 6200 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 2300 6400 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 2300 6400 50  0001 C CNN
 F 3 "~" H 2300 6400 50  0001 C CNN
 	1    2300 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 6500 0    50   Input ~ 0
+Text GLabel 2050 6300 0    50   Input ~ 0
 NEUTRAL4
 Text GLabel 2050 6400 0    50   Input ~ 0
 EARTH
-Text GLabel 2050 6300 0    50   Input ~ 0
+Text GLabel 2050 6500 0    50   Input ~ 0
 LIVE4
 Wire Wire Line
 	2100 6300 2050 6300
@@ -918,16 +731,16 @@ U 1 1 5B9FF0D7
 P 2300 6850
 F 0 "J6" H 2300 6650 50  0000 C CNN
 F 1 "Screw_Terminal" H 2100 6650 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 2300 6850 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 2300 6850 50  0001 C CNN
 F 3 "~" H 2300 6850 50  0001 C CNN
 	1    2300 6850
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 6950 0    50   Input ~ 0
+Text GLabel 2050 6750 0    50   Input ~ 0
 NEUTRAL6
 Text GLabel 2050 6850 0    50   Input ~ 0
 EARTH
-Text GLabel 2050 6750 0    50   Input ~ 0
+Text GLabel 2050 6950 0    50   Input ~ 0
 LIVE6
 Wire Wire Line
 	2100 6750 2050 6750
@@ -941,16 +754,16 @@ U 1 1 5BA084D9
 P 1500 5950
 F 0 "J1" H 1500 5750 50  0000 C CNN
 F 1 "Screw_Terminal" H 1300 5750 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 1500 5950 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 1500 5950 50  0001 C CNN
 F 3 "~" H 1500 5950 50  0001 C CNN
 	1    1500 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 1250 6050 0    50   Input ~ 0
+Text GLabel 1250 5850 0    50   Input ~ 0
 NEUTRAL1
 Text GLabel 1250 5950 0    50   Input ~ 0
 EARTH
-Text GLabel 1250 5850 0    50   Input ~ 0
+Text GLabel 1250 6050 0    50   Input ~ 0
 LIVE1
 Wire Wire Line
 	1300 5850 1250 5850
@@ -964,16 +777,16 @@ U 1 1 5BA120AB
 P 1500 6400
 F 0 "J3" H 1500 6200 50  0000 C CNN
 F 1 "Screw_Terminal" H 1300 6200 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 1500 6400 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 1500 6400 50  0001 C CNN
 F 3 "~" H 1500 6400 50  0001 C CNN
 	1    1500 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 1250 6500 0    50   Input ~ 0
+Text GLabel 1250 6300 0    50   Input ~ 0
 NEUTRAL3
 Text GLabel 1250 6400 0    50   Input ~ 0
 EARTH
-Text GLabel 1250 6300 0    50   Input ~ 0
+Text GLabel 1250 6500 0    50   Input ~ 0
 LIVE3
 Wire Wire Line
 	1300 6300 1250 6300
@@ -987,16 +800,16 @@ U 1 1 5BA1C474
 P 1500 6850
 F 0 "J5" H 1500 6650 50  0000 C CNN
 F 1 "Screw_Terminal" H 1300 6650 50  0001 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree" H 1500 6850 50  0001 C CNN
+F 2 "AquaFootprints:weidmuller_pm-5.08-3-way" H 1500 6850 50  0001 C CNN
 F 3 "~" H 1500 6850 50  0001 C CNN
 	1    1500 6850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1250 6950 0    50   Input ~ 0
+Text GLabel 1250 6750 0    50   Input ~ 0
 NEUTRAL5
 Text GLabel 1250 6850 0    50   Input ~ 0
 EARTH
-Text GLabel 1250 6750 0    50   Input ~ 0
+Text GLabel 1250 6950 0    50   Input ~ 0
 LIVE5
 Wire Wire Line
 	1300 6750 1250 6750
@@ -1257,242 +1070,276 @@ F 3 "~" H 4750 7250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 7250 4750 7250
-Wire Wire Line
-	1850 2400 2000 2400
 $Comp
 L Device:C_Small C3
 U 1 1 5BBC29CD
-P 1100 1550
-F 0 "C3" H 1000 1650 50  0000 L CNN
-F 1 "10uF" H 850 1500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1138 1400 50  0001 C CNN
-F 3 "~" H 1100 1550 50  0001 C CNN
-	1    1100 1550
+P 1100 1100
+F 0 "C3" H 975 1175 50  0000 L CNN
+F 1 "10uF" H 900 1025 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1138 950 50  0001 C CNN
+F 3 "~" H 1100 1100 50  0001 C CNN
+	1    1100 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP_Small C4
 U 1 1 5BBC2ACA
-P 1300 1550
-F 0 "C4" H 1350 1650 50  0000 L CNN
-F 1 "100uF" H 1350 1450 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 1338 1400 50  0001 C CNN
-F 3 "~" H 1300 1550 50  0001 C CNN
-	1    1300 1550
+P 1300 1100
+F 0 "C4" H 1325 1175 50  0000 L CNN
+F 1 "100uF" H 1325 1025 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 1338 950 50  0001 C CNN
+F 3 "~" H 1300 1100 50  0001 C CNN
+	1    1300 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 1650 1100 1700
+	1100 1200 1100 1250
 Wire Wire Line
-	1100 1700 1200 1700
+	1100 1250 1200 1250
 Wire Wire Line
-	1300 1700 1300 1650
+	1300 1250 1300 1200
 Wire Wire Line
-	1200 1700 1200 1750
-Connection ~ 1200 1700
+	1200 1250 1200 1300
+Connection ~ 1200 1250
 Wire Wire Line
-	1200 1700 1300 1700
+	1200 1250 1300 1250
 Wire Wire Line
-	1100 1450 1100 1400
+	1100 1000 1100 950 
 Wire Wire Line
-	1100 1400 1200 1400
+	1100 950  1200 950 
 Wire Wire Line
-	1300 1400 1300 1450
+	1300 950  1300 1000
 Wire Wire Line
-	1200 1400 1200 1350
-Connection ~ 1200 1400
+	1200 950  1200 900 
+Connection ~ 1200 950 
 Wire Wire Line
-	1200 1400 1300 1400
+	1200 950  1300 950 
 $Comp
 L power:GND #PWR017
 U 1 1 5BBE53CB
-P 1200 1750
-F 0 "#PWR017" H 1200 1500 50  0001 C CNN
-F 1 "GND" H 1205 1577 50  0000 C CNN
-F 2 "" H 1200 1750 50  0001 C CNN
-F 3 "" H 1200 1750 50  0001 C CNN
-	1    1200 1750
+P 1200 1300
+F 0 "#PWR017" H 1200 1050 50  0001 C CNN
+F 1 "GND" H 1205 1127 50  0000 C CNN
+F 2 "" H 1200 1300 50  0001 C CNN
+F 3 "" H 1200 1300 50  0001 C CNN
+	1    1200 1300
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3250 2950 3250 2650
-Wire Notes Line
-	3250 2650 3150 2650
-Wire Notes Line
-	3250 2950 3150 2950
-Wire Notes Line
-	2000 2450 1950 2450
-Wire Notes Line
-	1950 2450 1950 2550
-Wire Notes Line
-	1950 2550 2000 2550
-Wire Notes Line
-	3150 2250 3200 2250
-Wire Notes Line
-	3200 2250 3200 2350
-Wire Notes Line
-	3200 2350 3150 2350
 $Comp
 L Device:R_Small R4
 U 1 1 5BCB203E
-P 1750 1500
-F 0 "R4" V 1825 1500 50  0000 C CNN
-F 1 "10k" V 1675 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 1500 50  0001 C CNN
-F 3 "~" H 1750 1500 50  0001 C CNN
-	1    1750 1500
+P 1750 1250
+F 0 "R4" V 1825 1250 50  0000 C CNN
+F 1 "10k" V 1675 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 1250 50  0001 C CNN
+F 3 "~" H 1750 1250 50  0001 C CNN
+	1    1750 1250
 	0    1    1    0   
 $EndComp
+Connection ~ 1575 900 
 Wire Wire Line
-	2000 1400 1925 1400
+	1650 1250 1575 1250
 Wire Wire Line
-	1925 1400 1925 1350
+	1200 900  1575 900 
 Wire Wire Line
-	1925 1350 1575 1350
-Connection ~ 1575 1350
-Wire Wire Line
-	1650 1500 1575 1500
-Wire Wire Line
-	1200 1350 1575 1350
-Wire Wire Line
-	1575 1350 1575 1500
-Wire Wire Line
-	1850 1500 2000 1500
+	1575 900  1575 1250
 Wire Wire Line
 	4600 5800 5250 5800
 Text Label 4700 5800 0    39   ~ 0
 LIVE_IN
-Wire Wire Line
-	3150 1500 3300 1500
-NoConn ~ 3150 1900
 $Comp
 L Device:Varistor RV1
 U 1 1 5B914832
-P 6600 2350
-F 0 "RV1" H 6500 2400 50  0000 R CNN
-F 1 "S14MOV" H 6500 2325 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W4.8mm_P7.5mm" V 6530 2350 50  0001 C CNN
-F 3 "~" H 6600 2350 50  0001 C CNN
-	1    6600 2350
+P 6550 2350
+F 0 "RV1" H 6450 2400 50  0000 R CNN
+F 1 "S14MOV" H 6450 2325 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W4.8mm_P7.5mm" V 6480 2350 50  0001 C CNN
+F 3 "~" H 6550 2350 50  0001 C CNN
+	1    6550 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2250 6725 2250
+	6675 2250 6675 2200
 Wire Wire Line
-	6725 2250 6725 2200
+	6675 2200 6550 2200
 Wire Wire Line
-	6725 2200 6600 2200
+	6550 2200 6400 2200
 Wire Wire Line
-	6600 2200 6450 2200
+	6675 2450 6675 2500
 Wire Wire Line
-	6800 2450 6725 2450
+	6675 2500 6550 2500
+Connection ~ 6550 2200
+Connection ~ 6550 2500
 Wire Wire Line
-	6725 2450 6725 2500
-Wire Wire Line
-	6725 2500 6600 2500
-Connection ~ 6600 2200
-Connection ~ 6600 2500
-Wire Wire Line
-	6600 2500 6450 2500
+	6550 2500 6400 2500
 $Sheet
 S 1275 4275 1325 800 
 U 5B8F2634
 F0 "Front Panel" 39
 F1 "FrontPanel.sch" 39
-F2 "Panel_LED" I R 2600 4675 39 
-F3 "5V" I R 2600 4325 39 
-F4 "GND" I R 2600 5025 39 
+F2 "Panel_LED" I R 2600 4575 39 
+F3 "Panel_SCL" I R 2600 4775 39 
+F4 "Panel_SDA" I R 2600 4850 39 
+F5 "Panel_INT" I R 2600 4925 39 
 $EndSheet
-Wire Wire Line
-	2600 4675 3050 4675
-Text GLabel 3675 4675 2    39   Input ~ 0
-PANEL_LEDS
-Text GLabel 1850 2400 0    50   Output ~ 0
-PANEL_LEDS
-Wire Wire Line
-	2000 2600 1850 2600
+$Sheet
+S 6100 7200 725  475 
+U 5B9D4F46
+F0 "Mechanical" 39
+F1 "Mechanical.sch" 39
+$EndSheet
 $Comp
-L Connector_Generic:Conn_01x03 J11
-U 1 1 5B93859D
-P 3050 4250
-F 0 "J11" H 3050 4450 50  0000 C CNN
-F 1 "PinHeader3" V 3150 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 4250 50  0001 C CNN
-F 3 "~" H 3050 4250 50  0001 C CNN
-	1    3050 4250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3050 4675 3050 4450
-Connection ~ 3050 4675
-Wire Wire Line
-	3050 4675 3525 4675
-Wire Wire Line
-	2600 5025 2750 5025
-Wire Wire Line
-	3150 5025 3150 4450
-Wire Wire Line
-	2600 4325 2700 4325
-Wire Wire Line
-	2700 4325 2700 4475
-Wire Wire Line
-	2700 4475 2950 4475
-Wire Wire Line
-	2950 4475 2950 4450
-$Comp
-L power:GND #PWR021
-U 1 1 5B965045
-P 2750 5050
-F 0 "#PWR021" H 2750 4800 50  0001 C CNN
-F 1 "GND" H 2755 4877 50  0000 C CNN
-F 2 "" H 2750 5050 50  0001 C CNN
-F 3 "" H 2750 5050 50  0001 C CNN
-	1    2750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR020
-U 1 1 5B965090
-P 2700 4300
-F 0 "#PWR020" H 2700 4150 50  0001 C CNN
-F 1 "+5V" H 2715 4473 50  0000 C CNN
-F 2 "" H 2700 4300 50  0001 C CNN
-F 3 "" H 2700 4300 50  0001 C CNN
-	1    2700 4300
+L MCU_Espressif:ESP32-WROVER U1
+U 1 1 5B9122A5
+P 2650 2200
+F 0 "U1" H 2750 3375 50  0000 C CNN
+F 1 "ESP32-WROVER" H 3000 3300 50  0000 C CNN
+F 2 "Module:Espressif_ESP32_WROVER" H 2500 2750 50  0001 C CNN
+F 3 "https://espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf" H 4250 1750 50  0001 C CNN
+	1    2650 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 4300 2700 4325
-Connection ~ 2700 4325
+	3200 2050 3725 2050
 Wire Wire Line
-	2750 5050 2750 5025
-Connection ~ 2750 5025
+	2650 1050 2650 900 
 Wire Wire Line
-	2750 5025 3150 5025
-$Comp
-L Connector_Generic:Conn_01x03 J12
-U 1 1 5B988329
-P 3525 4250
-F 0 "J12" H 3525 4450 50  0000 C CNN
-F 1 "PinHeader3" V 3625 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3525 4250 50  0001 C CNN
-F 3 "~" H 3525 4250 50  0001 C CNN
-	1    3525 4250
-	0    -1   -1   0   
-$EndComp
+	2050 1900 1950 1900
 Wire Wire Line
-	2950 4475 3425 4475
+	2050 2000 1950 2000
 Wire Wire Line
-	3425 4475 3425 4450
-Connection ~ 2950 4475
+	3200 2450 3725 2450
 Wire Wire Line
-	3525 4450 3525 4675
-Connection ~ 3525 4675
+	3200 2550 3725 2550
 Wire Wire Line
-	3525 4675 3675 4675
+	3725 2150 3200 2150
 Wire Wire Line
-	3625 4450 3625 5025
+	3725 2250 3200 2250
 Wire Wire Line
-	3625 5025 3150 5025
-Connection ~ 3150 5025
+	3725 2350 3200 2350
+NoConn ~ 2600 3350
+NoConn ~ 2050 1350
+NoConn ~ 2050 1450
+Wire Wire Line
+	2300 3350 2300 3450
+Wire Wire Line
+	2300 3450 2400 3450
+Wire Wire Line
+	2500 3450 2500 3350
+Wire Wire Line
+	2400 3350 2400 3450
+Connection ~ 2400 3450
+Wire Wire Line
+	2400 3450 2500 3450
+Wire Wire Line
+	2400 3450 2400 3550
+Wire Wire Line
+	2650 900  1575 900 
+Wire Wire Line
+	1850 1250 2050 1250
+Wire Wire Line
+	3725 1650 3200 1650
+Wire Wire Line
+	3200 1850 3725 1850
+Wire Wire Line
+	3725 1950 3200 1950
+NoConn ~ 2050 1550
+NoConn ~ 2050 1650
+NoConn ~ 2050 2350
+NoConn ~ 2050 2450
+NoConn ~ 2050 2550
+NoConn ~ 2050 2650
+NoConn ~ 2050 2750
+NoConn ~ 2050 2850
+NoConn ~ 3200 2700
+NoConn ~ 3725 1550
+NoConn ~ 3725 1650
+NoConn ~ 3200 3000
+NoConn ~ 3725 2050
+NoConn ~ 3725 2350
+Wire Wire Line
+	6675 2250 6750 2250
+Wire Wire Line
+	6675 2450 6750 2450
+Wire Wire Line
+	7600 2450 7550 2450
+Wire Wire Line
+	7600 2250 7550 2250
+Connection ~ 7600 2250
+Wire Wire Line
+	8100 2900 7600 2900
+Wire Wire Line
+	7600 2450 7600 2900
+Text Label 7600 2725 3    39   ~ 0
+GND
+Wire Wire Line
+	2600 4575 2775 4575
+Wire Wire Line
+	2600 4775 2775 4775
+Wire Wire Line
+	2600 4850 2775 4850
+Wire Wire Line
+	2600 4925 2775 4925
+Text Label 2775 4775 0    39   ~ 0
+Panel_SCL
+Text Label 2775 4850 0    39   ~ 0
+Panel_SDA
+Text Label 2775 4925 0    39   ~ 0
+Panel_INT
+Text Label 2775 4575 0    39   ~ 0
+Panel_LED
+Text Label 3725 2900 2    39   ~ 0
+Panel_LED
+Text Label 3725 1750 2    39   ~ 0
+Panel_SCL
+Text Label 3725 1350 2    39   ~ 0
+Panel_SDA
+Text Label 3725 2800 2    39   ~ 0
+Panel_INT
+Wire Wire Line
+	3200 1350 3725 1350
+Wire Wire Line
+	3200 1450 3725 1450
+Wire Wire Line
+	3200 1550 3725 1550
+Text Label 5850 3450 2    39   ~ 0
+POW1
+Text Label 5850 3550 2    39   ~ 0
+POW2
+Text Label 5850 3650 2    39   ~ 0
+POW3
+Text Label 5850 3750 2    39   ~ 0
+POW4
+Text Label 5850 3850 2    39   ~ 0
+POW5
+Text Label 5850 3950 2    39   ~ 0
+POW6
+Text Label 3725 1850 2    39   ~ 0
+POW1
+Text Label 3725 1950 2    39   ~ 0
+POW2
+Text Label 3725 2150 2    39   ~ 0
+POW5
+Text Label 3725 2250 2    39   ~ 0
+POW6
+Text Label 3725 2450 2    39   ~ 0
+POW3
+Text Label 3725 2550 2    39   ~ 0
+POW4
+Text Label 10125 2500 2    39   ~ 0
+FLOW_SENSE
+Text Label 3725 3100 2    39   ~ 0
+FLOW_SENSE
+Wire Wire Line
+	4675 5700 4600 5700
+Wire Wire Line
+	4600 5600 4675 5600
+Wire Wire Line
+	3725 1750 3200 1750
+Wire Wire Line
+	3200 3100 3725 3100
+Wire Wire Line
+	3200 2900 3725 2900
+Wire Wire Line
+	3200 2800 3725 2800
 $EndSCHEMATC

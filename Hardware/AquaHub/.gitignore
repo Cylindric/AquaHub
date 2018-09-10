@@ -24,3 +24,5 @@ _autosave-*
 *.xml
 *.csv
 
+# Generated output
+AquaHub.step

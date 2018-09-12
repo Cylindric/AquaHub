@@ -1,200 +1,152 @@
-Cmp-Mod V01 Created by PcbNew   date = 28/08/2018 00:23:55
+Cmp-Mod V01 Created by PcbNew   date = 12/09/2018 01:05:31
 
 BeginCmp
-TimeStamp = 5B9CB916
-Path = /5B87FB45
-Reference = R2;
-ValeurCmp = 2.2K;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+TimeStamp = 5B9894C2
+Path = /5B914832
+Reference = RV1;
+ValeurCmp = S14MOV;
+IdModule  = Varistor:RV_Disc_D15.5mm_W6.1mm_P7.5mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 5BA9402F
-Path = /5B858EFB
-Reference = J4;
-ValeurCmp = Screw_Terminal_01x03;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+TimeStamp = 5BBD1C43
+Path = /5B8EAC54
+Reference = U3;
+ValeurCmp = NCP1117DT33G;
+IdModule  = Package_TO_SOT_SMD:TO-252-3_TabPin2;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B92A6A9
-Path = /5B89B223
-Reference = J5;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+TimeStamp = 5BA21D8A
+Path = /5B8F2634/5BC806F3
+Reference = J12;
+ValeurCmp = Conn_01x06;
+IdModule  = Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B927229
-Path = /5B89B22A
-Reference = J6;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+TimeStamp = 5BA21B70
+Path = /5B8F2634/5BAE63BD
+Reference = U6;
+ValeurCmp = TCA9534;
+IdModule  = Package_SO:SOIC-16W_7.5x12.8mm_P1.27mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9272B2
-Path = /5B88684A
-Reference = J7;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
+TimeStamp = 5BB150E7
+Path = /5B8891DE
+Reference = R3;
+ValeurCmp = 3.3K;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9272BE
-Path = /5B89B24E
-Reference = K4;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
+TimeStamp = 5BA21D67
+Path = /5B8F2634/5BB05088
+Reference = J11;
+ValeurCmp = Conn_01x06;
+IdModule  = Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B927106
-Path = /5B852D5C
-Reference = C1;
-ValeurCmp = 0.1uF;
-IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+TimeStamp = 5BA776ED
+Path = /5B8F2634/5B8F26C8
+Reference = D1;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9290B4
-Path = /5B85020F
-Reference = C2;
-ValeurCmp = 1nF;
-IdModule  = Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+TimeStamp = 5BA21AB0
+Path = /5B8F2634/5BAD9A26
+Reference = SW1;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B92969C
-Path = /5B84CA24
-Reference = U2;
-ValeurCmp = ACS723;
-IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
+TimeStamp = 5BA21B2C
+Path = /5B8F2634/5BADAB27
+Reference = SW5;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B92A47D
-Path = /5B886855
-Reference = K6;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B92AC49
-Path = /5B85C2BF
-Reference = R1;
-ValeurCmp = 4.7K;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B9272CA
-Path = /5B89B25D
-Reference = K5;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BA92B87
-Path = /5B84F663
-Reference = U1;
-ValeurCmp = ESP32-WROVER-I;
-IdModule  = AquaFootprints:ESP32-WROVER;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BA92FCB
-Path = /5B850570
-Reference = J1;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BA93054
-Path = /5B8508CA
-Reference = J2;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BA930DD
-Path = /5B853F62
-Reference = J3;
-ValeurCmp = Screw_Terminal;
-IdModule  = TerminalBlock_WAGO:TerminalBlock_WAGO_236-103_1x03_P5.00mm_45Degree;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B928EB7
-Path = /5B869114
-Reference = K1;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BC157BE
-Path = /5B869168
-Reference = K2;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
-EndCmp
-
-BeginCmp
-TimeStamp = 5BC157C9
-Path = /5B8691A6
-Reference = K3;
-ValeurCmp = HF64F-G;
-IdModule  = AquaFootprints:Relay_HF46F;
-EndCmp
-
-BeginCmp
-TimeStamp = 5B9CB8EE
-Path = /5B930F72
-Reference = J8;
-ValeurCmp = ISP;
-IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+TimeStamp = 5BA7763F
+Path = /5B8D3CBA
+Reference = V1;
+ValeurCmp = RAC01-12SGB;
+IdModule  = Converter_ACDC:Converter_ACDC_RECOM_RAC01-xxSGB_THT;
 EndCmp
 
 BeginCmp
 TimeStamp = 5B9CB905
 Path = /5B857A53
 Reference = J9;
-ValeurCmp = FLOW;
+ValeurCmp = PinHeader3;
 IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9CBCBA
-Path = /5B8891DE
-Reference = R3;
-ValeurCmp = 3.3K;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder;
+TimeStamp = 5B932E76
+Path = /5B880367
+Reference = K1;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9CB93D
-Path = /5B8EAC54
-Reference = U3;
-ValeurCmp = AP1117-33;
-IdModule  = Package_TO_SOT_SMD:SOT-223-3_TabPin2;
+TimeStamp = 5BAFBC28
+Path = /5BAB6A9F
+Reference = K2;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9CB94A
-Path = /5B8D3CBA
-Reference = V1;
-ValeurCmp = VCE05;
-IdModule  = AquaFootprints:VCE05;
+TimeStamp = 5B932EA2
+Path = /5BABC493
+Reference = K3;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B932EB8
+Path = /5BAC26F9
+Reference = K4;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B932ECE
+Path = /5BAC92A1
+Reference = K5;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B932EE4
+Path = /5BAD06E3
+Reference = K6;
+ValeurCmp = MT2-C93402;
+IdModule  = AquaFootprints:MT2-C93400;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B92969C
+Path = /5B84CA24
+Reference = U2;
+ValeurCmp = MLX91210KDC-CAS-102-SP;
+IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
 EndCmp
 
 BeginCmp
 TimeStamp = 5B9CD6A9
-Path = /5B95551D
+Path = /5B9D4F46/5B9E153C
 Reference = MH1;
 ValeurCmp = MountingHole;
 IdModule  = MountingHole:MountingHole_4.3mm_M4;
@@ -202,15 +154,15 @@ EndCmp
 
 BeginCmp
 TimeStamp = 5B9CD6B1
-Path = /5B95544F
+Path = /5B9D4F46/5B9E1536
 Reference = MH2;
 ValeurCmp = MountingHole;
 IdModule  = MountingHole:MountingHole_4.3mm_M4;
 EndCmp
 
 BeginCmp
-TimeStamp = 5B9CD6B9
-Path = /5B955565
+TimeStamp = 5BB43A16
+Path = /5B9D4F46/5B9E1542
 Reference = MH3;
 ValeurCmp = MountingHole;
 IdModule  = MountingHole:MountingHole_4.3mm_M4;
@@ -218,10 +170,330 @@ EndCmp
 
 BeginCmp
 TimeStamp = 5B9CD6C1
-Path = /5B9555B9
+Path = /5B9D4F46/5B9E1548
 Reference = MH4;
 ValeurCmp = MountingHole;
 IdModule  = MountingHole:MountingHole_4.3mm_M4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B9214ED
+Path = /5B863B89
+Reference = U4;
+ValeurCmp = TPL7407LA;
+IdModule  = Package_SO:SOIC-16_3.9x9.9mm_P1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA8EC8F
+Path = /5B930F72
+Reference = J10;
+ValeurCmp = PinHeader4;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA13D46
+Path = /5BB06BF9
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA01A7D
+Path = /5B852D5C
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA01A8D
+Path = /5B85020F
+Reference = C2;
+ValeurCmp = 10nF;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA01A9D
+Path = /5B85C2BF
+Reference = R1;
+ValeurCmp = 6k-100k?;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BB15117
+Path = /5B87FB45
+Reference = R2;
+ValeurCmp = 2.2K;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA13DA8
+Path = /5BB06BFF
+Reference = C4;
+ValeurCmp = 100uF;
+IdModule  = Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA77587
+Path = /5B8F2634/5B8F2748
+Reference = D2;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA7759C
+Path = /5B8F2634/5B8F2790
+Reference = D3;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA775B1
+Path = /5B8F2634/5B8F27F6
+Reference = D4;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA775C6
+Path = /5B8F2634/5B8FD1E7
+Reference = D5;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA775DB
+Path = /5B8F2634/5B8FD2FB
+Reference = D6;
+ValeurCmp = NeoPixel;
+IdModule  = LED_THT:LED_D5.0mm-4_RGB;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B95B2E8
+Path = /5B9D4F46/5B9E1555
+Reference = MH5;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_2.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B95B2F0
+Path = /5B9D4F46/5B9E1588
+Reference = MH6;
+ValeurCmp = MountingHole;
+IdModule  = MountingHole:MountingHole_2.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA21ACF
+Path = /5B8F2634/5BADAA87
+Reference = SW2;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA21AEE
+Path = /5B8F2634/5BADAABB
+Reference = SW3;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA21B0D
+Path = /5B8F2634/5BADAAEF
+Reference = SW4;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA21B4B
+Path = /5B8F2634/5BB45FCD
+Reference = SW6;
+ValeurCmp = SW_Push;
+IdModule  = Button_Switch_THT:SW_PUSH_6mm_H13mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA29165
+Path = /5B9D4F46/5BCD1A07
+Reference = MH7;
+ValeurCmp = MountingHole;
+IdModule  = AquaFootprints:Breakaway 1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA2916E
+Path = /5B9D4F46/5BCD1A86
+Reference = MH8;
+ValeurCmp = MountingHole;
+IdModule  = AquaFootprints:Breakaway 1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA29177
+Path = /5B9D4F46/5BCD1AB0
+Reference = MH9;
+ValeurCmp = MountingHole;
+IdModule  = AquaFootprints:Breakaway 1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BA29180
+Path = /5B9D4F46/5BCD1ADC
+Reference = MH10;
+ValeurCmp = MountingHole;
+IdModule  = AquaFootprints:Breakaway 1mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BBD1912
+Path = /5C108620
+Reference = C5;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BBD193A
+Path = /5C2C774E
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BBD1962
+Path = /5C1AD4D4
+Reference = C7;
+ValeurCmp = 4.7uF;
+IdModule  = Capacitor_SMD:CP_Elec_5x5.4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BBD198A
+Path = /5C130B61
+Reference = C8;
+ValeurCmp = 4.7uF;
+IdModule  = Capacitor_SMD:CP_Elec_5x5.4;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BBD1C6A
+Path = /5B9ED31F
+Reference = U5;
+ValeurCmp = NCP1117DT50G;
+IdModule  = Package_TO_SOT_SMD:TO-252-3_TabPin2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9CABA
+Path = /5C3CB881
+Reference = J3;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9CAE4
+Path = /5C3CB8DB
+Reference = J4;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D0F9
+Path = /5C3CB93B
+Reference = J5;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9CDCE
+Path = /5B9CD097
+Reference = J1;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9CE20
+Path = /5B858EFB
+Reference = J8;
+ValeurCmp = Screw_Terminal;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9CE52
+Path = /5BAA9F80
+Reference = U1;
+ValeurCmp = ESP32-WROOM;
+IdModule  = AquaFootprints:ESP32-WROOM;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D3DE
+Path = /5C3CB825
+Reference = J2;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D430
+Path = /5C3CB99B
+Reference = J6;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D431
+Path = /5C3CB9FB
+Reference = J7;
+ValeurCmp = Screw_Terminal_01x13;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D463
+Path = /5BB4550C
+Reference = J13;
+ValeurCmp = Conn_01x02;
+IdModule  = Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B987D8D
+Path = 
+Reference = REF**;
+ValeurCmp = OSHW-Logo_11.4x12mm_SilkScreen;
+IdModule  = Symbol:OSHW-Logo_11.4x12mm_SilkScreen;
+EndCmp
+
+BeginCmp
+TimeStamp = 5B987DF7
+Path = 
+Reference = REF**;
+ValeurCmp = KiCAD Logo;
+IdModule  = Symbol:Symbol_KiCAD-Logo_CopperAndSilkScreenTop;
 EndCmp
 
 EndListe

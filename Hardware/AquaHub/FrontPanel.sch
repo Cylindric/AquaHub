@@ -531,4 +531,10 @@ Wire Notes Line
 	3650 3600 3650 5600
 Text Notes 3650 3600 0    50   ~ 0
 Input Buttons
+Text Notes 5875 4100 0    79   ~ 16
+?
+Text Notes 4025 2150 0    79   ~ 16
+?
+Text Notes 2100 1925 0    79   ~ 16
+?
 $EndSCHEMATC

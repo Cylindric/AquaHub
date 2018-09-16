@@ -17,166 +17,156 @@ $EndDescr
 $Comp
 L LED:NeoPixel_THT D1
 U 1 1 5B8F26C8
-P 4825 2550
-F 0 "D1" H 4600 2800 50  0000 L CNN
-F 1 "NeoPixel" H 4900 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4875 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 4925 2175 50  0001 L TNN
-	1    4825 2550
+P 6275 2550
+F 0 "D1" H 6050 2800 50  0000 L CNN
+F 1 "WS2811" H 6300 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6325 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 6375 2175 50  0001 L TNN
+	1    6275 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D2
 U 1 1 5B8F2748
-P 5875 2550
-F 0 "D2" H 5675 2800 50  0000 L CNN
-F 1 "NeoPixel" H 5950 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5925 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 5975 2175 50  0001 L TNN
-	1    5875 2550
+P 6950 2550
+F 0 "D2" H 6750 2800 50  0000 L CNN
+F 1 "WS2811" H 6975 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 7000 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 7050 2175 50  0001 L TNN
+	1    6950 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D3
 U 1 1 5B8F2790
-P 6925 2550
-F 0 "D3" H 6700 2800 50  0000 L CNN
-F 1 "NeoPixel" H 7025 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6975 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 7025 2175 50  0001 L TNN
-	1    6925 2550
+P 7625 2550
+F 0 "D3" H 7400 2800 50  0000 L CNN
+F 1 "WS2811" H 7650 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 7675 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 7725 2175 50  0001 L TNN
+	1    7625 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D4
 U 1 1 5B8F27F6
-P 7975 2550
-F 0 "D4" H 7750 2800 50  0000 L CNN
-F 1 "NeoPixel" H 8075 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 8025 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 8075 2175 50  0001 L TNN
-	1    7975 2550
+P 8300 2550
+F 0 "D4" H 8075 2800 50  0000 L CNN
+F 1 "WS2811" H 8325 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 8350 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 8400 2175 50  0001 L TNN
+	1    8300 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D5
 U 1 1 5B8FD1E7
-P 9025 2550
-F 0 "D5" H 8800 2800 50  0000 L CNN
-F 1 "NeoPixel" H 9125 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9075 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 9125 2175 50  0001 L TNN
-	1    9025 2550
+P 8975 2550
+F 0 "D5" H 8750 2800 50  0000 L CNN
+F 1 "WS2811" H 9000 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9025 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 9075 2175 50  0001 L TNN
+	1    8975 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L LED:NeoPixel_THT D6
 U 1 1 5B8FD2FB
-P 10075 2550
-F 0 "D6" H 9875 2800 50  0000 L CNN
-F 1 "NeoPixel" H 10175 2300 50  0000 L CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB" H 10125 2250 50  0001 L TNN
-F 3 "https://www.adafruit.com/product/1938" H 10175 2175 50  0001 L TNN
-	1    10075 2550
+P 9650 2550
+F 0 "D6" H 9450 2800 50  0000 L CNN
+F 1 "WS2811" H 9675 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9700 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 9750 2175 50  0001 L TNN
+	1    9650 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4825 2250 4825 2100
+	5600 2250 5600 2100
 Wire Wire Line
-	10075 2100 10075 2250
+	8975 2100 8975 2250
 Wire Wire Line
-	5875 2250 5875 2100
+	6275 2250 6275 2100
 Wire Wire Line
-	4825 2100 5875 2100
-Connection ~ 5875 2100
+	5600 2100 6275 2100
+Connection ~ 6275 2100
 Wire Wire Line
-	5875 2100 6925 2100
+	6275 2100 6950 2100
 Wire Wire Line
-	6925 2250 6925 2100
-Connection ~ 6925 2100
+	6950 2250 6950 2100
+Connection ~ 6950 2100
 Wire Wire Line
-	6925 2100 7425 2100
+	7625 2250 7625 2100
+Connection ~ 7625 2100
 Wire Wire Line
-	7975 2250 7975 2100
-Connection ~ 7975 2100
+	7625 2100 8300 2100
 Wire Wire Line
-	7975 2100 9025 2100
+	8300 2250 8300 2100
+Connection ~ 8300 2100
 Wire Wire Line
-	9025 2250 9025 2100
-Connection ~ 9025 2100
+	8300 2100 8975 2100
 Wire Wire Line
-	9025 2100 10075 2100
+	6575 2550 6650 2550
 Wire Wire Line
-	5125 2550 5575 2550
+	7250 2550 7325 2550
 Wire Wire Line
-	6175 2550 6625 2550
+	7925 2550 8000 2550
 Wire Wire Line
-	7225 2550 7675 2550
+	8600 2550 8675 2550
 Wire Wire Line
-	8275 2550 8725 2550
+	9275 2550 9350 2550
 Wire Wire Line
-	9325 2550 9775 2550
+	5600 2850 5600 3000
 Wire Wire Line
-	4825 2850 4825 3000
+	5600 3000 6275 3000
 Wire Wire Line
-	4825 3000 5875 3000
+	8975 3000 8975 2850
 Wire Wire Line
-	10075 3000 10075 2850
+	8300 2850 8300 3000
+Connection ~ 8300 3000
 Wire Wire Line
-	9025 2850 9025 3000
-Connection ~ 9025 3000
+	8300 3000 8975 3000
 Wire Wire Line
-	9025 3000 10075 3000
+	7625 2850 7625 3000
+Connection ~ 7625 3000
 Wire Wire Line
-	7975 2850 7975 3000
-Connection ~ 7975 3000
+	7625 3000 8300 3000
 Wire Wire Line
-	7975 3000 9025 3000
+	6950 2850 6950 3000
+Connection ~ 6950 3000
 Wire Wire Line
-	6925 2850 6925 3000
-Connection ~ 6925 3000
+	6950 3000 7300 3000
 Wire Wire Line
-	6925 3000 7425 3000
+	6275 2850 6275 3000
+Connection ~ 6275 3000
 Wire Wire Line
-	5875 2850 5875 3000
-Connection ~ 5875 3000
+	6275 3000 6950 3000
 Wire Wire Line
-	5875 3000 6925 3000
+	7300 2100 7300 2000
 Wire Wire Line
-	7425 2100 7425 2000
-Connection ~ 7425 2100
-Wire Wire Line
-	7425 2100 7975 2100
-Wire Wire Line
-	7425 3000 7425 3100
-Connection ~ 7425 3000
-Wire Wire Line
-	7425 3000 7975 3000
+	7300 3000 7300 3100
 $Comp
 L power:+5V #PWR018
 U 1 1 5B8FEB53
-P 7425 2000
-F 0 "#PWR018" H 7425 1850 50  0001 C CNN
-F 1 "+5V" H 7440 2173 50  0000 C CNN
-F 2 "" H 7425 2000 50  0001 C CNN
-F 3 "" H 7425 2000 50  0001 C CNN
-	1    7425 2000
+P 7300 2000
+F 0 "#PWR018" H 7300 1850 50  0001 C CNN
+F 1 "+5V" H 7315 2173 50  0000 C CNN
+F 2 "" H 7300 2000 50  0001 C CNN
+F 3 "" H 7300 2000 50  0001 C CNN
+	1    7300 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 5B8FEBA4
-P 7425 3100
-F 0 "#PWR019" H 7425 2850 50  0001 C CNN
-F 1 "GND" H 7430 2927 50  0000 C CNN
-F 2 "" H 7425 3100 50  0001 C CNN
-F 3 "" H 7425 3100 50  0001 C CNN
-	1    7425 3100
+P 7300 3100
+F 0 "#PWR019" H 7300 2850 50  0001 C CNN
+F 1 "GND" H 7305 2927 50  0000 C CNN
+F 2 "" H 7300 3100 50  0001 C CNN
+F 3 "" H 7300 3100 50  0001 C CNN
+	1    7300 3100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10375 2550
-Text HLabel 4075 2550 0    39   Input ~ 0
-Panel_LED
+NoConn ~ 9950 2550
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5BAD9A26
@@ -309,7 +299,7 @@ L power:+5V #PWR024
 U 1 1 5BAE4B4C
 P 4675 3875
 F 0 "#PWR024" H 4675 3725 50  0001 C CNN
-F 1 "+5V" H 4690 4048 50  0000 C CNN
+F 1 "+5V" H 4800 3925 50  0000 C CNN
 F 2 "" H 4675 3875 50  0001 C CNN
 F 3 "" H 4675 3875 50  0001 C CNN
 	1    4675 3875
@@ -362,7 +352,7 @@ L Connector_Generic:Conn_01x06 J11
 U 1 1 5BB05088
 P 1450 2525
 F 0 "J11" H 1370 2000 50  0000 C CNN
-F 1 "Conn_01x06" H 1370 2091 50  0000 C CNN
+F 1 "IDC_2x3" H 1370 2091 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 1450 2525 50  0001 C CNN
 F 3 "~" H 1450 2525 50  0001 C CNN
 	1    1450 2525
@@ -408,9 +398,7 @@ Wire Wire Line
 	2150 2225 2150 2175
 Wire Wire Line
 	1650 2225 2150 2225
-Text Label 4075 2550 0    39   ~ 0
-Panel_LED
-Text Label 2075 2625 2    39   ~ 0
+Text Label 1675 2625 0    39   ~ 0
 Panel_LED
 Text Label 4075 4250 2    39   ~ 0
 Button_SCL
@@ -418,11 +406,11 @@ Text Label 4075 4350 2    39   ~ 0
 Button_SDA
 Text Label 4075 4450 2    39   ~ 0
 Button_INT
-Text Label 2075 2325 2    39   ~ 0
+Text Label 1675 2325 0    39   ~ 0
 Button_SCL
-Text Label 2075 2425 2    39   ~ 0
+Text Label 1675 2425 0    39   ~ 0
 Button_SDA
-Text Label 2075 2525 2    39   ~ 0
+Text Label 1675 2525 0    39   ~ 0
 Button_INT
 $Comp
 L Switch:SW_Push SW6
@@ -447,14 +435,14 @@ Wire Wire Line
 Wire Wire Line
 	5400 4750 5075 4750
 Wire Wire Line
-	4075 2550 4525 2550
-Text HLabel 2225 2300 2    39   Input ~ 0
+	5900 2550 5975 2550
+Text HLabel 2225 2275 2    39   Input ~ 0
 Panel_SCL
-Text HLabel 2225 2400 2    39   Input ~ 0
+Text HLabel 2225 2375 2    39   Input ~ 0
 Panel_SDA
-Text HLabel 2225 2500 2    39   Input ~ 0
+Text HLabel 2225 2475 2    39   Input ~ 0
 Panel_INT
-Text HLabel 2225 2600 2    39   Input ~ 0
+Text HLabel 2225 2575 2    39   Input ~ 0
 Panel_LED
 $Comp
 L Connector_Generic:Conn_01x06 J12
@@ -463,7 +451,7 @@ P 2800 2525
 AR Path="/5B8F2634/5BC806F3" Ref="J12"  Part="1" 
 AR Path="/5BC806F3" Ref="J?"  Part="1" 
 F 0 "J12" H 2719 2000 50  0000 C CNN
-F 1 "Conn_01x06" H 2719 2091 50  0000 C CNN
+F 1 "IDC_2x3" H 2719 2091 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" H 2800 2525 50  0001 C CNN
 F 3 "~" H 2800 2525 50  0001 C CNN
 	1    2800 2525
@@ -484,42 +472,42 @@ Wire Wire Line
 	2150 2725 2600 2725
 Connection ~ 2150 2725
 Wire Wire Line
-	2225 2600 2150 2600
+	2225 2575 2150 2575
 Wire Wire Line
-	2150 2600 2150 2625
+	2150 2575 2150 2625
 Connection ~ 2150 2625
 Wire Wire Line
 	2150 2625 2600 2625
 Wire Wire Line
-	2225 2500 2150 2500
+	2225 2475 2150 2475
 Wire Wire Line
-	2150 2500 2150 2525
+	2150 2475 2150 2525
 Connection ~ 2150 2525
 Wire Wire Line
 	2150 2525 2600 2525
 Wire Wire Line
-	2225 2400 2150 2400
+	2225 2375 2150 2375
 Wire Wire Line
-	2150 2400 2150 2425
+	2150 2375 2150 2425
 Connection ~ 2150 2425
 Wire Wire Line
 	2150 2425 2600 2425
 Wire Wire Line
-	2225 2300 2150 2300
+	2225 2275 2150 2275
 Wire Wire Line
-	2150 2300 2150 2325
+	2150 2275 2150 2325
 Connection ~ 2150 2325
 Wire Wire Line
 	2150 2325 2600 2325
 Wire Notes Line
-	3650 1775 10550 1775
+	4725 1775 10125 1775
 Wire Notes Line
-	10550 1775 10550 3325
+	10125 1775 10125 3325
 Wire Notes Line
-	10550 3325 3650 3325
+	10125 3325 4725 3325
 Wire Notes Line
-	3650 1775 3650 3325
-Text Notes 3650 1775 0    50   ~ 0
+	4725 1775 4725 3325
+Text Notes 4725 1775 0    50   ~ 0
 Indicator LEDs
 Wire Notes Line
 	3650 3600 6725 3600
@@ -533,8 +521,79 @@ Text Notes 3650 3600 0    50   ~ 0
 Input Buttons
 Text Notes 5875 4100 0    79   ~ 16
 ?
-Text Notes 4025 2150 0    79   ~ 16
-?
-Text Notes 2100 1925 0    79   ~ 16
-?
+Text Notes 3675 3750 0    39   ~ 0
+This is a simple I2C port expander to reduce the number\nof connections back to the main board.
+Text Notes 4750 1925 0    39   ~ 0
+Using a chain of NeoPixels as indicators, to reduce\nthe number of connections back to the main board.
+$Comp
+L LED:NeoPixel_THT D7
+U 1 1 5BD90CC1
+P 5600 2550
+F 0 "D7" H 5400 2800 50  0000 L CNN
+F 1 "WS2811" H 5625 2300 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5650 2250 50  0001 L TNN
+F 3 "https://www.adafruit.com/product/1938" H 5700 2175 50  0001 L TNN
+	1    5600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2850 9650 3000
+Wire Wire Line
+	9650 3000 8975 3000
+Connection ~ 8975 3000
+Wire Wire Line
+	8975 2100 9650 2100
+Wire Wire Line
+	9650 2100 9650 2250
+Connection ~ 8975 2100
+Connection ~ 7300 3000
+Wire Wire Line
+	7300 3000 7625 3000
+Connection ~ 7300 2100
+Wire Wire Line
+	7300 2100 7625 2100
+Wire Wire Line
+	6950 2100 7300 2100
+$Comp
+L Device:R_Small R7
+U 1 1 5BEAE4FE
+P 5200 2400
+F 0 "R7" V 5125 2400 50  0000 C CNN
+F 1 "500R" V 5275 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 2400 50  0001 C CNN
+F 3 "~" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5225 2200 5200 2200
+Wire Wire Line
+	5200 2200 5200 2300
+Wire Wire Line
+	5200 2500 5200 2550
+Wire Wire Line
+	5200 2550 5300 2550
+Wire Wire Line
+	5600 2100 4975 2100
+Wire Wire Line
+	4975 2100 4975 2475
+Connection ~ 5600 2100
+Wire Wire Line
+	5600 3000 4975 3000
+Wire Wire Line
+	4975 3000 4975 2675
+Connection ~ 5600 3000
+$Comp
+L Device:CP_Small C9
+U 1 1 5BEC66A1
+P 4975 2575
+F 0 "C9" H 4850 2500 50  0000 L CNN
+F 1 "1000uF" H 5000 2500 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.4" H 4975 2575 50  0001 C CNN
+F 3 "~" H 4975 2575 50  0001 C CNN
+	1    4975 2575
+	1    0    0    -1  
+$EndComp
+Text Label 5225 2200 0    39   ~ 0
+Panel_LED
 $EndSCHEMATC

@@ -1,7 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP FTR-F1-A
+D Fujitsu Low Profile Power Relay
+$ENDCMP
+#
 $CMP MT2-Relay
-D TE Connectivity DPDT Non-Latching Relay PCB Mount
+D Fujitsu Power Relay Low Profile
 $ENDCMP
 #
 $CMP TPL7407LA

@@ -8,6 +8,7 @@
 *.kicad_pcb-bak
 *~
 _autosave-*
+_saved_*
 *.tmp
 *-rescue.lib
 *-save.pro
@@ -26,3 +27,4 @@ _autosave-*
 
 # Generated output
 AquaHub.step
+*.erc

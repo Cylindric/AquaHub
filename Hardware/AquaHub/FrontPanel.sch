@@ -342,11 +342,11 @@ Wire Wire Line
 NoConn ~ 5075 4850
 NoConn ~ 5075 4950
 Wire Wire Line
-	4275 4250 4075 4250
+	4275 4250 3925 4250
 Wire Wire Line
-	4275 4350 4075 4350
+	4275 4350 3925 4350
 Wire Wire Line
-	4275 4450 4075 4450
+	4275 4450 3925 4450
 $Comp
 L Connector_Generic:Conn_01x06 J11
 U 1 1 5BB05088
@@ -400,11 +400,11 @@ Wire Wire Line
 	1650 2225 2150 2225
 Text Label 1675 2625 0    39   ~ 0
 Panel_LED
-Text Label 4075 4250 2    39   ~ 0
+Text Label 3925 4250 0    39   ~ 0
 Button_SCL
-Text Label 4075 4350 2    39   ~ 0
+Text Label 3925 4350 0    39   ~ 0
 Button_SDA
-Text Label 4075 4450 2    39   ~ 0
+Text Label 3925 4450 0    39   ~ 0
 Button_INT
 Text Label 1675 2325 0    39   ~ 0
 Button_SCL
@@ -566,8 +566,6 @@ F 3 "~" H 5200 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5225 2200 5200 2200
-Wire Wire Line
 	5200 2200 5200 2300
 Wire Wire Line
 	5200 2500 5200 2550
@@ -594,6 +592,6 @@ F 3 "~" H 4975 2575 50  0001 C CNN
 	1    4975 2575
 	1    0    0    -1  
 $EndComp
-Text Label 5225 2200 0    39   ~ 0
+Text Label 5200 2200 0    39   ~ 0
 Panel_LED
 $EndSCHEMATC

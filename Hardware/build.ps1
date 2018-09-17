@@ -8,7 +8,7 @@ Move-Item -Force .\AquaHub\bom\ibom.html "${PSScriptRoot}\Output\bom\"
 
 
 
-git pull
-git add -A Output
-git commit -m "Auto-generated Outputs"
-git push
+# git pull
+# git add -A Output
+# git commit -m "Auto-generated Outputs"
+# git push

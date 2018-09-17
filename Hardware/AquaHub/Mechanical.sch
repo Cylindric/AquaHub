@@ -97,7 +97,7 @@ Main board mounting
 Text Notes 2525 850  0    39   ~ 0
 Panel mounting
 Text Notes 3675 850  0    39   ~ 0
-Panel perfs
+Panel perforations
 $Comp
 L Mechanical:MountingHole MH?
 U 1 1 5BCD1A07

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name AquaHub-rescue)(type Legacy)(uri ${KIPRJMOD}/AquaHub-rescue.lib)(options "")(descr ""))
+)

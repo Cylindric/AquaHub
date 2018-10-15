@@ -37,7 +37,7 @@ F 3 "" H 9500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11025 2600 10600 2600
+	10575 2600 10475 2600
 $Comp
 L AquaHub-rescue:MLX91210-AquaParts U2
 U 1 1 5B84CA24
@@ -47,37 +47,39 @@ F 1 "Current Sense" H 9125 2350 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9600 2450 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS723-Datasheet.ashx?la=en" H 9500 2800 50  0001 C CNN
 F 4 "MLX91210KDC-CAS-102-SP" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    9500 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L AquaHub-rescue:C-Device C2
 U 1 1 5B85020F
-P 10200 2800
-F 0 "C2" H 10315 2846 50  0000 L CNN
-F 1 "10nF" H 10315 2755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10238 2650 50  0001 C CNN
-F 3 "~" H 10200 2800 50  0001 C CNN
-F 4 "VJ0603A102GXAPW1BC" H 50  75  50  0001 C CNN "manf#"
-	1    10200 2800
+P 10075 2800
+F 0 "C2" H 10190 2846 50  0000 L CNN
+F 1 "10nF" H 10190 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10113 2650 50  0001 C CNN
+F 3 "~" H 10075 2800 50  0001 C CNN
+F 4 "VJ0603A102GXAPW1BC" H -75 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
+	1    10075 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L AquaHub-rescue:GND-power #PWR04
 U 1 1 5B851403
-P 10425 3075
-F 0 "#PWR04" H 10425 2825 50  0001 C CNN
-F 1 "GND" H 10430 2902 50  0000 C CNN
-F 2 "" H 10425 3075 50  0001 C CNN
-F 3 "" H 10425 3075 50  0001 C CNN
-	1    10425 3075
+P 10175 3075
+F 0 "#PWR04" H 10175 2825 50  0001 C CNN
+F 1 "GND" H 10180 2902 50  0000 C CNN
+F 2 "" H 10175 3075 50  0001 C CNN
+F 3 "" H 10175 3075 50  0001 C CNN
+	1    10175 3075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 2650 10200 2600
-Connection ~ 10200 2600
+	10075 2650 10075 2600
+Connection ~ 10075 2600
 Wire Wire Line
-	10200 2600 9900 2600
+	10075 2600 9900 2600
 $Comp
 L AquaHub-rescue:C-Device C1
 U 1 1 5B852D5C
@@ -87,6 +89,7 @@ F 1 "100nF" V 9589 2150 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9788 2000 50  0001 C CNN
 F 3 "~" H 9750 2150 50  0001 C CNN
 F 4 "GRM033R61C104ME14D" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    9750 2150
 	0    1    1    0   
 $EndComp
@@ -107,13 +110,14 @@ Wire Wire Line
 $Comp
 L AquaHub-rescue:R-Device R1
 U 1 1 5B85C2BF
-P 10600 2825
-F 0 "R1" H 10670 2871 50  0000 L CNN
-F 1 "10k" H 10670 2780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10530 2825 50  0001 C CNN
-F 3 "~" H 10600 2825 50  0001 C CNN
-F 4 "GWCR0603-10KFT5" H 50  75  50  0001 C CNN "manf#"
-	1    10600 2825
+P 10475 2825
+F 0 "R1" H 10545 2871 50  0000 L CNN
+F 1 "10k" H 10545 2780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10405 2825 50  0001 C CNN
+F 3 "~" H 10475 2825 50  0001 C CNN
+F 4 "GWCR0603-10KFT5" H -75 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
+	1    10475 2825
 	1    0    0    -1  
 $EndComp
 Wire Notes Line style dotted
@@ -135,134 +139,43 @@ Input Current Sensing
 $Comp
 L AquaHub-rescue:Conn_01x06-Connector_Generic J10
 U 1 1 5B930F72
-P 3900 4950
-F 0 "J10" H 3900 5250 50  0000 C CNN
-F 1 "PinHeader6" V 4000 4900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3900 4950 50  0001 C CNN
-F 3 "~" H 3900 4950 50  0001 C CNN
-	1    3900 4950
+P 3750 4950
+F 0 "J10" H 3750 5250 50  0000 C CNN
+F 1 "PinHeader6" V 3850 4900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3750 4950 50  0001 C CNN
+F 3 "~" H 3750 4950 50  0001 C CNN
+	1    3750 4950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4100 5050 4250 5050
+	3950 5050 4100 5050
 Wire Wire Line
-	4100 4750 4250 4750
+	3950 4750 4100 4750
 Wire Wire Line
-	4100 4850 4250 4850
+	3950 4850 4100 4850
 Wire Wire Line
-	4100 4950 4250 4950
+	3950 4950 4100 4950
 $Comp
 L AquaHub-rescue:GND-power #PWR0109
 U 1 1 5B9402BF
-P 4200 5225
-F 0 "#PWR0109" H 4200 4975 50  0001 C CNN
-F 1 "GND" H 4350 5150 50  0000 C CNN
-F 2 "" H 4200 5225 50  0001 C CNN
-F 3 "" H 4200 5225 50  0001 C CNN
-	1    4200 5225
+P 4050 5225
+F 0 "#PWR0109" H 4050 4975 50  0001 C CNN
+F 1 "GND" H 4200 5150 50  0000 C CNN
+F 2 "" H 4050 5225 50  0001 C CNN
+F 3 "" H 4050 5225 50  0001 C CNN
+	1    4050 5225
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3750 4425 4500 4425
+	3600 4425 4350 4425
 Wire Notes Line
-	4500 4425 4500 5375
+	4350 4425 4350 5375
 Wire Notes Line
-	4500 5375 3750 5375
+	4350 5375 3600 5375
 Wire Notes Line
-	3750 5375 3750 4425
-Text Notes 3750 4425 0    50   ~ 0
+	3600 5375 3600 4425
+Text Notes 3600 4425 0    50   ~ 0
 UART
-$Comp
-L AquaHub-rescue:Conn_01x03-Connector_Generic J9
-U 1 1 5B857A53
-P 4750 4900
-F 0 "J9" H 4750 5100 50  0000 C CNN
-F 1 "PinHeader3" V 4850 4900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4750 4900 50  0001 C CNN
-F 3 "~" H 4750 4900 50  0001 C CNN
-	1    4750 4900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4950 4800 5050 4800
-Wire Wire Line
-	5050 4800 5050 4700
-Wire Wire Line
-	4950 5000 5050 5000
-Wire Wire Line
-	4950 4900 5100 4900
-$Comp
-L AquaHub-rescue:+5V-power #PWR05
-U 1 1 5B86C495
-P 5050 4700
-F 0 "#PWR05" H 5050 4550 50  0001 C CNN
-F 1 "+5V" H 5150 4800 50  0000 C CNN
-F 2 "" H 5050 4700 50  0001 C CNN
-F 3 "" H 5050 4700 50  0001 C CNN
-	1    5050 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L AquaHub-rescue:GND-power #PWR06
-U 1 1 5B86C4C8
-P 5050 5200
-F 0 "#PWR06" H 5050 4950 50  0001 C CNN
-F 1 "GND" H 4950 5100 50  0000 C CNN
-F 2 "" H 5050 5200 50  0001 C CNN
-F 3 "" H 5050 5200 50  0001 C CNN
-	1    5050 5200
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4600 4550 5900 4550
-Wire Notes Line
-	5900 4550 5900 5375
-Wire Notes Line
-	5900 5375 4600 5375
-Wire Notes Line
-	4600 5375 4600 4550
-Text Notes 4600 4550 0    50   ~ 0
-Flow Sensor
-$Comp
-L AquaHub-rescue:R-Device R2
-U 1 1 5B87FB45
-P 5250 4900
-F 0 "R2" V 5100 4900 50  0000 C CNN
-F 1 "2.2K" V 5175 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 4900 50  0001 C CNN
-F 3 "~" H 5250 4900 50  0001 C CNN
-F 4 "RC0603JR-072K2L" H -2150 3750 50  0001 C CNN "manf#"
-	1    5250 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:R-Device R3
-U 1 1 5B8891DE
-P 5250 5100
-F 0 "R3" V 5150 5100 50  0000 C CNN
-F 1 "3.3K" V 5075 5100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 5100 50  0001 C CNN
-F 3 "~" H 5250 5100 50  0001 C CNN
-F 4 "GWCR0603-2K2FT5" H -2150 3750 50  0001 C CNN "manf#"
-	1    5250 5100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5050 5000 5050 5100
-Wire Wire Line
-	5400 4900 5450 4900
-Wire Wire Line
-	5450 4900 5450 5100
-Wire Wire Line
-	5450 5100 5400 5100
-Connection ~ 5450 4900
-Wire Wire Line
-	5450 4900 5875 4900
-Wire Wire Line
-	5100 5100 5050 5100
-Connection ~ 5050 5100
-Wire Wire Line
-	5050 5100 5050 5200
 $Comp
 L AquaHub-rescue:RAC04-xxGA-Converter_ACDC V1
 U 1 1 5B8D3CBA
@@ -307,8 +220,6 @@ F 3 "" H 10525 3875 50  0001 C CNN
 	1    10525 3875
 	1    0    0    -1  
 $EndComp
-Text Notes 5350 4750 0    39   ~ 0
-Simple voltage\ndivider to get the\n5V signal to 3.3V.
 $Comp
 L AquaHub-rescue:TPL7407LA-AquaParts U4
 U 1 1 5B863B89
@@ -318,6 +229,7 @@ F 1 "Low-Side Driver" H 6750 5091 39  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6600 4825 39  0001 C CNN
 F 3 "" H 6600 4825 39  0001 C CNN
 F 4 "TPL7407LADR" H 6750 4575 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    6750 4575
 	1    0    0    -1  
 $EndComp
@@ -412,6 +324,7 @@ F 1 "1A 5V" H 10150 4950 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10200 4500 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 10150 4750 50  0001 C CNN
 F 4 "NCP1117DT50G" H 10150 4750 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10150 4750
 	1    0    0    -1  
 $EndComp
@@ -451,6 +364,7 @@ F 1 "1A 3.3V" H 10150 4125 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 10150 4125 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 10250 3675 50  0001 C CNN
 F 4 "NCP1117DT33G" H 10150 3925 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10150 3925
 	1    0    0    -1  
 $EndComp
@@ -491,6 +405,7 @@ F 1 "5A Relay" H 4350 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 5550 5925 39  0001 C CNN
 F 3 "" H 5550 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 4350 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    4350 5975
 	1    0    0    -1  
 $EndComp
@@ -509,6 +424,7 @@ F 1 "5A Relay" H 5850 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 7050 5925 39  0001 C CNN
 F 3 "" H 7050 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 4350 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    5850 5975
 	1    0    0    -1  
 $EndComp
@@ -527,6 +443,7 @@ F 1 "5A Relay" H 7350 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 8550 5925 39  0001 C CNN
 F 3 "" H 8550 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 4350 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7350 5975
 	1    0    0    -1  
 $EndComp
@@ -545,6 +462,7 @@ F 1 "5A Relay" H 8850 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 10050 5925 39  0001 C CNN
 F 3 "" H 10050 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 4350 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    8850 5975
 	1    0    0    -1  
 $EndComp
@@ -559,6 +477,7 @@ F 1 "5A Relay" H 10350 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 11550 5925 39  0001 C CNN
 F 3 "" H 11550 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 4350 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10350 5975
 	1    0    0    -1  
 $EndComp
@@ -577,6 +496,7 @@ F 1 "S14MOV" H 8300 4400 50  0000 R CNN
 F 2 "Varistor:RV_Disc_D15.5mm_W6.1mm_P7.5mm" V 8330 4425 50  0001 C CNN
 F 3 "~" H 8400 4425 50  0001 C CNN
 F 4 "B72214P2251K101" H 8400 4425 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    8400 4425
 	1    0    0    -1  
 $EndComp
@@ -597,10 +517,7 @@ S 625  6800 1325 800
 U 5B8F2634
 F0 "Front Panel" 39
 F1 "FrontPanel.sch" 39
-F2 "Panel_LED" I R 1950 7100 39 
-F3 "Panel_SCL" I R 1950 7300 39 
-F4 "Panel_SDA" I R 1950 7375 39 
-F5 "Panel_INT" I R 1950 7450 39 
+F2 "Panel_INT" I R 1950 7450 39 
 $EndSheet
 Wire Wire Line
 	8525 4325 8600 4325
@@ -614,28 +531,8 @@ Connection ~ 9450 4325
 Wire Wire Line
 	9500 4525 9500 4775
 Wire Wire Line
-	1950 7100 2125 7100
-Wire Wire Line
-	1950 7300 2125 7300
-Wire Wire Line
-	1950 7375 2125 7375
-Wire Wire Line
 	1950 7450 2125 7450
-Text Label 2125 7300 0    39   ~ 0
-Panel_SCL
-Text Label 2125 7375 0    39   ~ 0
-Panel_SDA
 Text Label 2125 7450 0    39   ~ 0
-Panel_INT
-Text Label 2125 7100 0    39   ~ 0
-Panel_LED
-Text Label 5875 4025 2    39   ~ 0
-Panel_LED
-Text Label 3650 2700 2    39   ~ 0
-Panel_SCL
-Text Label 3650 2600 2    39   ~ 0
-Panel_SDA
-Text Label 3650 2500 2    39   ~ 0
 Panel_INT
 Text Label 6150 4725 0    39   ~ 0
 POW1
@@ -661,12 +558,6 @@ Text Label 3650 3300 2    39   ~ 0
 POW3
 Text Label 3650 3400 2    39   ~ 0
 POW4
-Text Label 5875 4900 2    39   ~ 0
-Flow_Sense
-Text Label 3675 2200 2    39   ~ 0
-Flow_Sense
-Text Notes 4700 4700 0    79   ~ 16
-?
 Text Notes 4400 900  0    50   ~ 0
 To Do: Change pin-headers to terminals\nTo Do: Replace panel board buttons?
 $Comp
@@ -678,6 +569,7 @@ F 1 "Screw_Terminal_01x02" H 7955 3301 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 3400 50  0001 C CNN
 F 3 "~" H 7875 3400 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 3400
 	-1   0    0    1   
 $EndComp
@@ -712,6 +604,7 @@ F 1 "ESP32-WROOM" H 2275 3075 60  0000 C CNN
 F 2 "Module:Espressif_ESP32_WROOM_32_SMT" H 2625 4050 60  0001 C CNN
 F 3 "" H 1825 3150 60  0001 C CNN
 F 4 "ESP32-WROOM-32D" H 2275 2700 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    2275 2700
 	1    0    0    -1  
 $EndComp
@@ -746,6 +639,7 @@ F 1 "10uF" H 1350 1075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 1000 50  0001 C CNN
 F 3 "~" H 1550 1150 50  0001 C CNN
 F 4 "TAJB106K006SNJ" H -475 -25 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    1550 1150
 	1    0    0    -1  
 $EndComp
@@ -758,6 +652,7 @@ F 1 "100uF" H 1775 1075 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 1788 1000 50  0001 C CNN
 F 3 "~" H 1750 1150 50  0001 C CNN
 F 4 "TAJD107K006SNJ" H -475 -25 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    1750 1150
 	1    0    0    -1  
 $EndComp
@@ -841,12 +736,10 @@ Text Label 3650 1800 2    39   ~ 0
 TX
 Text Label 3650 1900 2    39   ~ 0
 RX
-Text Label 4250 4750 2    39   ~ 0
+Text Label 4100 4750 2    39   ~ 0
 TX
-Text Label 4250 4850 2    39   ~ 0
+Text Label 4100 4850 2    39   ~ 0
 RX
-Text Label 11025 2600 2    39   ~ 0
-Power_Sense
 Text Label 3675 2300 2    39   ~ 0
 Power_Sense
 Wire Wire Line
@@ -865,24 +758,24 @@ Wire Wire Line
 Wire Wire Line
 	9500 2150 9500 2300
 Wire Wire Line
-	10600 2675 10600 2600
-Connection ~ 10600 2600
+	10475 2675 10475 2600
+Connection ~ 10475 2600
 Wire Wire Line
-	10600 2600 10200 2600
+	10475 2600 10075 2600
 Wire Wire Line
-	10425 3000 10600 3000
+	10175 3000 10475 3000
 Wire Wire Line
-	10600 3000 10600 2975
+	10475 3000 10475 2975
 Wire Wire Line
-	10425 3000 10425 3075
+	10175 3000 10175 3075
 Wire Wire Line
-	10200 2950 10200 3000
+	10075 2950 10075 3000
 Wire Wire Line
-	10200 3000 10425 3000
-Connection ~ 10425 3000
+	10075 3000 10175 3000
+Connection ~ 10175 3000
 Wire Wire Line
-	9900 3000 10200 3000
-Connection ~ 10200 3000
+	9900 3000 10075 3000
+Connection ~ 10075 3000
 Wire Wire Line
 	9500 3325 9500 3300
 $Comp
@@ -894,6 +787,7 @@ F 1 "10uF" H 9600 4050 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon" H 9800 4125 50  0001 C CNN
 F 3 "~" H 9800 4125 50  0001 C CNN
 F 4 "UWX1H100MCL1GB" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    9800 4125
 	1    0    0    -1  
 $EndComp
@@ -918,6 +812,7 @@ F 1 "4.7uF" H 10600 4050 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 10525 4125 50  0001 C CNN
 F 3 "~" H 10525 4125 50  0001 C CNN
 F 4 "UWX1H4R7MCL1GB" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10525 4125
 	1    0    0    -1  
 $EndComp
@@ -939,6 +834,7 @@ F 1 "4.7uF" H 10575 4875 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 10500 4950 50  0001 C CNN
 F 3 "~" H 10500 4950 50  0001 C CNN
 F 4 "UWX1H4R7MCL1GB" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10500 4950
 	1    0    0    -1  
 $EndComp
@@ -977,6 +873,7 @@ F 1 "10uF" H 9550 4875 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon" H 9800 4950 50  0001 C CNN
 F 3 "~" H 9800 4950 50  0001 C CNN
 F 4 "UWX1H100MCL1GB" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    9800 4950
 	1    0    0    -1  
 $EndComp
@@ -995,6 +892,7 @@ F 1 "Screw_Terminal_01x02" H 7955 3076 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 3175 50  0001 C CNN
 F 3 "~" H 7875 3175 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 3175
 	-1   0    0    1   
 $EndComp
@@ -1007,6 +905,7 @@ F 1 "Screw_Terminal_01x02" H 7955 2851 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 2950 50  0001 C CNN
 F 3 "~" H 7875 2950 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 2950
 	-1   0    0    1   
 $EndComp
@@ -1019,6 +918,7 @@ F 1 "Screw_Terminal_01x02" H 7955 2626 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 2725 50  0001 C CNN
 F 3 "~" H 7875 2725 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 2725
 	-1   0    0    1   
 $EndComp
@@ -1031,6 +931,7 @@ F 1 "Screw_Terminal_01x02" H 7955 2401 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 2500 50  0001 C CNN
 F 3 "~" H 7875 2500 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 2500
 	-1   0    0    1   
 $EndComp
@@ -1043,6 +944,7 @@ F 1 "Screw_Terminal_01x02" H 7955 2176 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 7875 2275 50  0001 C CNN
 F 3 "~" H 7875 2275 50  0001 C CNN
 F 4 "1935161" H 350 75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    7875 2275
 	-1   0    0    1   
 $EndComp
@@ -1066,12 +968,8 @@ Wire Wire Line
 	6150 4225 6350 4225
 Wire Wire Line
 	6150 4325 6350 4325
-Wire Wire Line
-	3175 2500 3650 2500
 NoConn ~ 1375 2600
 NoConn ~ 1375 2500
-Wire Wire Line
-	3675 2200 3175 2200
 Wire Wire Line
 	3675 2300 3175 2300
 $Comp
@@ -1079,9 +977,10 @@ L AquaHub-rescue:TestPoint-Connector TP2
 U 1 1 5B9E071D
 P 10600 3925
 F 0 "TP2" V 10625 4125 50  0000 L CNN
-F 1 "TestPoint" V 10700 4125 50  0000 L CNN
+F 1 "Test_3V3" V 10700 4125 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 10800 3925 50  0001 C CNN
 F 3 "~" H 10800 3925 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
 	1    10600 3925
 	0    1    1    0   
 $EndComp
@@ -1090,9 +989,10 @@ L AquaHub-rescue:TestPoint-Connector TP1
 U 1 1 5B9E07DA
 P 10575 4750
 F 0 "TP1" V 10529 4938 50  0000 L CNN
-F 1 "TestPoint" V 10620 4938 50  0000 L CNN
+F 1 "TEST_5V" V 10620 4938 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 10775 4750 50  0001 C CNN
 F 3 "~" H 10775 4750 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
 	1    10575 4750
 	0    1    1    0   
 $EndComp
@@ -1105,9 +1005,10 @@ L AquaHub-rescue:TestPoint-Connector TP3
 U 1 1 5BA7E124
 P 10600 4275
 F 0 "TP3" V 10650 4475 50  0000 L CNN
-F 1 "TestPoint" V 10725 4475 50  0000 L CNN
+F 1 "Test_3V3_GND" V 10725 4300 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 10800 4275 50  0001 C CNN
 F 3 "~" H 10800 4275 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
 	1    10600 4275
 	0    1    1    0   
 $EndComp
@@ -1117,17 +1018,15 @@ Connection ~ 10525 4275
 $Comp
 L AquaHub-rescue:TestPoint-Connector TP4
 U 1 1 5BA8CCD1
-P 9550 3925
-F 0 "TP4" V 9745 3999 50  0000 C CNN
-F 1 "TestPoint" V 9654 3999 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 9750 3925 50  0001 C CNN
-F 3 "~" H 9750 3925 50  0001 C CNN
-	1    9550 3925
-	0    -1   -1   0   
+P 9600 3900
+F 0 "TP4" H 9675 4100 50  0000 C CNN
+F 1 "Test_12V" H 9800 4025 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 9800 3900 50  0001 C CNN
+F 3 "~" H 9800 3900 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
+	1    9600 3900
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 3925 9550 3925
-Connection ~ 9600 3925
 Wire Wire Line
 	7950 4275 8400 4275
 Wire Wire Line
@@ -1137,7 +1036,7 @@ Wire Wire Line
 Connection ~ 9050 3000
 Wire Wire Line
 	9050 3000 9050 3050
-Text Label 4375 7125 2    39   ~ 0
+Text Label 1900 5100 2    39   ~ 0
 NEUTRAL
 Text Label 8800 2600 0    39   ~ 0
 LIVE
@@ -1194,64 +1093,58 @@ LIVE
 $Comp
 L AquaHub-rescue:PWR_FLAG-power #FLG?
 U 1 1 5BD98BDA
-P 5025 7350
+P 3050 6950
 AR Path="/5B9D4F46/5BD98BDA" Ref="#FLG?"  Part="1" 
 AR Path="/5BD98BDA" Ref="#FLG0101"  Part="1" 
-F 0 "#FLG0101" H 5025 7425 50  0001 C CNN
-F 1 "PWR_FLAG" V 5025 7478 50  0000 L CNN
-F 2 "" H 5025 7350 50  0001 C CNN
-F 3 "~" H 5025 7350 50  0001 C CNN
-	1    5025 7350
+F 0 "#FLG0101" H 3050 7025 50  0001 C CNN
+F 1 "PWR_FLAG" V 3050 7078 50  0000 L CNN
+F 2 "" H 3050 6950 50  0001 C CNN
+F 3 "~" H 3050 6950 50  0001 C CNN
+	1    3050 6950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5300 7350 5025 7350
+	3325 6950 3050 6950
 $Comp
 L AquaHub-rescue:PWR_FLAG-power #FLG?
 U 1 1 5BD98BE1
-P 5025 7550
+P 3050 7150
 AR Path="/5B9D4F46/5BD98BE1" Ref="#FLG?"  Part="1" 
 AR Path="/5BD98BE1" Ref="#FLG0102"  Part="1" 
-F 0 "#FLG0102" H 5025 7625 50  0001 C CNN
-F 1 "PWR_FLAG" V 5025 7678 50  0000 L CNN
-F 2 "" H 5025 7550 50  0001 C CNN
-F 3 "~" H 5025 7550 50  0001 C CNN
-	1    5025 7550
+F 0 "#FLG0102" H 3050 7225 50  0001 C CNN
+F 1 "PWR_FLAG" V 3050 7278 50  0000 L CNN
+F 2 "" H 3050 7150 50  0001 C CNN
+F 3 "~" H 3050 7150 50  0001 C CNN
+	1    3050 7150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5025 7550 5300 7550
+	3050 7150 3325 7150
 $Comp
 L AquaHub-rescue:PWR_FLAG-power #FLG?
 U 1 1 5BD98BE8
-P 5025 7450
+P 3050 7050
 AR Path="/5B9D4F46/5BD98BE8" Ref="#FLG?"  Part="1" 
 AR Path="/5BD98BE8" Ref="#FLG0103"  Part="1" 
-F 0 "#FLG0103" H 5025 7525 50  0001 C CNN
-F 1 "PWR_FLAG" V 5025 7578 50  0000 L CNN
-F 2 "" H 5025 7450 50  0001 C CNN
-F 3 "~" H 5025 7450 50  0001 C CNN
-	1    5025 7450
+F 0 "#FLG0103" H 3050 7125 50  0001 C CNN
+F 1 "PWR_FLAG" V 3050 7178 50  0000 L CNN
+F 2 "" H 3050 7050 50  0001 C CNN
+F 3 "~" H 3050 7050 50  0001 C CNN
+	1    3050 7050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5300 7450 5025 7450
-Text Label 5300 7350 2    39   ~ 0
+	3325 7050 3050 7050
+Text Label 3325 6950 2    39   ~ 0
 LIVE_IN
-Text Label 5300 7450 2    39   ~ 0
+Text Label 3325 7050 2    39   ~ 0
 LIVE
-Text Label 5300 7550 2    39   ~ 0
+Text Label 3325 7150 2    39   ~ 0
 NEUTRAL
-Text Label 6550 5775 2    50   ~ 0
-RE3
-Text Label 3550 5775 2    50   ~ 0
-RE1
 Text Label 3550 5975 2    50   ~ 0
 NEUTRAL1
 Text Label 3550 6175 2    50   ~ 0
 LIVE1
-Text Label 5075 5775 2    50   ~ 0
-RE2
 Text Label 5075 5975 2    50   ~ 0
 NEUTRAL2
 Text Label 5050 6175 2    50   ~ 0
@@ -1264,10 +1157,6 @@ Text Label 8050 5975 2    50   ~ 0
 NEUTRAL4
 Text Label 8050 6175 2    50   ~ 0
 LIVE4
-Text Label 8050 5775 2    50   ~ 0
-RE4
-Text Label 11050 5775 2    50   ~ 0
-RE6
 Text Label 11050 5975 2    50   ~ 0
 NEUTRAL6
 Text Label 11050 6175 2    50   ~ 0
@@ -1276,8 +1165,6 @@ Text Label 9550 6175 2    50   ~ 0
 LIVE5
 Text Label 9550 5975 2    50   ~ 0
 NEUTRAL5
-Text Label 9550 5775 2    50   ~ 0
-RE5
 Text Label 7425 4225 2    50   ~ 0
 RE6
 Text Label 7425 4325 2    50   ~ 0
@@ -1368,10 +1255,11 @@ L AquaHub-rescue:R-Device R4
 U 1 1 5B9C3454
 P 1250 5875
 F 0 "R4" H 1100 5825 50  0000 L CNN
-F 1 "4.7K" H 1025 5900 50  0000 L CNN
+F 1 "4.7k" H 1025 5900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 5875 50  0001 C CNN
 F 3 "~" H 1250 5875 50  0001 C CNN
 F 4 "GWCR0603-4K7FT5" H 50  75  50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    1250 5875
 	-1   0    0    1   
 $EndComp
@@ -1400,16 +1288,17 @@ This connector goes to\nan in-tank DS18B20 \ntemperature sensor
 $Comp
 L AquaHub-rescue:Screw_Terminal_01x02-Connector J8
 U 1 1 5BAA2E3E
-P 3175 7125
-F 0 "J8" H 3150 6925 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 2375 7225 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 3175 7125 50  0001 C CNN
-F 3 "~" H 3175 7125 50  0001 C CNN
-F 4 "1935161" H 0   0   50  0001 C CNN "manf#"
-	1    3175 7125
+P 700 5100
+F 0 "J8" H 675 4900 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H -100 5200 50  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 700 5100 50  0001 C CNN
+F 3 "~" H 700 5100 50  0001 C CNN
+F 4 "1935161" H -2475 -2025 50  0001 C CNN "manf#"
+F 5 "Mouser" H -2475 -2025 50  0001 C CNN "Vendor"
+	1    700  5100
 	-1   0    0    -1  
 $EndComp
-Text Label 3800 7225 2    39   ~ 0
+Text Label 1325 5200 2    39   ~ 0
 UNFUSED_LIVE
 Text Label 3675 2100 2    39   ~ 0
 Temp_Sense
@@ -1418,26 +1307,26 @@ Wire Wire Line
 $Comp
 L AquaHub-rescue:+3V3-power #PWR0110
 U 1 1 5B9CDDAF
-P 4200 4600
-F 0 "#PWR0110" H 4200 4450 50  0001 C CNN
-F 1 "+3V3" H 4350 4700 50  0000 C CNN
-F 2 "" H 4200 4600 50  0001 C CNN
-F 3 "" H 4200 4600 50  0001 C CNN
-	1    4200 4600
+P 4050 4600
+F 0 "#PWR0110" H 4050 4450 50  0001 C CNN
+F 1 "+3V3" H 4200 4700 50  0000 C CNN
+F 2 "" H 4050 4600 50  0001 C CNN
+F 3 "" H 4050 4600 50  0001 C CNN
+	1    4050 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 4650 4200 4650
+	3950 4650 4050 4650
 Wire Wire Line
-	4200 4650 4200 4600
-Text Label 4250 4950 2    39   ~ 0
+	4050 4650 4050 4600
+Text Label 4100 4950 2    39   ~ 0
 EN
-Text Label 4250 5050 2    39   ~ 0
+Text Label 4100 5050 2    39   ~ 0
 IO0
 Wire Wire Line
-	4100 5150 4200 5150
+	3950 5150 4050 5150
 Wire Wire Line
-	4200 5150 4200 5225
+	4050 5150 4050 5225
 $Comp
 L AquaHub-rescue:R-Device R5
 U 1 1 5BA87CFB
@@ -1447,6 +1336,7 @@ F 1 "10k" H 2225 1200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2105 1200 50  0001 C CNN
 F 3 "~" H 2175 1200 50  0001 C CNN
 F 4 "GWCR0603-10KFT5" H -475 -25 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    2175 1200
 	1    0    0    -1  
 $EndComp
@@ -1461,6 +1351,7 @@ F 1 "10k" H 1125 2800 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1005 2850 50  0001 C CNN
 F 3 "~" H 1075 2850 50  0001 C CNN
 F 4 "GWCR0603-10KFT5" H -375 -25 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    1075 2850
 	1    0    0    -1  
 $EndComp
@@ -1494,135 +1385,37 @@ Wire Wire Line
 Text Notes 6875 2050 0    39   ~ 0
 These are 240V connectors and\nneed to be rated for at least 2A.
 Wire Wire Line
-	3375 7225 3825 7225
-Text Label 4375 7225 2    39   ~ 0
+	900  5200 1350 5200
+Text Label 1900 5200 2    39   ~ 0
 LIVE_IN
 Wire Wire Line
-	4125 7225 4375 7225
+	1650 5200 1900 5200
 Wire Wire Line
-	3375 7125 4375 7125
+	900  5100 1900 5100
 Wire Notes Line
-	3075 7375 4400 7375
+	600  5350 1925 5350
 Wire Notes Line
-	4400 7375 4400 6825
+	1925 5350 1925 4800
 Wire Notes Line
-	4400 6825 3075 6825
+	1925 4800 600  4800
 Wire Notes Line
-	3075 7375 3075 6825
-Text Notes 3075 6825 0    50   ~ 0
+	600  5350 600  4800
+Text Notes 600  4800 0    50   ~ 0
 Utility Supply
-Text Notes 4375 6975 2    39   ~ 0
+Text Notes 1900 4950 2    39   ~ 0
 This are 240V connector and\nneed to be rated for at least 4A.
 Wire Wire Line
 	7150 4925 7550 4925
 $Comp
-L AquaHub-rescue:BSS138-Transistor_FET Q1
-U 1 1 5BED20CF
-P 5225 3925
-F 0 "Q1" V 5475 3925 50  0000 C CNN
-F 1 "BSS138" V 5566 3925 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5425 3850 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5225 3925 50  0001 L CNN
-F 4 "BSS138" H -500 1000 50  0001 C CNN "manf#"
-	1    5225 3925
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3175 3600 3650 3600
-$Comp
-L AquaHub-rescue:R-Device R8
-U 1 1 5BF06795
-P 4975 3825
-F 0 "R8" H 4825 3875 50  0000 L CNN
-F 1 "10k" H 4775 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4905 3825 50  0001 C CNN
-F 3 "~" H 4975 3825 50  0001 C CNN
-F 4 "GWCR0603-10KFT5" H -500 1000 50  0001 C CNN "manf#"
-	1    4975 3825
-	1    0    0    -1  
-$EndComp
-Text Label 3650 3600 2    39   ~ 0
-Panel_LED_33
-Text Label 4500 4025 0    39   ~ 0
-Panel_LED_33
-Wire Wire Line
-	4500 4025 4975 4025
-Wire Wire Line
-	5425 4025 5475 4025
-Wire Wire Line
-	4975 4025 4975 3975
-Connection ~ 4975 4025
-Wire Wire Line
-	4975 4025 5025 4025
-Wire Wire Line
-	4975 3675 4975 3625
-$Comp
-L AquaHub-rescue:+3V3-power #PWR017
-U 1 1 5BFFE47F
-P 4975 3575
-F 0 "#PWR017" H 4975 3425 50  0001 C CNN
-F 1 "+3V3" H 4850 3700 50  0000 C CNN
-F 2 "" H 4975 3575 50  0001 C CNN
-F 3 "" H 4975 3575 50  0001 C CNN
-	1    4975 3575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4975 3625 5225 3625
-Wire Wire Line
-	5225 3625 5225 3725
-Connection ~ 4975 3625
-Wire Wire Line
-	4975 3625 4975 3575
-$Comp
-L AquaHub-rescue:R-Device R9
-U 1 1 5C022D14
-P 5475 3825
-F 0 "R9" H 5525 3875 50  0000 L CNN
-F 1 "10k" H 5525 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5405 3825 50  0001 C CNN
-F 3 "~" H 5475 3825 50  0001 C CNN
-F 4 "GWCR0603-10KFT5" H -500 1000 50  0001 C CNN "manf#"
-	1    5475 3825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5475 3975 5475 4025
-Connection ~ 5475 4025
-Wire Wire Line
-	5475 4025 5875 4025
-Wire Wire Line
-	5475 3675 5475 3575
-$Comp
-L AquaHub-rescue:+5V-power #PWR020
-U 1 1 5C04837A
-P 5475 3575
-F 0 "#PWR020" H 5475 3425 50  0001 C CNN
-F 1 "+5V" H 5550 3700 50  0000 C CNN
-F 2 "" H 5475 3575 50  0001 C CNN
-F 3 "" H 5475 3575 50  0001 C CNN
-	1    5475 3575
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4450 3150 5900 3150
-Wire Notes Line
-	5900 3150 5900 4325
-Wire Notes Line
-	5900 4325 4450 4325
-Wire Notes Line
-	4450 3150 4450 4325
-Text Notes 4450 3150 0    50   ~ 0
-Logic-Level Shifter
-$Comp
 L AquaHub-rescue:Fuse-Device F1
 U 1 1 5C12688B
-P 3975 7225
-F 0 "F1" V 4050 7075 50  0000 C CNN
-F 1 "4A" V 4050 7350 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" H 4025 7025 50  0001 L CNN
-F 3 "~" H 3975 7225 50  0001 C CNN
-	1    3975 7225
+P 1500 5200
+F 0 "F1" V 1575 5050 50  0000 C CNN
+F 1 "4A" V 1575 5325 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" H 1550 5000 50  0001 L CNN
+F 3 "~" H 1500 5200 50  0001 C CNN
+F 4 "Mouser" H -2475 -2025 50  0001 C CNN "Vendor"
+	1    1500 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1634,6 +1427,7 @@ F 1 "5A Relay" H 2850 5575 39  0000 C CNN
 F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 4050 5925 39  0001 C CNN
 F 3 "" H 4050 5925 39  0001 C CNN
 F 4 "FTR-F1AA012V" H 2850 5975 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    2850 5975
 	1    0    0    -1  
 $EndComp
@@ -1695,16 +1489,14 @@ F 3 "" H 9925 5725 50  0001 C CNN
 	1    9925 5725
 	1    0    0    -1  
 $EndComp
-Text Notes 4475 3300 0    39   ~ 0
-This is a simple logic level shifter to drive \nthe 5V NeoPixels from the 3.3V signal.
 Text Notes 6025 3825 0    39   ~ 0
 Using a relay driver IC means we don't have to\nworry about diodes, and we can drive any size\nrelay from the 3.3V GPIO pins directly.
 Text Notes 7875 3825 0    39   ~ 0
 The incoming 240V AC mains supply is first\ntaken down to 12V DC, then two regulators\nare used to get a 5V and 3.3V.
 Wire Wire Line
-	3175 2700 3650 2700
+	3175 2700 3450 2700
 Wire Wire Line
-	3650 2600 3175 2600
+	3450 2600 3175 2600
 Wire Wire Line
 	2175 1050 2175 950 
 Wire Wire Line
@@ -1728,7 +1520,7 @@ NoConn ~ 1375 3500
 Text Notes 10275 1975 0    39   ~ 0
 All of the 240V load passes\nthrough this component.\nRated at 50A max, reading\nat 40mV/A.
 $Comp
-L AquaHub-rescue:Speaker_Crystal-Device LS1
+L Device:Speaker_Crystal LS1
 U 1 1 5C55459F
 P 10900 850
 F 0 "LS1" H 10800 950 50  0000 L CNN
@@ -1736,6 +1528,7 @@ F 1 "Piezo" V 11100 800 50  0000 C CNN
 F 2 "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm" H 10865 800 50  0001 C CNN
 F 3 "~" H 10865 800 50  0001 C CNN
 F 4 "PS1240P02BT" H 7400 -4100 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10900 850 
 	1    0    0    -1  
 $EndComp
@@ -1765,29 +1558,29 @@ Wire Notes Line
 Wire Notes Line
 	9325 550  11150 550 
 Wire Wire Line
-	6150 5775 6550 5775
+	6150 5775 6425 5775
 Wire Wire Line
 	5475 5725 5475 5775
 Wire Wire Line
-	4650 5775 5075 5775
+	4650 5775 4925 5775
 Wire Wire Line
 	3975 5725 3975 5775
 Wire Wire Line
-	3150 5775 3550 5775
+	3150 5775 3425 5775
 Wire Wire Line
 	2500 5725 2500 5775
 Wire Wire Line
 	6925 5725 6925 5775
 Wire Wire Line
-	7650 5775 8050 5775
+	7650 5775 7925 5775
 Wire Wire Line
 	8425 5725 8425 5775
 Wire Wire Line
-	9150 5775 9550 5775
+	9150 5775 9425 5775
 Wire Wire Line
 	9925 5725 9925 5775
 Wire Wire Line
-	10650 5775 11050 5775
+	10650 5775 10925 5775
 Wire Notes Line
 	3700 4200 525  4200
 Wire Notes Line
@@ -1822,6 +1615,7 @@ F 1 "1K" V 10575 850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10430 850 50  0001 C CNN
 F 3 "~" H 10500 850 50  0001 C CNN
 F 4 "GWCR0603-4K7FT5" H 9300 -4950 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10500 850 
 	0    -1   -1   0   
 $EndComp
@@ -1835,6 +1629,7 @@ F 0 "Q2" H 10391 1246 50  0000 L CNN
 F 1 "2SC1815" H 10391 1155 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10400 1125 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 10200 1200 50  0001 L CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    10200 1200
 	1    0    0    -1  
 $EndComp
@@ -1851,6 +1646,7 @@ F 1 "1K" V 9875 1200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9730 1200 50  0001 C CNN
 F 3 "~" H 9800 1200 50  0001 C CNN
 F 4 "GWCR0603-4K7FT5" H 8600 -4600 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Vendor"
 	1    9800 1200
 	0    -1   -1   0   
 $EndComp
@@ -1884,176 +1680,165 @@ $EndComp
 $Comp
 L AquaHub-rescue:DS1307+-Timer_RTC U7
 U 1 1 5BBB2528
-P 5600 2425
-F 0 "U7" H 5900 2850 50  0000 L CNN
-F 1 "DS1307+" H 5675 2775 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 1925 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 5600 2225 50  0001 C CNN
-	1    5600 2425
+P 5600 2900
+F 0 "U7" H 5900 3325 50  0000 L CNN
+F 1 "DS1307+" H 5675 3250 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 2400 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 5600 2700 50  0001 C CNN
+	1    5600 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L AquaHub-rescue:Crystal_Small-Device Y1
 U 1 1 5BBB28AA
-P 4875 2575
-F 0 "Y1" V 4850 2650 50  0000 L CNN
-F 1 "32.768KHz" V 4925 2650 50  0000 L CNN
-F 2 "Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal" H 4875 2575 50  0001 C CNN
-F 3 "~" H 4875 2575 50  0001 C CNN
-	1    4875 2575
+P 4875 3050
+F 0 "Y1" V 4850 3125 50  0000 L CNN
+F 1 "32.768KHz" V 4925 3125 50  0000 L CNN
+F 2 "Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal" H 4875 3050 50  0001 C CNN
+F 3 "~" H 4875 3050 50  0001 C CNN
+F 4 "Mouser" H 0   475 50  0001 C CNN "Vendor"
+	1    4875 3050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4875 2675 4875 2700
+	4875 3150 4875 3175
 Wire Wire Line
-	4875 2700 5050 2700
+	4875 3175 5050 3175
 Wire Wire Line
-	5050 2700 5050 2625
+	5050 3175 5050 3100
 Wire Wire Line
-	5050 2625 5100 2625
+	5050 3100 5100 3100
 Wire Wire Line
-	5100 2525 5050 2525
+	5100 3000 5050 3000
 Wire Wire Line
-	5050 2525 5050 2450
+	5050 3000 5050 2925
 Wire Wire Line
-	5050 2450 4875 2450
+	5050 2925 4875 2925
 Wire Wire Line
-	4875 2450 4875 2475
+	4875 2925 4875 2950
 $Comp
 L AquaHub-rescue:+5V-power #PWR08
 U 1 1 5BC2C96F
-P 5500 1725
-F 0 "#PWR08" H 5500 1575 50  0001 C CNN
-F 1 "+5V" H 5400 1800 50  0000 C CNN
-F 2 "" H 5500 1725 50  0001 C CNN
-F 3 "" H 5500 1725 50  0001 C CNN
-	1    5500 1725
+P 5500 2200
+F 0 "#PWR08" H 5500 2050 50  0001 C CNN
+F 1 "+5V" H 5400 2275 50  0000 C CNN
+F 2 "" H 5500 2200 50  0001 C CNN
+F 3 "" H 5500 2200 50  0001 C CNN
+	1    5500 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L AquaHub-rescue:GND-power #PWR013
 U 1 1 5BC2CC86
-P 5600 2900
-F 0 "#PWR013" H 5600 2650 50  0001 C CNN
-F 1 "GND" H 5750 2825 50  0000 C CNN
-F 2 "" H 5600 2900 50  0001 C CNN
-F 3 "" H 5600 2900 50  0001 C CNN
-	1    5600 2900
+P 5600 3375
+F 0 "#PWR013" H 5600 3125 50  0001 C CNN
+F 1 "GND" H 5750 3300 50  0000 C CNN
+F 2 "" H 5600 3375 50  0001 C CNN
+F 3 "" H 5600 3375 50  0001 C CNN
+	1    5600 3375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2825 5600 2900
+	5600 3300 5600 3375
 $Comp
 L AquaHub-rescue:R-Device R13
 U 1 1 5BCAFF2F
-P 5000 1975
-F 0 "R13" H 4800 1925 50  0000 L CNN
-F 1 "4.7K" H 4775 2000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 1975 50  0001 C CNN
-F 3 "~" H 5000 1975 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 3800 -3825 50  0001 C CNN "manf#"
-	1    5000 1975
+P 5000 2450
+F 0 "R13" H 4800 2400 50  0000 L CNN
+F 1 "4.7k" H 4775 2475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 2450 50  0001 C CNN
+F 3 "~" H 5000 2450 50  0001 C CNN
+F 4 "GWCR0603-4K7FT5" H 3800 -3350 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   475 50  0001 C CNN "Vendor"
+	1    5000 2450
 	-1   0    0    1   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R12
 U 1 1 5BCAFFDB
-P 4825 1975
-F 0 "R12" H 4875 1925 50  0000 L CNN
-F 1 "4.7K" H 4875 2000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4755 1975 50  0001 C CNN
-F 3 "~" H 4825 1975 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 3625 -3825 50  0001 C CNN "manf#"
-	1    4825 1975
+P 4825 2450
+F 0 "R12" H 4875 2400 50  0000 L CNN
+F 1 "4.7k" H 4875 2475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4755 2450 50  0001 C CNN
+F 3 "~" H 4825 2450 50  0001 C CNN
+F 4 "GWCR0603-4K7FT5" H 3625 -3350 50  0001 C CNN "manf#"
+F 5 "Mouser" H 0   475 50  0001 C CNN "Vendor"
+	1    4825 2450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5000 2125 5000 2225
+	5000 2600 5000 2700
 Wire Wire Line
-	5000 2225 5100 2225
+	5000 2700 5100 2700
 Wire Wire Line
-	5100 2325 4825 2325
+	5100 2800 4825 2800
 Wire Wire Line
-	4825 2325 4825 2125
+	4825 2800 4825 2600
 Wire Wire Line
-	4825 1825 4825 1775
+	4825 2300 4825 2250
 Wire Wire Line
-	4825 1775 5000 1775
+	4825 2250 5000 2250
 Wire Wire Line
-	5000 1825 5000 1775
-Connection ~ 5000 1775
+	5000 2300 5000 2250
+Connection ~ 5000 2250
 Wire Wire Line
-	5000 1775 5500 1775
-Connection ~ 5500 1775
+	5000 2250 5500 2250
+Connection ~ 5500 2250
 Wire Wire Line
-	5500 1775 5500 1725
+	5500 2250 5500 2200
 Wire Wire Line
-	5000 2225 4675 2225
-Connection ~ 5000 2225
+	5000 2700 4675 2700
+Connection ~ 5000 2700
 Wire Wire Line
-	4825 2325 4675 2325
-Connection ~ 4825 2325
+	4825 2800 4675 2800
+Connection ~ 4825 2800
 Wire Wire Line
-	5600 1900 5600 2025
+	5600 2375 5600 2500
 $Comp
 L AquaHub-rescue:GND-power #PWR015
 U 1 1 5BD9F409
-P 6325 2300
-F 0 "#PWR015" H 6325 2050 50  0001 C CNN
-F 1 "GND" H 6475 2225 50  0000 C CNN
-F 2 "" H 6325 2300 50  0001 C CNN
-F 3 "" H 6325 2300 50  0001 C CNN
-	1    6325 2300
+P 6325 2775
+F 0 "#PWR015" H 6325 2525 50  0001 C CNN
+F 1 "GND" H 6475 2700 50  0000 C CNN
+F 2 "" H 6325 2775 50  0001 C CNN
+F 3 "" H 6325 2775 50  0001 C CNN
+	1    6325 2775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6325 2300 6325 2250
+	6325 2775 6325 2725
 $Comp
 L AquaHub-rescue:Battery_Cell-Device BT1
 U 1 1 5BD55164
-P 6325 2150
-F 0 "BT1" H 6443 2246 50  0000 L CNN
-F 1 "CR2032" H 6443 2155 50  0000 L CNN
-F 2 "AquaFootprints:Multicomp-BC-2001" V 6325 2210 50  0001 C CNN
-F 3 "~" V 6325 2210 50  0001 C CNN
-	1    6325 2150
+P 6325 2625
+F 0 "BT1" H 6443 2721 50  0000 L CNN
+F 1 "CR2032" H 6443 2630 50  0000 L CNN
+F 2 "AquaFootprints:Multicomp-BC-2001" V 6325 2685 50  0001 C CNN
+F 3 "~" V 6325 2685 50  0001 C CNN
+F 4 "Mouser" H 0   475 50  0001 C CNN "Vendor"
+	1    6325 2625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 1900 6325 1900
+	5600 2375 6325 2375
 Wire Wire Line
-	6325 1900 6325 1950
-Text Label 4675 2325 2    39   ~ 0
-Panel_SDA
-Text Label 4675 2225 2    39   ~ 0
-Panel_SCL
-NoConn ~ 6100 2425
+	6325 2375 6325 2425
+NoConn ~ 6100 2900
 Wire Wire Line
-	5500 1775 5500 2025
+	5500 2250 5500 2500
 Wire Notes Line
-	4275 1575 6750 1575
+	4275 2050 6750 2050
 Wire Notes Line
-	6750 1575 6750 3025
+	6750 2050 6750 3500
 Wire Notes Line
-	6750 3025 4275 3025
+	6750 3500 4275 3500
 Wire Notes Line
-	4275 3025 4275 1575
-Text Notes 4275 1575 0    50   ~ 0
+	4275 3500 4275 2050
+Text Notes 4275 2050 0    50   ~ 0
 Real-Time Clock
-$Comp
-L AquaHub-rescue:+3V3-power #PWR0122
-U 1 1 5BE26A9D
-P 6325 1875
-F 0 "#PWR0122" H 6325 1725 50  0001 C CNN
-F 1 "+3V3" H 6340 2048 50  0000 C CNN
-F 2 "" H 6325 1875 50  0001 C CNN
-F 3 "" H 6325 1875 50  0001 C CNN
-	1    6325 1875
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6325 1875 6325 1900
-Connection ~ 6325 1900
+	6325 2300 6325 2375
+Connection ~ 6325 2375
 Wire Wire Line
 	2175 4025 2075 4025
 Wire Wire Line
@@ -2072,111 +1857,317 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5BC474A2
-P 5700 7000
-F 0 "H1" H 5800 7046 50  0000 L CNN
-F 1 "MountingHole" H 5800 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 7000 50  0001 C CNN
-F 3 "~" H 5700 7000 50  0001 C CNN
-	1    5700 7000
+P 4200 7600
+F 0 "H1" H 4275 7600 50  0000 L CNN
+F 1 "MountingHole" H 4300 7555 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4200 7600 50  0001 C CNN
+F 3 "~" H 4200 7600 50  0001 C CNN
+F 4 "n/a" H -1500 600 50  0001 C CNN "Vendor"
+	1    4200 7600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5BC4FE93
-P 5700 6600
-F 0 "H3" H 5800 6646 50  0000 L CNN
-F 1 "MountingHole" H 5800 6555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 6600 50  0001 C CNN
-F 3 "~" H 5700 6600 50  0001 C CNN
-	1    5700 6600
+P 4200 7200
+F 0 "H3" H 4275 7200 50  0000 L CNN
+F 1 "MountingHole" H 4300 7155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4200 7200 50  0001 C CNN
+F 3 "~" H 4200 7200 50  0001 C CNN
+F 4 "n/a" H -1500 600 50  0001 C CNN "Vendor"
+	1    4200 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5BC53FF6
-P 5700 6800
-F 0 "H2" H 5800 6846 50  0000 L CNN
-F 1 "MountingHole" H 5800 6755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 6800 50  0001 C CNN
-F 3 "~" H 5700 6800 50  0001 C CNN
-	1    5700 6800
+P 4200 7400
+F 0 "H2" H 4275 7400 50  0000 L CNN
+F 1 "MountingHole" H 4300 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4200 7400 50  0001 C CNN
+F 3 "~" H 4200 7400 50  0001 C CNN
+F 4 "n/a" H -1500 600 50  0001 C CNN "Vendor"
+	1    4200 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5BC569FF
-P 6200 7000
-F 0 "H4" H 6300 7046 50  0000 L CNN
-F 1 "MountingHole" H 6300 6955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6200 7000 50  0001 C CNN
-F 3 "~" H 6200 7000 50  0001 C CNN
-	1    6200 7000
+P 4500 7600
+F 0 "H4" H 4575 7600 50  0000 L CNN
+F 1 "MountingHole" H 4600 7555 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4500 7600 50  0001 C CNN
+F 3 "~" H 4500 7600 50  0001 C CNN
+F 4 "n/a" H -1700 600 50  0001 C CNN "Vendor"
+	1    4500 7600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5BC5FC3B
-P 6200 6800
-F 0 "H5" H 6300 6846 50  0000 L CNN
-F 1 "MountingHole" H 6300 6755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6200 6800 50  0001 C CNN
-F 3 "~" H 6200 6800 50  0001 C CNN
-	1    6200 6800
+P 4500 7400
+F 0 "H5" H 4575 7400 50  0000 L CNN
+F 1 "MountingHole" H 4600 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4500 7400 50  0001 C CNN
+F 3 "~" H 4500 7400 50  0001 C CNN
+F 4 "n/a" H -1700 600 50  0001 C CNN "Vendor"
+	1    4500 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5BC615FA
-P 6200 6600
-F 0 "H6" H 6300 6646 50  0000 L CNN
-F 1 "MountingHole" H 6300 6555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6200 6600 50  0001 C CNN
-F 3 "~" H 6200 6600 50  0001 C CNN
-	1    6200 6600
+P 4500 7200
+F 0 "H6" H 4575 7200 50  0000 L CNN
+F 1 "MountingHole" H 4600 7155 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4500 7200 50  0001 C CNN
+F 3 "~" H 4500 7200 50  0001 C CNN
+F 4 "n/a" H -1700 600 50  0001 C CNN "Vendor"
+	1    4500 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H8
 U 1 1 5BC4782B
-P 5700 7600
-F 0 "H8" H 5800 7646 50  0000 L CNN
-F 1 "MountingHole" H 5800 7555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 7600 50  0001 C CNN
-F 3 "~" H 5700 7600 50  0001 C CNN
-	1    5700 7600
+P 4825 7600
+F 0 "H8" H 4900 7600 50  0000 L CNN
+F 1 "MountingHole" H 4925 7555 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4825 7600 50  0001 C CNN
+F 3 "~" H 4825 7600 50  0001 C CNN
+F 4 "n/a" H -875 0   50  0001 C CNN "Vendor"
+	1    4825 7600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 5BC47833
-P 5700 7400
-F 0 "H7" H 5800 7446 50  0000 L CNN
-F 1 "MountingHole" H 5800 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 7400 50  0001 C CNN
-F 3 "~" H 5700 7400 50  0001 C CNN
-	1    5700 7400
+P 4825 7400
+F 0 "H7" H 4900 7400 50  0000 L CNN
+F 1 "MountingHole" H 4925 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4825 7400 50  0001 C CNN
+F 3 "~" H 4825 7400 50  0001 C CNN
+F 4 "n/a" H -875 0   50  0001 C CNN "Vendor"
+	1    4825 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H10
 U 1 1 5BC4783B
-P 6200 7600
-F 0 "H10" H 6300 7646 50  0000 L CNN
-F 1 "MountingHole" H 6300 7555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6200 7600 50  0001 C CNN
-F 3 "~" H 6200 7600 50  0001 C CNN
-	1    6200 7600
+P 5125 7600
+F 0 "H10" H 5200 7600 50  0000 L CNN
+F 1 "MountingHole" H 5225 7555 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 7600 50  0001 C CNN
+F 3 "~" H 5125 7600 50  0001 C CNN
+F 4 "n/a" H -1075 0   50  0001 C CNN "Vendor"
+	1    5125 7600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H9
 U 1 1 5BC47843
-P 6200 7400
-F 0 "H9" H 6300 7446 50  0000 L CNN
-F 1 "MountingHole" H 6300 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6200 7400 50  0001 C CNN
-F 3 "~" H 6200 7400 50  0001 C CNN
-	1    6200 7400
+P 5125 7400
+F 0 "H9" H 5200 7400 50  0000 L CNN
+F 1 "MountingHole" H 5225 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 7400 50  0001 C CNN
+F 3 "~" H 5125 7400 50  0001 C CNN
+F 4 "n/a" H -1075 0   50  0001 C CNN "Vendor"
+	1    5125 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0122
+U 1 1 5BD1A50C
+P 6325 2300
+F 0 "#PWR0122" H 6325 2150 50  0001 C CNN
+F 1 "+BATT" H 6475 2375 50  0000 C CNN
+F 2 "" H 6325 2300 50  0001 C CNN
+F 3 "" H 6325 2300 50  0001 C CNN
+	1    6325 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L AquaHub-rescue:TestPoint-Connector TP5
+U 1 1 5BDF9390
+P 9525 5100
+F 0 "TP5" V 9525 5350 50  0000 C CNN
+F 1 "Test_12V_GND" V 9450 5175 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 9725 5100 50  0001 C CNN
+F 3 "~" H 9725 5100 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
+	1    9525 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AquaHub-rescue:TestPoint-Connector TP6
+U 1 1 5BE5860A
+P 10575 5100
+F 0 "TP6" V 10600 5275 50  0000 L CNN
+F 1 "TEST_5V_GND" V 10675 5175 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 10775 5100 50  0001 C CNN
+F 3 "~" H 10775 5100 50  0001 C CNN
+F 4 "n/a" H 0   0   50  0001 C CNN "Vendor"
+	1    10575 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10575 5100 10500 5100
+Connection ~ 10500 5100
+Wire Wire Line
+	9600 3900 9600 3925
+Connection ~ 9600 3925
+Wire Wire Line
+	9800 5100 9525 5100
+Connection ~ 9800 5100
+Text GLabel 3425 5775 2    50   Input ~ 0
+RE1
+Text GLabel 4925 5775 2    50   Input ~ 0
+RE2
+Text GLabel 6425 5775 2    50   Input ~ 0
+RE3
+Text GLabel 7925 5775 2    50   Input ~ 0
+RE4
+Text GLabel 9425 5775 2    50   Input ~ 0
+RE5
+Text GLabel 10925 5775 2    50   Input ~ 0
+RE6
+Text GLabel 10575 2600 2    50   Input ~ 0
+Power_Sense
+Text GLabel 4675 2700 0    50   Input ~ 0
+SCL
+Text GLabel 4675 2800 0    50   BiDi ~ 0
+SDA
+Text GLabel 3450 2600 2    50   BiDi ~ 0
+SDA
+Text GLabel 3450 2700 2    50   Output ~ 0
+SCL
+NoConn ~ 3175 2200
+NoConn ~ 3175 3600
+$Comp
+L AquaHub-rescue:PWR_FLAG-power #FLG?
+U 1 1 5C4BFF3D
+P 3050 6850
+AR Path="/5B9D4F46/5C4BFF3D" Ref="#FLG?"  Part="1" 
+AR Path="/5C4BFF3D" Ref="#FLG0104"  Part="1" 
+F 0 "#FLG0104" H 3050 6925 50  0001 C CNN
+F 1 "PWR_FLAG" V 3050 6978 50  0000 L CNN
+F 2 "" H 3050 6850 50  0001 C CNN
+F 3 "~" H 3050 6850 50  0001 C CNN
+	1    3050 6850
+	0    -1   -1   0   
+$EndComp
+Text Label 3325 6850 2    39   ~ 0
+Battery
+Text Label 6275 2375 2    50   ~ 0
+Battery
+Wire Wire Line
+	3325 6850 3050 6850
+Text Notes 6725 2125 2    50   ~ 0
+I2C Address: 0x68 1101000
+NoConn ~ 3175 2500
+Wire Notes Line
+	4075 7700 4075 7100
+Wire Notes Line
+	4075 7100 6125 7100
+Wire Notes Line
+	6125 7100 6125 7700
+Wire Notes Line
+	6125 7700 4075 7700
+Text Notes 4075 7100 0    50   ~ 0
+Mounting Holes
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 5BD3D117
+P 5500 7600
+F 0 "H12" H 5475 7725 50  0000 C CNN
+F 1 "MountingHole" H 5600 7555 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5500 7600 50  0001 C CNN
+F 3 "~" H 5500 7600 50  0001 C CNN
+F 4 "n/a" H -700 200 50  0001 C CNN "Vendor"
+	1    5500 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 5BD4C135
+P 5675 7600
+F 0 "H14" H 5650 7725 50  0000 C CNN
+F 1 "MountingHole" H 5775 7555 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5675 7600 50  0001 C CNN
+F 3 "~" H 5675 7600 50  0001 C CNN
+F 4 "n/a" H -525 200 50  0001 C CNN "Vendor"
+	1    5675 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H16
+U 1 1 5BD4D512
+P 5850 7600
+F 0 "H16" H 5825 7725 50  0000 C CNN
+F 1 "MountingHole" H 5950 7555 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5850 7600 50  0001 C CNN
+F 3 "~" H 5850 7600 50  0001 C CNN
+F 4 "n/a" H -350 200 50  0001 C CNN "Vendor"
+	1    5850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H18
+U 1 1 5BD4E729
+P 6025 7600
+F 0 "H18" H 6000 7725 50  0000 C CNN
+F 1 "MountingHole" H 6125 7555 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 6025 7600 50  0001 C CNN
+F 3 "~" H 6025 7600 50  0001 C CNN
+F 4 "n/a" H -175 200 50  0001 C CNN "Vendor"
+	1    6025 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 5BD52FCC
+P 5500 7350
+F 0 "H11" H 5475 7475 50  0000 C CNN
+F 1 "MountingHole" H 5600 7305 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5500 7350 50  0001 C CNN
+F 3 "~" H 5500 7350 50  0001 C CNN
+F 4 "n/a" H -700 -50 50  0001 C CNN "Vendor"
+	1    5500 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 5BD52FD7
+P 5675 7350
+F 0 "H13" H 5650 7475 50  0000 C CNN
+F 1 "MountingHole" H 5775 7305 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5675 7350 50  0001 C CNN
+F 3 "~" H 5675 7350 50  0001 C CNN
+F 4 "n/a" H -525 -50 50  0001 C CNN "Vendor"
+	1    5675 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H15
+U 1 1 5BD52FE2
+P 5850 7350
+F 0 "H15" H 5825 7475 50  0000 C CNN
+F 1 "MountingHole" H 5950 7305 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 5850 7350 50  0001 C CNN
+F 3 "~" H 5850 7350 50  0001 C CNN
+F 4 "n/a" H -350 -50 50  0001 C CNN "Vendor"
+	1    5850 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H17
+U 1 1 5BD52FED
+P 6025 7350
+F 0 "H17" H 6000 7475 50  0000 C CNN
+F 1 "MountingHole" H 6125 7305 50  0001 L CNN
+F 2 "AquaFootprints:Breakaway 1mm" H 6025 7350 50  0001 C CNN
+F 3 "~" H 6025 7350 50  0001 C CNN
+F 4 "n/a" H -175 -50 50  0001 C CNN "Vendor"
+	1    6025 7350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -517,7 +517,6 @@ S 625  6800 1325 800
 U 5B8F2634
 F0 "Front Panel" 39
 F1 "FrontPanel.sch" 39
-F2 "Panel_INT" I R 1950 7450 39 
 $EndSheet
 Wire Wire Line
 	8525 4325 8600 4325
@@ -530,10 +529,6 @@ Wire Wire Line
 Connection ~ 9450 4325
 Wire Wire Line
 	9500 4525 9500 4775
-Wire Wire Line
-	1950 7450 2125 7450
-Text Label 2125 7450 0    39   ~ 0
-Panel_INT
 Text Label 6150 4725 0    39   ~ 0
 POW1
 Text Label 6150 4625 0    39   ~ 0

@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP32-WROOM-32
+D ESP32-WROOM-32D and ESP32-WROOM-32U are powerful, generic Wi-Fi+BT+BLE MCU modules.
+K espressif esp32 wroom
+F https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+$ENDCMP
+#
+$CMP MT2-Relay
+D Fujitsu Power Relay Low Profile
+$ENDCMP
+#
+$CMP TPL7407LA
+D TPL7407LA 30-V 7-Channel Low Side Driver
+$ENDCMP
+#
+#End Doc Library

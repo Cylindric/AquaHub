@@ -70,14 +70,14 @@ A Mouser project with some of the components listed in detail is available here:
 
 ## Datasheets
 
-[Espressif ESP32 WROOM 32D](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
-[Recom 5v Regulator](https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf)
-[Diodes 3.3V Regulator](http://www.diodes.com/datasheets/AP1117.pdf)
-[2SC1815 Transistor](https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
-[Maxim I²C RTC](https://datasheets.maximintegrated.com/en/ds/DS1307.pdf)
-[TI I²C IO Expander](http://www.ti.com/lit/ds/symlink/tca9534.pdf)
-[TI I²C LED Driver](http://www.ti.com/lit/ds/symlink/tpic2810.pdf)
+* [Espressif ESP32 WROOM 32D](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
+* [Recom 5v Regulator](https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf)
+* [Diodes 3.3V Regulator](http://www.diodes.com/datasheets/AP1117.pdf)
+* [2SC1815 Transistor](https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+* [Maxim I²C RTC](https://datasheets.maximintegrated.com/en/ds/DS1307.pdf)
+* [TI I²C IO Expander](http://www.ti.com/lit/ds/symlink/tca9534.pdf)
+* [TI I²C LED Driver](http://www.ti.com/lit/ds/symlink/tpic2810.pdf)
 
 ## References
 
-DS18B20 temperature - [ESP32 With Multiple DS18B20 Sensors](https://randomnerdtutorials.com/esp32-with-multiple-ds18b20-temperature-sensors/)
+* DS18B20 temperature - [ESP32 With Multiple DS18B20 Sensors](https://randomnerdtutorials.com/esp32-with-multiple-ds18b20-temperature-sensors/)

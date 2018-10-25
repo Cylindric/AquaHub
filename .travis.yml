@@ -8,14 +8,10 @@ before_install:
   - sudo mv arduino-1.8.7 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
-  - ln -s $PWD /usr/local/share/arduino/libraries/LiquidCrystal
-  - arduino --install-library "LiquidCrystal"
+  - arduino --pref boardsmanager.additional.urls="https://dl.espressif.com/dl/package_esp32_dev_index.json"
+  - arduino --install-boards esp32:esp32
 script:
-  - ls -lha $PWD
-  - ls -lha $PWD/examples
-  - ls -lha $PWD/examples/Blink
-  - arduino --verify $PWD/Firmware/AquaHub/AquaHub.ino
-  - arduino --verify $PWD/examples/Blink/Blink.ino
+  - arduino --verbose --verify --boards esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
 notifications:
   email:
     on_success: change

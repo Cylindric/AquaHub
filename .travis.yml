@@ -9,9 +9,9 @@ before_install:
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
   - arduino --pref boardsmanager.additional.urls="https://dl.espressif.com/dl/package_esp32_dev_index.json"
-  - arduino --install-boards esp32:esp32
+  - arduino --install-boards "esp32:esp32"
 script:
-  - arduino --verbose --verify --boards esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
+  - arduino --verbose --verify --boards esp32:esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
 notifications:
   email:
     on_success: change

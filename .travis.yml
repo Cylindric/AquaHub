@@ -12,7 +12,7 @@ install:
   - arduino --install-boards "esp32:esp32"
   - arduino --board esp32:esp32:esp32 --save-prefs
 script:
-  - arduino --verbose --verify --boards esp32:esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
+  - arduino --verbose --verify --board esp32:esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
 notifications:
   email:
     on_success: change

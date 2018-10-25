@@ -1,18 +1,26 @@
 language: c
 before_install:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
-  - sleep 3
-  - export DISPLAY=:1.0
-  - wget http://downloads.arduino.cc/arduino-1.8.7-linux64.tar.xz
-  - tar xf arduino-1.8.7-linux64.tar.xz
-  - sudo mv arduino-1.8.7 /usr/local/share/arduino
-  - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+  - sudo apt update
+  - sudo apt install -y gcc git wget make libncurses-dev flex bison gperf python python-pip python-setuptools python-serial python-cryptography python-future
+  - wget https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
+  - tar xf xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
+  - sudo mv xtensa-esp32-elf /usr/local/share
+  - export PATH="/usr/local/share/xtensa-esp32-elf/bin:$PATH"
+  - git clone --recursive https://github.com/espressif/esp-idf.git
+  - python -m pip install --user -r ~/esp-idf/requirements.txt
+  - export IDF_PATH="~/esp-idf/"
+  - cd ~/esp-idf/examples/get-started/hello_world
+  - make
 install:
-  - arduino --pref boardsmanager.additional.urls="https://dl.espressif.com/dl/package_esp32_dev_index.json" --save-prefs
-  - arduino --install-boards "esp32:esp32"
-  - arduino --board esp32:esp32:esp32 --save-prefs
+  - mkdir -p components
+  - cd components
+  - git clone https://github.com/espressif/arduino-esp32.git arduino
+  - cd arduino
+  - git submodule update --init --recursive
+  - cd ../..
 script:
-  - arduino --verbose --verify --board esp32:esp32:esp32 $PWD/Firmware/AquaHub/AquaHub.ino
+  - cd $PWD/Firmware/AquaHub
+  - make
 notifications:
   email:
     on_success: change

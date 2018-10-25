@@ -11,6 +11,7 @@ The actual KiCad project files are [here](Hardware/AquaHub/).
 Rendered output (schematic and board PDFs, gerbers and bom) are [here](Hardware/Output/). (Not always up-to-date with the schematics and boards, so use with caution)
 
 ![Open Hardware](Hardware/Output/renders/AquaHub-Front.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCylindric%2FAquaHub.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FCylindric%2FAquaHub?ref=badge_shield)
 
 ### License
 
@@ -25,6 +26,9 @@ Myriam Ayass, legal adviser of the Knowledge and Technology Transfer Group at CE
 > In addition, if modifications are made and distributed, it must be under the same licence conditions – this is the ‘persistent’ nature of the licence, which ensures that the whole community will continue benefiting from improvements, in the sense that everyone will in turn be able to make modifications to these improvements.
 
 ![Open Hardware](images/oshw-logo-200-px.png)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FCylindric%2FAquaHub.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FCylindric%2FAquaHub?ref=badge_large)
 
 ### Rev 1
 - [x] ESP32 module for control and wireless access (Espressif ESP32-WROOM-32D)

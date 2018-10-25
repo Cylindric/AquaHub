@@ -10,11 +10,10 @@ before_install:
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/LiquidCrystal
   - arduino --install-library "LiquidCrystal"
-  - arduino --install-boards "arduino:avr:uno"
 script:
   - ls -lha $PWD/examples
   - ls -lha $PWD/examples/Blink
-  - arduino --verify --board arduino:avr:uno $PWD/examples/Blink/Blink.ino
+  - arduino --verify $PWD/examples/Blink/Blink.ino
 notifications:
   email:
     on_success: change

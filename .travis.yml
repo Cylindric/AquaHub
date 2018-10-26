@@ -4,7 +4,7 @@ services:
 language: c
 before_install:
   - docker pull cylindric/esp-idf
-  - docker run -d --name esp-idf -v $(pwd):/src cylindric/esp-idf
+  - docker run -dit --name esp-idf -v $(pwd):/src cylindric/esp-idf
   - docker ps -a
 install:
   - cd Firmware/AquaHub
@@ -17,6 +17,7 @@ install:
 script:
   - docker ps -a
   - docker exec -it esp-idf ls /
+  - docker exec -it esp-idf bash -c 'cd /src/Firmware/AquaHub ; make'
 after_script:
   - docker ps -a
   - docker images

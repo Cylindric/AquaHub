@@ -2,14 +2,10 @@ sudo: required
 services:
   - docker
 language: c
-env:
-  - IDF_PATH=/esp/esp-idf
-  - PATH=$PATH:/esp/xtensa-esp32-elf/bin
 before_install:
   - docker pull cylindric/esp-idf
-  - docker run -d cylindric/esp-idf
+  - docker run -d --name esp-idf -v $(pwd):/src cylindric/esp-idf
   - docker ps -a
-  - docker run --mount 'type=bind,source="$(pwd)",target=/src' cylindric/esp-idf
 install:
   - cd Firmware/AquaHub
   - mkdir -p components
@@ -19,7 +15,6 @@ install:
   - git submodule update --init --recursive
   - cd ../..
 script:
-  - docker ps
   - docker exec -it esp-idf ls /
 after_script:
   - docker images

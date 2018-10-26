@@ -9,22 +9,20 @@ before_install:
   - docker pull cylindric/esp-idf
   - docker run -d cylindric/esp-idf
   - docker ps -a
-  - docker run cylindric/esp-idf
+  - docker run --mount 'type=bind,source="$(pwd)",target=/src' cylindric/esp-idf
 install:
   - cd Firmware/AquaHub
   - mkdir -p components
   - cd components
   - git clone https://github.com/espressif/arduino-esp32.git arduino
-  - ls
   - cd arduino
   - git submodule update --init --recursive
-  - ls
   - cd ../..
 script:
-  - ls /
-  - printenv
-  - ls
-  - make
+  - docker ps
+  - docker exec -it esp-idf ls /
+after_script:
+  - docker images
 notifications:
   email:
     on_success: change

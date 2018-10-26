@@ -7,8 +7,16 @@ before_install:
   - docker run -d cylindric/esp-idf
   - docker ps -a
   - docker run cylindric/esp-idf
-script:
+install:
   - cd Firmware/AquaHub
+  - mkdir -p components
+  - cd components
+  - git clone https://github.com/espressif/arduino-esp32.git arduino
+  - cd arduino
+  - git submodule update --init --recursive
+  - cd ../..
+script:
+  - ls
   - make
 notifications:
   email:

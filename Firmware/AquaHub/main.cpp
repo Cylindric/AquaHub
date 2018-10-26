@@ -22,6 +22,31 @@ int POW4 = 12; // IO27, pin 12
 int POW5 = 13; // IO14, pin 13
 int POW6 = 14; // IO12, pin 14
 
+// #if CONFIG_AUTOSTART_ARDUINO
+
+// #if CONFIG_FREERTOS_UNICORE
+// #define ARDUINO_RUNNING_CORE 0
+// #else
+// #define ARDUINO_RUNNING_CORE 1
+// #endif
+
+// void loopTask(void *pvParameters)
+// {
+//     setup();
+//     for(;;) {
+//         micros(); //update overflow
+//         loop();
+//     }
+// }
+
+// void app_main()
+// {
+//     initArduino();
+//     xTaskCreatePinnedToCore(loopTask, "loopTask", 8192, NULL, 1, NULL, ARDUINO_RUNNING_CORE);
+// }
+
+// #endif
+
 
 void setup() {
   // put your setup code here, to run once:

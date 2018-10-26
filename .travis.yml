@@ -1,25 +1,14 @@
+sudo: required
+services:
+  - docker
 language: c
 before_install:
-  - sudo apt update
-  - sudo apt install -y gcc git wget make libncurses-dev flex bison gperf python python-pip python-setuptools python-serial python-cryptography python-future
-  - wget https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
-  - tar xf xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
-  - sudo mv xtensa-esp32-elf /usr/local/share
-  - export PATH="/usr/local/share/xtensa-esp32-elf/bin:$PATH"
-  - git clone --recursive https://github.com/espressif/esp-idf.git
-  - python -m pip install --user -r ~/esp-idf/requirements.txt
-  - export IDF_PATH="~/esp-idf/"
-  - cd ~/esp-idf/examples/get-started/hello_world
-  - make
-install:
-  - mkdir -p components
-  - cd components
-  - git clone https://github.com/espressif/arduino-esp32.git arduino
-  - cd arduino
-  - git submodule update --init --recursive
-  - cd ../..
+  - docker pull cylindric/esp-idf
+  - docker run -d cylindric/esp-idf
+  - docker ps -a
+  - docker run cylindric/esp-idf
 script:
-  - cd $PWD/Firmware/AquaHub
+  - cd Firmware/AquaHub
   - make
 notifications:
   email:

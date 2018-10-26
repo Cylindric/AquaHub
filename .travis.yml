@@ -2,6 +2,9 @@ sudo: required
 services:
   - docker
 language: c
+env:
+  - IDF_PATH=/esp/esp-idf
+  - PATH=$PATH:/esp/xtensa-esp32-elf/bin
 before_install:
   - docker pull cylindric/esp-idf
   - docker run -d cylindric/esp-idf
@@ -18,6 +21,7 @@ install:
   - ls
   - cd ../..
 script:
+  - ls /
   - printenv
   - ls
   - make

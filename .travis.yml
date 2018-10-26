@@ -15,8 +15,10 @@ install:
   - git submodule update --init --recursive
   - cd ../..
 script:
+  - docker ps -a
   - docker exec -it esp-idf ls /
 after_script:
+  - docker ps -a
   - docker images
 notifications:
   email:

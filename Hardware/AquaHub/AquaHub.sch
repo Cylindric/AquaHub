@@ -94,8 +94,9 @@ F 0 "U4" H 7850 2291 39  0000 C CNN
 F 1 "Low-Side Driver" H 7850 2216 39  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7700 1950 39  0001 C CNN
 F 3 "" H 7700 1950 39  0001 C CNN
-F 4 "TPL7407LADR" H 7850 1700 50  0001 C CNN "manf#"
-F 5 "Mouser" H 1100 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 1100 -2875 50  0001 C CNN "Vendor"
+F 5 "TPL7407LADR" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    7850 1700
 	1    0    0    -1  
 $EndComp
@@ -163,8 +164,9 @@ F 0 "U5" H 3425 1975 50  0000 C BNN
 F 1 "1A 5V" H 3425 2075 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3475 1625 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 3425 1875 50  0001 C CNN
-F 4 "NCP1117DT50G" H 3425 1875 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "NCP1117DT50G" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3425 1875
 	1    0    0    -1  
 $EndComp
@@ -199,8 +201,9 @@ F 0 "U3" H 3425 1150 50  0000 C BNN
 F 1 "1A 3.3V" H 3425 1250 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3425 1250 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3525 800 50  0001 C CNN
-F 4 "NCP1117DT33G" H 3425 1050 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "NCP1117DT33G" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3425 1050
 	1    0    0    -1  
 $EndComp
@@ -244,8 +247,9 @@ F 0 "U1" H 6250 5100 60  0000 C CNN
 F 1 "ESP32-WROOM" H 6250 5175 60  0000 C CNN
 F 2 "Module:Espressif_ESP32_WROOM_32_SMT" H 6600 6150 60  0001 C CNN
 F 3 "" H 5800 5250 60  0001 C CNN
-F 4 "ESP32-WROOM-32D" H 6250 4800 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 5 "ESP32-WROOM-32D" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    6250 4800
 	1    0    0    -1  
 $EndComp
@@ -279,8 +283,8 @@ F 0 "C3" H 5400 3325 50  0000 L CNN
 F 1 "10uF" H 5325 3175 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5563 3100 50  0001 C CNN
 F 3 "~" H 5525 3250 50  0001 C CNN
-F 4 "TAJB106K006SNJ" H 3500 2075 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 5 "TAJB106K006SNJ" H 0   0   50  0001 C CNN "Mouser"
 	1    5525 3250
 	1    0    0    -1  
 $EndComp
@@ -292,8 +296,9 @@ F 0 "C4" H 5750 3325 50  0000 L CNN
 F 1 "100uF" H 5750 3175 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder" H 5763 3100 50  0001 C CNN
 F 3 "~" H 5725 3250 50  0001 C CNN
-F 4 "TAJD107K006SNJ" H 3500 2075 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 5 "CA06848" H 0   0   50  0001 C CNN "Farnell"
+F 6 "TAJD107K006SNJ" H 0   0   50  0001 C CNN "Mouser"
 	1    5725 3250
 	1    0    0    -1  
 $EndComp
@@ -389,8 +394,10 @@ F 0 "C5" H 2900 1250 50  0000 L CNN
 F 1 "10uF" H 2875 1175 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon" H 3075 1250 50  0001 C CNN
 F 3 "~" H 3075 1250 50  0001 C CNN
-F 4 "UWX1H100MCL1GB" H -6675 -2800 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "CA07886" H 0   0   50  0001 C CNN "Farnell"
+F 6 "UWX1H100MCL1GB" H 0   0   50  0001 C CNN "Mouser"
+F 7 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3075 1250
 	1    0    0    -1  
 $EndComp
@@ -414,8 +421,9 @@ F 0 "C8" H 3875 1250 50  0000 L CNN
 F 1 "4.7uF" H 3875 1175 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3800 1250 50  0001 C CNN
 F 3 "~" H 3800 1250 50  0001 C CNN
-F 4 "UWX1H4R7MCL1GB" H -6675 -2800 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "UWX1H4R7MCL1GB" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3800 1250
 	1    0    0    -1  
 $EndComp
@@ -436,8 +444,9 @@ F 0 "C7" H 3850 2075 50  0000 L CNN
 F 1 "4.7uF" H 3850 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3775 2075 50  0001 C CNN
 F 3 "~" H 3775 2075 50  0001 C CNN
-F 4 "UWX1H4R7MCL1GB" H -6675 -2800 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "UWX1H4R7MCL1GB" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3775 2075
 	1    0    0    -1  
 $EndComp
@@ -475,8 +484,10 @@ F 0 "C6" H 2900 2075 50  0000 L CNN
 F 1 "10uF" H 2825 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x5.4_Nichicon" H 3075 2075 50  0001 C CNN
 F 3 "~" H 3075 2075 50  0001 C CNN
-F 4 "UWX1H100MCL1GB" H -6675 -2800 50  0001 C CNN "manf#"
-F 5 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
+F 5 "CA07886" H 0   0   50  0001 C CNN "Farnell"
+F 6 "UWX1H100MCL1GB" H 0   0   50  0001 C CNN "Mouser"
+F 7 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3075 2075
 	1    0    0    -1  
 $EndComp
@@ -608,8 +619,7 @@ F 0 "R4" H 5100 1850 50  0000 L CNN
 F 1 "4.7k" H 5025 1925 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 1900 50  0001 C CNN
 F 3 "~" H 5250 1900 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 4050 -3900 50  0001 C CNN "manf#"
-F 5 "Mouser" H 4000 -3975 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 4000 -3975 50  0001 C CNN "Vendor"
 	1    5250 1900
 	-1   0    0    1   
 $EndComp
@@ -668,8 +678,8 @@ F 0 "R3" H 6200 3375 50  0000 L CNN
 F 1 "10k" H 6200 3300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3300 50  0001 C CNN
 F 3 "~" H 6150 3300 50  0001 C CNN
-F 4 "GWCR0603-10KFT5" H 3500 2075 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 5 "GWCR0603-10KFT5" H 0   0   50  0001 C CNN "Mouser"
 	1    6150 3300
 	1    0    0    -1  
 $EndComp
@@ -683,8 +693,8 @@ F 0 "R7" H 5100 4975 50  0000 L CNN
 F 1 "10k" H 5100 4900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 4950 50  0001 C CNN
 F 3 "~" H 5050 4950 50  0001 C CNN
-F 4 "GWCR0603-10KFT5" H 3600 2075 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
+F 5 "GWCR0603-10KFT5" H 0   0   50  0001 C CNN "Mouser"
 	1    5050 4950
 	1    0    0    -1  
 $EndComp
@@ -739,8 +749,8 @@ F 0 "LS1" H 10475 1875 50  0000 L CNN
 F 1 "Piezo" V 10775 1725 50  0000 C CNN
 F 2 "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm" H 10540 1725 50  0001 C CNN
 F 3 "~" H 10540 1725 50  0001 C CNN
-F 4 "PS1240P02BT" H 7075 -3175 50  0001 C CNN "manf#"
-F 5 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 5 "PS1240P02BT" H 0   0   50  0001 C CNN "Mouser"
 	1    10575 1775
 	1    0    0    -1  
 $EndComp
@@ -802,8 +812,9 @@ F 0 "R8" V 10325 1700 50  0000 L CNN
 F 1 "1K" V 10250 1775 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10105 1775 50  0001 C CNN
 F 3 "~" H 10175 1775 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 8975 -4025 50  0001 C CNN "manf#"
-F 5 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 5 "RE07090" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10175 1775
 	0    -1   -1   0   
 $EndComp
@@ -818,6 +829,7 @@ F 1 "2SC1815" H 10066 2080 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10075 2050 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 9875 2125 50  0001 L CNN
 F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 5 "SC06581" H 0   0   50  0001 C CNN "Farnell"
 	1    9875 2125
 	1    0    0    -1  
 $EndComp
@@ -833,8 +845,9 @@ F 0 "R9" V 9625 2125 50  0000 C CNN
 F 1 "1K" V 9550 2125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9405 2125 50  0001 C CNN
 F 3 "~" H 9475 2125 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 8275 -3675 50  0001 C CNN "manf#"
-F 5 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
+F 5 "RE07090" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    9475 2125
 	0    -1   -1   0   
 $EndComp
@@ -873,6 +886,7 @@ F 0 "U7" H 3450 3950 50  0000 L CNN
 F 1 "DS1307+" H 3225 3875 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3150 3025 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 3150 3325 50  0001 C CNN
+F 4 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3150 3525
 	1    0    0    -1  
 $EndComp
@@ -885,6 +899,8 @@ F 1 "32.768KHz" V 2475 3750 50  0000 L CNN
 F 2 "Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal" H 2425 3675 50  0001 C CNN
 F 3 "~" H 2425 3675 50  0001 C CNN
 F 4 "Mouser" H -2450 1100 50  0001 C CNN "Vendor"
+F 5 "815-AB26T-32.768KHZ" H 0   0   50  0001 C CNN "Mouser"
+F 6 "z" H 0   0   50  0001 C CNN "manf#"
 	1    2425 3675
 	0    -1   1    0   
 $EndComp
@@ -936,8 +952,7 @@ F 0 "R6" V 8325 5600 50  0000 C CNN
 F 1 "4.7k" V 8250 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8355 5600 50  0001 C CNN
 F 3 "~" H 8425 5600 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 7225 -200 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3425 3625 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3425 3625 50  0001 C CNN "Vendor"
 	1    8425 5600
 	0    -1   -1   0   
 $EndComp
@@ -949,8 +964,7 @@ F 0 "R5" V 8250 5450 50  0000 C CNN
 F 1 "4.7k" V 8325 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8355 5450 50  0001 C CNN
 F 3 "~" H 8425 5450 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 7225 -350 50  0001 C CNN "manf#"
-F 5 "Mouser" H 3600 3475 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 3600 3475 50  0001 C CNN "Vendor"
 	1    8425 5450
 	0    1    1    0   
 $EndComp
@@ -975,9 +989,11 @@ U 1 1 5BD55164
 P 3875 3250
 F 0 "BT1" H 3993 3346 50  0000 L CNN
 F 1 "CR2032" H 3993 3255 50  0000 L CNN
-F 2 "AquaFootprints:Multicomp-BC-2001" V 3875 3310 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Multicomp_BC-2001_1x2032" V 3875 3310 50  0001 C CNN
 F 3 "~" V 3875 3310 50  0001 C CNN
 F 4 "Mouser" H -2450 1100 50  0001 C CNN "Vendor"
+F 5 "534-1058" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3875 3250
 	1    0    0    -1  
 $EndComp
@@ -1483,8 +1499,9 @@ F 0 "U6" H 2750 5825 50  0000 C CNN
 F 1 "TCA9534" H 2875 5750 50  0000 C CNN
 F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 3600 4700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 2750 5150 50  0001 C CNN
-F 4 "TCA9534DWR" H 2650 5250 50  0001 C CNN "manf#"
-F 5 "Mouser" H -3100 825 50  0001 C CNN "Vendor"
+F 4 "Mouser" H -3100 825 50  0001 C CNN "Vendor"
+F 5 "TCA9534DWR" H 0   0   50  0001 C CNN "Mouser"
+F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    2650 5250
 	1    0    0    -1  
 $EndComp
@@ -1706,6 +1723,7 @@ F 0 "C9" H 8075 3225 50  0000 L CNN
 F 1 "100nF" H 7975 3075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 3150 50  0001 C CNN
 F 3 "~" H 8250 3150 50  0001 C CNN
+F 4 "CA07658" H 0   0   50  0001 C CNN "Farnell"
 	1    8250 3150
 	1    0    0    -1  
 $EndComp
@@ -1742,6 +1760,7 @@ F 0 "U8" H 8650 4500 50  0000 C CNN
 F 1 "TPIC2810D" H 9225 4500 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9000 4550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpic2810.pdf" H 9000 4600 50  0001 C CNN
+F 4 "660-7981" H 0   0   50  0001 C CNN "RS"
 	1    9000 3850
 	1    0    0    -1  
 $EndComp
@@ -1945,8 +1964,9 @@ F 0 "R14" V 10600 4125 50  0000 C CNN
 F 1 "330R" V 10525 4125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4125 50  0001 C CNN
 F 3 "~" H 10450 4125 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -1675 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 2925 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 2925 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 4125
 	0    -1   -1   0   
 $EndComp
@@ -1958,8 +1978,9 @@ F 0 "R15" V 10600 4375 50  0000 C CNN
 F 1 "330R" V 10525 4375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4375 50  0001 C CNN
 F 3 "~" H 10450 4375 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -1425 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 3175 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 3175 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 4375
 	0    -1   -1   0   
 $EndComp
@@ -1971,8 +1992,9 @@ F 0 "R16" V 10600 4625 50  0000 C CNN
 F 1 "330R" V 10525 4625 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4625 50  0001 C CNN
 F 3 "~" H 10450 4625 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -1175 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 3425 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 3425 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 4625
 	0    -1   -1   0   
 $EndComp
@@ -1984,8 +2006,9 @@ F 0 "R13" V 10600 3875 50  0000 C CNN
 F 1 "330R" V 10525 3875 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3875 50  0001 C CNN
 F 3 "~" H 10450 3875 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -1925 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 2675 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 2675 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 3875
 	0    -1   -1   0   
 $EndComp
@@ -1997,8 +2020,9 @@ F 0 "R12" V 10600 3625 50  0000 C CNN
 F 1 "330R" V 10525 3625 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3625 50  0001 C CNN
 F 3 "~" H 10450 3625 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -2175 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 2425 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 2425 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 3625
 	0    -1   -1   0   
 $EndComp
@@ -2010,8 +2034,9 @@ F 0 "R11" V 10600 3375 50  0000 C CNN
 F 1 "330R" V 10525 3375 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3375 50  0001 C CNN
 F 3 "~" H 10450 3375 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -2425 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 2175 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 2175 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 3375
 	0    -1   -1   0   
 $EndComp
@@ -2023,8 +2048,9 @@ F 0 "R10" V 10600 3125 50  0000 C CNN
 F 1 "330R" V 10525 3125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3125 50  0001 C CNN
 F 3 "~" H 10450 3125 50  0001 C CNN
-F 4 "GWCR0603-4K7FT5" H 9250 -2675 50  0001 C CNN "manf#"
-F 5 "Mouser" H 650 1925 50  0001 C CNN "Vendor"
+F 4 "Mouser" H 650 1925 50  0001 C CNN "Vendor"
+F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
 	1    10450 3125
 	0    -1   -1   0   
 $EndComp

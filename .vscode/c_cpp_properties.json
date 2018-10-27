@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:\\Users\\mark\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",
+                "C:\\Users\\mark\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.0\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include\\avr",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "forcedInclude": []
+        }
+    ],
+    "version": 4
+}

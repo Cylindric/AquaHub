@@ -1,4 +1,4 @@
-update=22/10/2018 21:14:49
+update=24/10/2018 22:18:26
 version=1
 last_client=kicad
 [general]
@@ -12,6 +12,16 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -73,7 +83,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=MainsRails
 Clearance=0.2
-TrackWidth=2
+TrackWidth=2.5
 ViaDiameter=1
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -81,13 +91,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1

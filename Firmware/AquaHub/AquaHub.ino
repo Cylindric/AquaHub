@@ -33,14 +33,9 @@ int PWR_SENSE = 28; // IO17, pin 28
 int TMP_SENSE = 26; // IO4,  pin 26
 int SOUND_PIN = 37; // IO23, pin 37
 
-int POW1 =  9; // IO33, pin 9
-int POW2 = 10; // IO25, pin 10
-int POW3 = 11; // IO26, pin 11
-int POW4 = 12; // IO27, pin 12
-int POW5 = 13; // IO14, pin 13
-int POW6 = 14; // IO12, pin 14
+uint8_t POW_PINS[NUM_RELAYS] = {9, 10, 11, 12, 13, 14}; // IO33, IO25, IO26, IO27, IO14, IO12
 
-RelayControl relayControl(POW1, POW2, POW3, POW4, POW5, POW6);
+RelayControl relayControl(POW_PINS);
 
 void setup() {
   Serial.begin(115200);

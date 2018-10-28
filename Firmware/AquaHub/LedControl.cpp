@@ -14,18 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+/*
+LED Control
+
+The 7 status LEDs are connected to a TPIC2810D I²C controller.
+*/
 #include <Arduino.h>
+#include <Wire.h>
 #include "LedControl.h"
 
 
 #define _DEBUG 0
 
-LedControl::LedControl()
+LedControl::LedControl(TwoWire& wire, uint8_t address): _wire(wire)
 {
-    for (int i=0; i < NUM_LEDS; i++)
-    {
-        _states[i] = 0;
-    }
+    _address = address;
+    _states = 0; // all LEDs off.
+    _dirty = 1; // assume that we'll need to update the output at least once
 }
 
 LedControl::~LedControl()
@@ -40,19 +45,41 @@ void LedControl::setup()
 
     for (int i=0; i < NUM_LEDS; i++)
     {
-        setState(i, _states[i]);
+        setState(i, (_states & (1 << i)));
+    }
+}
+
+void LedControl::loop()
+{
+    if(_dirty)
+    {
+        _wire.beginTransmission(_address);
+        _wire.write(byte(0x44)); // Write data to the data shift register and transfer it to the output storage register immediately
+        _wire.write(_states); // datas
+        _wire.endTransmission();
     }
 }
 
 
-
 void LedControl::setState(int id, bool state)
 {
-    if(_states[id] == state) {
+    bool current = (_states & (1 << id));
+
+    if(current == state) {
         return;
     }
 
-    _states[id] = state;
+    // Any change of bit-value will need to be pushed to the LEDs in the next render pass
+    _dirty = true;
+
+    // Set the bit value of the requested LED to the desired state
+    if(state)
+    {
+        _states |= (1 << id); // set
+    } else {
+        _states &= ~(1 << id); // clear
+    }
+
     #if _DEBUG
     Serial.println("LED X switching " + state ? "ON" : "OFF");
     #endif

@@ -17,6 +17,7 @@ limitations under the License.
 #ifndef LedControl_h
 #define LedControl_h
 #include <inttypes.h>
+#include <Wire.h>
 
 #ifndef NUM_LEDS
 #define NUM_LEDS 7
@@ -26,10 +27,13 @@ class LedControl
 {
 private:
     bool _pins[NUM_LEDS];
-    bool _states[NUM_LEDS];
+    int _states;
+    bool _dirty;
+    uint8_t _address;
+    TwoWire _wire;
     void setState(int id, bool state);
 public:
-    LedControl();
+    LedControl(TwoWire& wire, uint8_t address);
     ~LedControl();
     void setup();
     void loop();

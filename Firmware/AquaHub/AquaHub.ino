@@ -21,6 +21,7 @@ limitations under the License.
 // #include <WiFiMulti.h>
 // #include <WiFiUdp.h>
 #include "RelayControl.h"
+#include "LedControl.h"
 
 int RTC_I2C_ADDR = 0x68; // 1101000
 int LED_I2C_ADDR = 0x60; // 1100000
@@ -36,17 +37,22 @@ int SOUND_PIN = 37; // IO23, pin 37
 uint8_t POW_PINS[NUM_RELAYS] = {9, 10, 11, 12, 13, 14}; // IO33, IO25, IO26, IO27, IO14, IO12
 
 RelayControl relayControl(POW_PINS);
+LedControl ledControl(Wire, LED_I2C_ADDR);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin();
+  Wire.begin(I2C_SDA, I2C_SCL);
   
   scan_i2c();
+
+  relayControl.setup();
+  ledControl.setup();
+
 }
 
 void loop() {
-  Serial.println("loop");
-  delay(1000);
+  relayControl.loop();
+  ledControl.loop();
 }
 
 void scan_i2c() {
@@ -59,18 +65,18 @@ void scan_i2c() {
     error = Wire.endTransmission();
     if (error == 0) {
       Serial.print("I2C device found at address 0x");
-      if (address<16) {
+      if (address < 16) {
         Serial.print("0");
       }
-      Serial.println(address,HEX);
+      Serial.println(address, HEX);
       nDevices++;
     }
-    else if (error==4) {
+    else if (error == 4) {
       Serial.print("Unknow error at address 0x");
-      if (address<16) {
+      if (address < 16) {
         Serial.print("0");
       }
-      Serial.println(address,HEX);
+      Serial.println(address, HEX);
     }    
   }
   if (nDevices == 0) {

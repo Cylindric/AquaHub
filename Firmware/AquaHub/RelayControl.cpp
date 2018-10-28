@@ -47,6 +47,10 @@ void RelayControl::setup()
 }
 
 
+void RelayControl::loop()
+{
+}
+
 
 void RelayControl::setState(int id, bool state)
 {

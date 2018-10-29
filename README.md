@@ -43,6 +43,7 @@ Myriam Ayass, legal adviser of the Knowledge and Technology Transfer Group at CE
 - [ ] PCB: additional input for flow-rate sensor
 - [ ] PCB: additional input for pH sensor (might not be feasible without a permanent-immersion sensor?)
 - [ ] PCB: LED power indication for ESP
+- [ ] PCB: Reset button for ESP
 - [ ] ENCLOSURE: Switched & fused power inlet receptacle
 - [ ] ENCLOSURE: Non-PCB panel buttons - more choice, better buttons
 - [ ] ENCLOSURE: Power LED

@@ -55,17 +55,17 @@ void setup() {
   
   scan_i2c();
 
-  wifi_setup();
-  timeControl.setup();
-  relayControl.setup();
-  ledControl.setup();
+  // wifi_setup();
+  // timeControl.setup();
+  // relayControl.setup();
+  // ledControl.setup();
 }
 
 void loop() {
-  ArduinoOTA.handle();
-  timeControl.loop();
-  relayControl.loop();
-  ledControl.loop();
+  // ArduinoOTA.handle();
+  // timeControl.loop();
+  // relayControl.loop();
+  // ledControl.loop();
 }
 
 void wifi_setup() {

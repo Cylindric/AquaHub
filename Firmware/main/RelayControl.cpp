@@ -18,7 +18,7 @@ limitations under the License.
 #include "RelayControl.h"
 
 
-#define _DEBUG 0
+#define _DEBUG 1
 
 RelayControl::RelayControl(uint8_t pins[NUM_RELAYS])
 {

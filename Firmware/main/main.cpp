@@ -26,6 +26,7 @@ limitations under the License.
 #include "RelayControl.h"
 #include "LedControl.h"
 #include "TimeControl.h"
+#include "WebControl.h"
 
 // Forward declarations for this file
 void wifi_setup();
@@ -35,14 +36,14 @@ void scan_i2c();
 const char* ssid = "ChocolateCows";
 const char* password = "CowsGoMoo";
 
-// 
-int RTC_I2C_ADDR = 0x68; // 1101000
-int LED_I2C_ADDR = 0x60; // 1100000
-int BTN_I2C_ADDR = 0x20; // 0100000
+// I²C addresses
+int RTC_I2C_ADDR = 0x68; // 1101000 = 104 = 0x68
+int LED_I2C_ADDR = 0x60; // 1100000 =  96 = 0x60
+int BTN_I2C_ADDR = 0x20; // 0100000 =  32 = 0x20
 
 // Pins
-int I2C_SCL   = 36; // IO22, pin 36
-int I2C_SDA   = 33; // IO21, pin 33
+int I2C_SCL   = SCL; // IO22, pin 36
+int I2C_SDA   = SDA; // IO21, pin 33
 int PWR_SENSE = 28; // IO17, pin 28
 int TMP_SENSE = 26; // IO4,  pin 26
 int SOUND_PIN = 37; // IO23, pin 37
@@ -52,31 +53,37 @@ uint8_t POW_PINS[NUM_RELAYS] = {9, 10, 11, 12, 13, 14}; // IO33, IO25, IO26, IO2
 RelayControl relayControl(POW_PINS);
 LedControl ledControl(Wire, LED_I2C_ADDR);
 TimeControl timeControl(Wire, RTC_I2C_ADDR);
+WebControl webControl;
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(I2C_SDA, I2C_SCL);
+  Wire.begin();
   
   scan_i2c();
 
-  // wifi_setup();
-  // timeControl.setup();
-  // relayControl.setup();
-  // ledControl.setup();
+  wifi_setup();
+  timeControl.setup();
+  relayControl.setup();
+  ledControl.setup();
+  webControl.setup();
 }
 
 void loop() {
-  // ArduinoOTA.handle();
-  // timeControl.loop();
-  // relayControl.loop();
-  // ledControl.loop();
+  ArduinoOTA.handle();
+  timeControl.loop();
+  relayControl.loop();
+  ledControl.loop();
+  webControl.loop();
 }
 
+
+// Connect to the preset wifi network, and check for any waiting OTA updates.
 void wifi_setup() {
   Serial.println("Booting");
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
-  while (WiFi.waitForConnectResult() != WL_CONNECTED) {
+  
+  while (WiFi.waitForConnectResult()) {
     Serial.println("Connection Failed! Rebooting...");
     delay(5000);
     ESP.restart();
@@ -128,6 +135,8 @@ void wifi_setup() {
   Serial.println(WiFi.localIP());
 }
 
+
+// A simple debugging aid that prints out the address of each detected I²C device.
 void scan_i2c() {
   byte error, address;
   int nDevices;

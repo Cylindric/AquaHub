@@ -14,20 +14,24 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-#ifndef TimeControl_h
-#define TimeControl_h
+#ifndef WebControl_h
+#define WebControl_h
 
-#include <inttypes.h>
-#include <Wire.h>
+#ifndef WEBSERVER_PORT
+#define WEBSERVER_PORT 80
+#endif
 
-class TimeControl
+#include <WebServer.h>
+
+class WebControl
 {
 private:
-    uint8_t _address;
-    TwoWire _wire;
+    WebServer _server;
+    void handleRoot();
+    void handleNotFound();
 public:
-    TimeControl(TwoWire& wire, uint8_t address);
-    ~TimeControl();
+    WebControl();
+    ~WebControl();
     void setup();
     void loop();
 };

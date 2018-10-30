@@ -19,7 +19,7 @@ limitations under the License.
 #include "TimeControl.h"
 
 
-#define _DEBUG 0
+#define _DEBUG 1
 
 TimeControl::TimeControl(TwoWire& wire, uint8_t address): _wire(wire)
 {

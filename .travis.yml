@@ -9,7 +9,6 @@ before_install:
 script:
   - docker ps -a
   - docker exec -it esp-idf printenv
-  - docker exec -it esp-idf bash -c 'cd /esp/examples/getting-started/hello_world ; make'
   - docker exec -it esp-idf bash -c 'cd /src/Firmware ; make'
 after_script:
   - docker ps -a

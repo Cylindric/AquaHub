@@ -27,6 +27,10 @@ limitations under the License.
 #include "LedControl.h"
 #include "TimeControl.h"
 
+// Forward declarations for this file
+void wifi_setup();
+void scan_i2c();
+
 // Wifi setup
 const char* ssid = "ChocolateCows";
 const char* password = "CowsGoMoo";

@@ -14,28 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-#ifndef WebControl_h
-#define WebControl_h
+#ifndef WifiControl_h
+#define WifiControl_h
 
-#ifndef WEBSERVER_PORT
-#define WEBSERVER_PORT 80
-#endif
+#include <WiFi.h>
 
-#include "SPIFFS.h"
-#include "FS.h"
-#include "ESPAsyncWebServer.h"
-
-class WebControl
+class WifiControl
 {
 private:
-    AsyncWebServer _server;
-    void handleNotFound();
-    void listDir(fs::FS &fs, const char * dirname, uint8_t levels);
+    const char* _ssid;
+    const char* _password;
+    void printEncryptionType(int thisType);
 public:
-    WebControl();
-    ~WebControl();
+    WifiControl(const char* ssid, const char* password);
+    ~WifiControl();
     void setup();
     void loop();
+    void listNetworks();
 };
 
 #endif

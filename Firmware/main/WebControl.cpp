@@ -22,7 +22,7 @@ limitations under the License.
 
 #define _DEBUG 1
 #ifndef FORMAT_SPIFFS_IF_FAILED 
-#define FORMAT_SPIFFS_IF_FAILED true
+#define FORMAT_SPIFFS_IF_FAILED false
 #endif
 
 WebControl::WebControl(): _server(WEBSERVER_PORT)
@@ -45,7 +45,6 @@ void WebControl::setup()
     }
     listDir(SPIFFS, "/", 0);
 
-    
     _server.serveStatic("/", SPIFFS, "/");
     
     _server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
@@ -61,9 +60,9 @@ void WebControl::setup()
     // _server.on("/bootstrap.min.js", HTTP_GET, [](AsyncWebServerRequest *request) {
     //     request->send(SPIFFS, "/bootstrap.min.js", "application/javascript");
     // });
-    // _server.onNotFound([](AsyncWebServerRequest *request) {
-    //     request->send(SPIFFS, "/404.html", "text/html");
-    // });
+    _server.onNotFound([](AsyncWebServerRequest *request) {
+        request->send(SPIFFS, "/404.html", "text/html");
+    });
 
     _server.begin();
 }

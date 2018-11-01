@@ -90,3 +90,7 @@ A Mouser project with some of the components listed in detail is available here:
 ## References
 
 * DS18B20 temperature - [ESP32 With Multiple DS18B20 Sensors](https://randomnerdtutorials.com/esp32-with-multiple-ds18b20-temperature-sensors/)
+
+# Attribution
+
+* Fish icon is from [iconsDB](https://www.iconsdb.com/custom-color/fish-3-icon.html); Creative Commons Attribution-NoDerivs 3.0.

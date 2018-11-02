@@ -45,7 +45,6 @@ int SOUND_PIN = 37; // IO23, pin 37
 
 uint8_t POW_PINS[NUM_RELAYS] = {9, 10, 11, 12, 13, 14}; // IO33, IO25, IO26, IO27, IO14, IO12
 
-RelayControl relayControl(POW_PINS);
 LedControl ledControl(Wire, LED_I2C_ADDR);
 TimeControl timeControl(Wire, RTC_I2C_ADDR);
 WebControl webControl;
@@ -59,7 +58,7 @@ void setup() {
 
   wifiControl.setup();
   timeControl.setup();
-  relayControl.setup();
+  Relays.setup(POW_PINS);
   ledControl.setup();
   webControl.setup();
 }
@@ -67,7 +66,7 @@ void setup() {
 void loop() {
   wifiControl.loop();
   timeControl.loop();
-  relayControl.loop();
+  Relays.loop();
   ledControl.loop();
   webControl.loop();
 }

@@ -18,7 +18,9 @@ limitations under the License.
 #include "SPIFFS.h"
 #include "ESPAsyncWebServer.h"
 #include "FS.h"
+
 #include "WebControl.h"
+#include "RelayControl.h"
 
 #define _DEBUG 1
 #ifndef FORMAT_SPIFFS_IF_FAILED 
@@ -51,15 +53,10 @@ void WebControl::setup()
         request->send(SPIFFS, "/index.html", "text/html");
     });
 
-    // _server.on("/bootstrap-theme.min.css", HTTP_GET, [](AsyncWebServerRequest *request) {
-    //     request->send(SPIFFS, "/bootstrap-theme.min.css", "text/css");
-    // });
-    // _server.on("/bootstrap.min.css", HTTP_GET, [](AsyncWebServerRequest *request) {
-    //     request->send(SPIFFS, "/bootstrap.min.css", "text/css");
-    // });
-    // _server.on("/bootstrap.min.js", HTTP_GET, [](AsyncWebServerRequest *request) {
-    //     request->send(SPIFFS, "/bootstrap.min.js", "application/javascript");
-    // });
+    _server.on("/relays", HTTP_GET, [this](AsyncWebServerRequest *request) {
+        this->getRelayStatus(request);
+    });
+
     _server.onNotFound([](AsyncWebServerRequest *request) {
         request->send(SPIFFS, "/404.html", "text/html");
     });
@@ -69,7 +66,26 @@ void WebControl::setup()
 
 void WebControl::loop()
 {
-    //_server.handleClient();
+}
+
+
+void WebControl::getRelayStatus(AsyncWebServerRequest *request)
+{
+    String message = "[";
+    for (int i=0; i < NUM_RELAYS; i++)
+    {
+        message += "{\"id\": ";
+        message += i;
+        message += ", \"state\": ";
+        message += Relays.getState(i);
+        message += "}";
+        if(i < NUM_RELAYS)
+        {
+            message += ",";
+        }
+    }
+    message += "]";
+    request->send(200, "text/json", message);
 }
 
 

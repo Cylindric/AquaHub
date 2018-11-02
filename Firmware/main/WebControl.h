@@ -30,6 +30,7 @@ class WebControl
 private:
     AsyncWebServer _server;
     void handleNotFound();
+    void getRelayStatus(AsyncWebServerRequest *request);
     void listDir(fs::FS &fs, const char * dirname, uint8_t levels);
 public:
     WebControl();

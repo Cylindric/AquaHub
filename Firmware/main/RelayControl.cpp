@@ -20,24 +20,25 @@ limitations under the License.
 
 #define _DEBUG 1
 
-RelayControl::RelayControl(uint8_t pins[NUM_RELAYS])
+RelayControl::RelayControl()
 {
-    for (int i=0; i < NUM_RELAYS; i++)
-    {
-        _pins[i] = pins[i];
-        _states[i] = 0;
-    }
 }
 
 RelayControl::~RelayControl()
 {
 }
 
-void RelayControl::setup()
+void RelayControl::setup(uint8_t pins[NUM_RELAYS])
 {
     #if _DEBUG
     Serial.println("RelayControl starting up.");
     #endif
+
+    for (int i=0; i < NUM_RELAYS; i++)
+    {
+        _pins[i] = pins[i];
+        _states[i] = 0;
+    }
 
     for (int i=0; i < NUM_RELAYS; i++)
     {
@@ -64,3 +65,10 @@ void RelayControl::setState(int id, bool state)
     #endif
     digitalWrite(_pins[id], state);
 }
+
+bool RelayControl::getState(int id)
+{
+    return _states[id];
+}
+
+RelayControl Relays = RelayControl();

@@ -27,12 +27,15 @@ class RelayControl
 private:
     bool _pins[NUM_RELAYS];
     bool _states[NUM_RELAYS];
-    void setState(int id, bool state);
 public:
-    RelayControl(uint8_t pins[NUM_RELAYS]);
+    RelayControl();
     ~RelayControl();
-    void setup();
+    void setup(uint8_t pins[NUM_RELAYS]);
     void loop();
+    void setState(int id, bool state);
+    bool getState(int id);
 };
+
+extern RelayControl Relays;
 
 #endif

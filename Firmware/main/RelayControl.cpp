@@ -18,7 +18,7 @@ limitations under the License.
 #include "RelayControl.h"
 
 
-#define _DEBUG 1
+#define _DEBUG 0
 
 RelayControl::RelayControl()
 {
@@ -48,22 +48,43 @@ void RelayControl::setup(uint8_t pins[NUM_RELAYS])
 }
 
 
+// Prints the current relay state every few seconds
 void RelayControl::loop()
 {
+    #if _DEBUG
+    static unsigned long lastReportTime = millis();
+    if (millis() - lastReportTime > 5000) {
+        lastReportTime = millis();
+        printStates();
+    }
+    #endif
 }
 
 
 void RelayControl::setState(int id, bool state)
 {
+    #if _DEBUG
+    Serial.print("Relay "); 
+    Serial.print(id); 
+    Serial.print(" switching ");
+    Serial.println(state ? "ON" : "OFF");
+    #endif
+
     if(_states[id] == state) {
         return;
     }
 
     _states[id] = state;
-    #if _DEBUG
-    Serial.println("Relay X switching " + state ? "ON" : "OFF");
-    #endif
     digitalWrite(_pins[id], state);
+}
+
+void RelayControl::printStates()
+{
+    Serial.print("Relay states: ");
+    for (int i=0; i < NUM_RELAYS; i++)
+    {
+        Serial.print(_states[i]);
+    }
 }
 
 bool RelayControl::getState(int id)

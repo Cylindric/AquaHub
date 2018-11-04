@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+#include <vector>
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WiFiUdp.h>
@@ -24,32 +25,51 @@ limitations under the License.
 
 #define _DEBUG 1
 
-WifiControl::WifiControl(const char* ssid, const char* password)
+WifiControl::WifiControl()
 {
-    _ssid = ssid;
-    _password = password;
 }
 
 WifiControl::~WifiControl()
 {
 }
 
-void WifiControl::setup()
+void WifiControl::setup(String sids[3], String passwords[3])
 {
     #if _DEBUG
     Serial.println("WifiControl starting up.");
     #endif
 
-  Serial.printf("Booting using %s and %s.\n", _ssid, _password);
   WiFi.mode(WIFI_STA);
-  listNetworks();
-  WiFi.begin(_ssid, _password);
-  
-  while (WiFi.waitForConnectResult() != WL_CONNECTED) {
-    Serial.println("Connection Failed! Rebooting...");
-    delay(5000);
-    ESP.restart();
+  std::vector<String> networks = listNetworks();
+
+  bool connected = false;
+  int wait_time = 10000;
+
+  for(auto ssid : networks) {
+    for(int i = 0; i < 3; i++) {
+      if(sids[i] == ssid) {
+        Serial.println("Connecting to " + ssid);
+        WiFi.begin(sids[i].c_str(), passwords[i].c_str());
+        wait_time = 10000;
+        while (WiFi.waitForConnectResult() != WL_CONNECTED && wait_time > 0) {
+          Serial.println("Connection Failed! Trying again...");
+          delay(5000);
+          wait_time -= 2000;
+        }
+        connected = WiFi.isConnected();
+        if(connected) {
+          break;
+        }
+      }
+    }
+    if(connected){
+      break;
+    }
   }
+  if(connected) {
+    Serial.println("Connected!");
+  }
+  
 
   // Port defaults to 3232
   // ArduinoOTA.setPort(3232);
@@ -102,7 +122,9 @@ void WifiControl::loop()
   ArduinoOTA.handle();
 }
 
-void WifiControl::listNetworks() {
+std::vector<String> WifiControl::listNetworks() {
+  std::vector<String> arr;
+
   // scan for nearby networks:
   Serial.println("** Scan Networks **");
   int numSsid = WiFi.scanNetworks();
@@ -117,6 +139,7 @@ void WifiControl::listNetworks() {
 
   // print the network number and name for each network found:
   for (int thisNet = 0; thisNet < numSsid; thisNet++) {
+    arr.push_back(WiFi.SSID(thisNet));
     Serial.print(thisNet);
     Serial.print(") ");
     Serial.print(WiFi.SSID(thisNet));
@@ -126,6 +149,8 @@ void WifiControl::listNetworks() {
     Serial.print("\tEncryption: ");
     printEncryptionType(WiFi.encryptionType(thisNet));
   }
+
+  return arr;
 }
 
 void WifiControl::printEncryptionType(int thisType) {

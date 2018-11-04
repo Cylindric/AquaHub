@@ -17,20 +17,19 @@ limitations under the License.
 #ifndef WifiControl_h
 #define WifiControl_h
 
+#include <vector>
 #include <WiFi.h>
 
 class WifiControl
 {
 private:
-    const char* _ssid;
-    const char* _password;
     void printEncryptionType(int thisType);
 public:
-    WifiControl(const char* ssid, const char* password);
+    WifiControl();
     ~WifiControl();
-    void setup();
+    void setup(String sids[3], String passwords[3]);
     void loop();
-    void listNetworks();
+    std::vector<String> listNetworks();
 };
 
 #endif

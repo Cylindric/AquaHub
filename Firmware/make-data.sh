@@ -19,10 +19,10 @@ ESP_BAUD=921600
 # I (75) boot:  2 app0             OTA app          00 10 00010000 00140000
 # I (82) boot:  3 app1             OTA app          00 11 00150000 00140000
 # I (90) boot:  4 eeprom           Unknown data     01 99 00290000 00001000
-# I (97) boot:  5 spiffs           Unknown data     01 82 00291000 0016f000
+# I (97) boot:  5 spiffs           Unknown data     01 82 00291000 0016f000 = 2691072 | 1503232
 # I (105) boot: End of partition table
-ESP_OFFSET=0x00291000
-SPIFF_SIZE=0x0016f000
+ESP_OFFSET=2691072
+SPIFF_SIZE=1503232
 
 
 
@@ -47,7 +47,7 @@ if [ -f "$SPIFF_PATH" ]; then
     rm -f $SPIFF_PATH
 fi
 
-mkspiffs -c $DEST_PATH -b $SPIFF_BLOCK_SIZE -p $SPIFF_PAGE_SIZE -s $SPIFF_SIZE $SPIFF_PATH
+mkspiffs -c $DEST_PATH -p $SPIFF_PAGE_SIZE -b $SPIFF_BLOCK_SIZE -s $SPIFF_SIZE $SPIFF_PATH
 if [ $? -ne 0 ]; then
     echo "Error creating SPIFF file!"
     exit 1
@@ -64,11 +64,11 @@ fi
 # --flash_freq flashFreq 
 # --flash_size detect 
 # spiStart imagePath
-$ESP_TOOL --chip $ESP_CHIP --port $ESP_PORT --baud $ESP_BAUD \
+$ESP_TOOL --chip $ESP_CHIP --baud $ESP_BAUD --port $ESP_PORT \
           --before default_reset --after hard_reset \
           write_flash -z \
           --flash_mode dio --flash_freq 40m --flash_size detect \
-          $ESP_OFFSET $SPIFF_PATH
+           $ESP_OFFSET $SPIFF_PATH
 
 if [ $? -ne 0 ]; then
     echo "Error flashing SPIFF file!"

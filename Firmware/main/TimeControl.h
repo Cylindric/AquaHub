@@ -25,11 +25,16 @@ class TimeControl
 private:
     uint8_t _address;
     TwoWire _wire;
+    byte bcdToDec(byte val);
+    byte decToBcd(byte val);
 public:
     TimeControl(TwoWire& wire, uint8_t address);
     ~TimeControl();
     void setup();
     void loop();
+    void setDate(byte second, byte minute, byte hour, byte dayOfWeek, byte dayOfMonth, byte month, byte year);
+    void getDate(byte *second, byte *minute, byte *hour, byte *dayOfWeek, byte *dayOfMonth, byte *month, byte *year);
+    void printDate();
 };
 
 #endif

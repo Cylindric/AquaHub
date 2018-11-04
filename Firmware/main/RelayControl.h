@@ -34,6 +34,7 @@ public:
     void loop();
     void setState(int id, bool state);
     bool getState(int id);
+    void printStates();
 };
 
 extern RelayControl Relays;

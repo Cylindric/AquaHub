@@ -303,14 +303,11 @@ F 6 "TAJD107K006SNJ" H -275 0   50  0001 C CNN "Mouser"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 3350 5250 3400
+	5250 3350 5250 3450
 Wire Wire Line
-	5250 3400 5350 3400
+	5250 3450 5075 3450
 Wire Wire Line
-	5450 3400 5450 3350
-Connection ~ 5350 3400
-Wire Wire Line
-	5350 3400 5450 3400
+	5450 3450 5450 3350
 Wire Wire Line
 	5250 3150 5250 3100
 Wire Wire Line
@@ -325,12 +322,12 @@ Wire Wire Line
 $Comp
 L AquaHub-rescue:GND-power #PWR0106
 U 1 1 5BB06C11
-P 5350 3500
-F 0 "#PWR0106" H 5350 3250 50  0001 C CNN
-F 1 "GND" H 5355 3327 50  0000 C CNN
-F 2 "" H 5350 3500 50  0001 C CNN
-F 3 "" H 5350 3500 50  0001 C CNN
-	1    5350 3500
+P 5075 3525
+F 0 "#PWR0106" H 5075 3275 50  0001 C CNN
+F 1 "GND" H 5080 3352 50  0000 C CNN
+F 2 "" H 5075 3525 50  0001 C CNN
+F 3 "" H 5075 3525 50  0001 C CNN
+	1    5075 3525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -509,7 +506,7 @@ U 1 1 5B9E071D
 P 3875 1050
 F 0 "TP2" V 3900 1250 50  0000 L CNN
 F 1 "Test_3V3" V 3975 1250 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4075 1050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4075 1050 50  0001 C CNN
 F 3 "~" H 4075 1050 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    3875 1050
@@ -521,7 +518,7 @@ U 1 1 5B9E07DA
 P 3850 1875
 F 0 "TP1" V 3804 2063 50  0000 L CNN
 F 1 "TEST_5V" V 3895 2063 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4050 1875 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4050 1875 50  0001 C CNN
 F 3 "~" H 4050 1875 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    3850 1875
@@ -537,7 +534,7 @@ U 1 1 5BA7E124
 P 3875 1400
 F 0 "TP3" V 3925 1600 50  0000 L CNN
 F 1 "Test_3V3_GND" V 4000 1425 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4075 1400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4075 1400 50  0001 C CNN
 F 3 "~" H 4075 1400 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    3875 1400
@@ -552,7 +549,7 @@ U 1 1 5BA8CCD1
 P 2875 1025
 F 0 "TP4" H 2950 1225 50  0000 C CNN
 F 1 "Test_12V" H 3075 1150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3075 1025 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 3075 1025 50  0001 C CNN
 F 3 "~" H 3075 1025 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    2875 1025
@@ -940,25 +937,25 @@ Wire Wire Line
 $Comp
 L AquaHub-rescue:R-Device R6
 U 1 1 5BCAFF2F
-P 8425 5600
-F 0 "R6" V 8325 5600 50  0000 C CNN
-F 1 "4.7k" V 8250 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8355 5600 50  0001 C CNN
-F 3 "~" H 8425 5600 50  0001 C CNN
-F 4 "Mouser" H 3425 3625 50  0001 C CNN "Vendor"
-	1    8425 5600
+P 8775 5600
+F 0 "R6" V 8675 5600 50  0000 C CNN
+F 1 "4.7k" V 8600 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8705 5600 50  0001 C CNN
+F 3 "~" H 8775 5600 50  0001 C CNN
+F 4 "Mouser" H 3775 3625 50  0001 C CNN "Vendor"
+	1    8775 5600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R5
 U 1 1 5BCAFFDB
-P 8425 5450
-F 0 "R5" V 8250 5450 50  0000 C CNN
-F 1 "4.7k" V 8325 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8355 5450 50  0001 C CNN
-F 3 "~" H 8425 5450 50  0001 C CNN
-F 4 "Mouser" H 3600 3475 50  0001 C CNN "Vendor"
-	1    8425 5450
+P 8775 5450
+F 0 "R5" V 8600 5450 50  0000 C CNN
+F 1 "4.7k" V 8675 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8705 5450 50  0001 C CNN
+F 3 "~" H 8775 5450 50  0001 C CNN
+F 4 "Mouser" H 3950 3475 50  0001 C CNN "Vendor"
+	1    8775 5450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1160,7 +1157,7 @@ U 1 1 5BDF9390
 P 2800 2225
 F 0 "TP5" V 2800 2475 50  0000 C CNN
 F 1 "Test_12V_GND" V 2725 2300 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 3000 2225 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 3000 2225 50  0001 C CNN
 F 3 "~" H 3000 2225 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    2800 2225
@@ -1172,7 +1169,7 @@ U 1 1 5BE5860A
 P 3850 2225
 F 0 "TP6" V 3875 2400 50  0000 L CNN
 F 1 "TEST_5V_GND" V 3950 2300 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 4050 2225 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4050 2225 50  0001 C CNN
 F 3 "~" H 4050 2225 50  0001 C CNN
 F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	1    3850 2225
@@ -1228,102 +1225,6 @@ Wire Notes Line
 Text Notes 4075 7100 0    50   ~ 0
 Mounting Holes
 $Comp
-L Mechanical:MountingHole H12
-U 1 1 5BD3D117
-P 5500 7600
-F 0 "H12" H 5475 7725 50  0000 C CNN
-F 1 "MountingHole" H 5600 7555 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5500 7600 50  0001 C CNN
-F 3 "~" H 5500 7600 50  0001 C CNN
-F 4 "n/a" H -700 200 50  0001 C CNN "Vendor"
-	1    5500 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H14
-U 1 1 5BD4C135
-P 5675 7600
-F 0 "H14" H 5650 7725 50  0000 C CNN
-F 1 "MountingHole" H 5775 7555 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5675 7600 50  0001 C CNN
-F 3 "~" H 5675 7600 50  0001 C CNN
-F 4 "n/a" H -525 200 50  0001 C CNN "Vendor"
-	1    5675 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H16
-U 1 1 5BD4D512
-P 5850 7600
-F 0 "H16" H 5825 7725 50  0000 C CNN
-F 1 "MountingHole" H 5950 7555 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5850 7600 50  0001 C CNN
-F 3 "~" H 5850 7600 50  0001 C CNN
-F 4 "n/a" H -350 200 50  0001 C CNN "Vendor"
-	1    5850 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H18
-U 1 1 5BD4E729
-P 6025 7600
-F 0 "H18" H 6000 7725 50  0000 C CNN
-F 1 "MountingHole" H 6125 7555 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 6025 7600 50  0001 C CNN
-F 3 "~" H 6025 7600 50  0001 C CNN
-F 4 "n/a" H -175 200 50  0001 C CNN "Vendor"
-	1    6025 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H11
-U 1 1 5BD52FCC
-P 5500 7350
-F 0 "H11" H 5475 7475 50  0000 C CNN
-F 1 "MountingHole" H 5600 7305 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5500 7350 50  0001 C CNN
-F 3 "~" H 5500 7350 50  0001 C CNN
-F 4 "n/a" H -700 -50 50  0001 C CNN "Vendor"
-	1    5500 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H13
-U 1 1 5BD52FD7
-P 5675 7350
-F 0 "H13" H 5650 7475 50  0000 C CNN
-F 1 "MountingHole" H 5775 7305 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5675 7350 50  0001 C CNN
-F 3 "~" H 5675 7350 50  0001 C CNN
-F 4 "n/a" H -525 -50 50  0001 C CNN "Vendor"
-	1    5675 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H15
-U 1 1 5BD52FE2
-P 5850 7350
-F 0 "H15" H 5825 7475 50  0000 C CNN
-F 1 "MountingHole" H 5950 7305 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 5850 7350 50  0001 C CNN
-F 3 "~" H 5850 7350 50  0001 C CNN
-F 4 "n/a" H -350 -50 50  0001 C CNN "Vendor"
-	1    5850 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H17
-U 1 1 5BD52FED
-P 6025 7350
-F 0 "H17" H 6000 7475 50  0000 C CNN
-F 1 "MountingHole" H 6125 7305 50  0001 L CNN
-F 2 "AquaFootprints:Breakaway 1mm" H 6025 7350 50  0001 C CNN
-F 3 "~" H 6025 7350 50  0001 C CNN
-F 4 "n/a" H -175 -50 50  0001 C CNN "Vendor"
-	1    6025 7350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO2
 U 1 1 5BC7DBAA
 P 10925 6875
@@ -1370,183 +1271,84 @@ Wire Wire Line
 Text GLabel 7200 4400 2    50   Input ~ 0
 Power_Sense
 $Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEABFE9
-P 3775 5900
-AR Path="/5B8F2634/5BEABFE9" Ref="SW?"  Part="1" 
-AR Path="/5BEABFE9" Ref="SW5"  Part="1" 
-F 0 "SW5" H 3775 6000 50  0000 C CNN
-F 1 "SW_Push" H 4075 5900 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 3775 6100 50  0001 C CNN
-F 3 "" H 3775 6100 50  0001 C CNN
-F 4 "Mouser" H -3200 1025 50  0001 C CNN "Vendor"
-	1    3775 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEABFF1
-P 3600 5875
-AR Path="/5B8F2634/5BEABFF1" Ref="SW?"  Part="1" 
-AR Path="/5BEABFF1" Ref="SW6"  Part="1" 
-F 0 "SW6" H 3600 5975 50  0000 C CNN
-F 1 "SW_Push" H 3900 5875 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 3600 6075 50  0001 C CNN
-F 3 "" H 3600 6075 50  0001 C CNN
-F 4 "Mouser" H -3375 825 50  0001 C CNN "Vendor"
-	1    3600 5875
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEABFF8
-P 3250 5850
-AR Path="/5B8F2634/5BEABFF8" Ref="SW?"  Part="1" 
-AR Path="/5BEABFF8" Ref="SW1"  Part="1" 
-F 0 "SW1" H 3250 5950 50  0000 C CNN
-F 1 "SW_Push" H 3550 5850 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 3250 6050 50  0001 C CNN
-F 3 "" H 3250 6050 50  0001 C CNN
-F 4 "Mouser" H -3725 1725 50  0001 C CNN "Vendor"
-	1    3250 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEABFFF
-P 3425 5850
-AR Path="/5B8F2634/5BEABFFF" Ref="SW?"  Part="1" 
-AR Path="/5BEABFFF" Ref="SW2"  Part="1" 
-F 0 "SW2" H 3425 5950 50  0000 C CNN
-F 1 "SW_Push" H 3725 5850 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 3425 6050 50  0001 C CNN
-F 3 "" H 3425 6050 50  0001 C CNN
-F 4 "Mouser" H -3550 1525 50  0001 C CNN "Vendor"
-	1    3425 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEAC006
-P 4100 5900
-AR Path="/5B8F2634/5BEAC006" Ref="SW?"  Part="1" 
-AR Path="/5BEAC006" Ref="SW3"  Part="1" 
-F 0 "SW3" H 4100 6000 50  0000 C CNN
-F 1 "SW_Push" H 4400 5900 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 4100 6100 50  0001 C CNN
-F 3 "" H 4100 6100 50  0001 C CNN
-F 4 "Mouser" H -2875 1375 50  0001 C CNN "Vendor"
-	1    4100 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L AquaHub-rescue:GND-power #PWR?
-U 1 1 5BEAC025
-P 3700 6200
-AR Path="/5B8F2634/5BEAC025" Ref="#PWR?"  Part="1" 
-AR Path="/5BEAC025" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 3700 5950 50  0001 C CNN
-F 1 "GND" H 3705 6027 50  0000 C CNN
-F 2 "" H 3700 6200 50  0001 C CNN
-F 3 "" H 3700 6200 50  0001 C CNN
-	1    3700 6200
-	1    0    0    -1  
-$EndComp
-$Comp
 L AquaHub-rescue:GND-power #PWR?
 U 1 1 5BEAC02B
-P 2650 6050
+P 3425 6075
 AR Path="/5B8F2634/5BEAC02B" Ref="#PWR?"  Part="1" 
 AR Path="/5BEAC02B" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 2650 5800 50  0001 C CNN
-F 1 "GND" H 2655 5877 50  0000 C CNN
-F 2 "" H 2650 6050 50  0001 C CNN
-F 3 "" H 2650 6050 50  0001 C CNN
-	1    2650 6050
+F 0 "#PWR024" H 3425 5825 50  0001 C CNN
+F 1 "GND" H 3430 5902 50  0000 C CNN
+F 2 "" H 3425 6075 50  0001 C CNN
+F 3 "" H 3425 6075 50  0001 C CNN
+	1    3425 6075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 5950 2650 6000
+	3425 5975 3425 6025
 $Comp
 L AquaHub-rescue:+5V-power #PWR?
 U 1 1 5BEAC032
-P 2650 4550
+P 3425 4575
 AR Path="/5B8F2634/5BEAC032" Ref="#PWR?"  Part="1" 
 AR Path="/5BEAC032" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 2650 4400 50  0001 C CNN
-F 1 "+5V" H 2775 4600 50  0000 C CNN
-F 2 "" H 2650 4550 50  0001 C CNN
-F 3 "" H 2650 4550 50  0001 C CNN
-	1    2650 4550
+F 0 "#PWR023" H 3425 4425 50  0001 C CNN
+F 1 "+5V" H 3550 4625 50  0000 C CNN
+F 2 "" H 3425 4575 50  0001 C CNN
+F 3 "" H 3425 4575 50  0001 C CNN
+	1    3425 4575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 4550 2650 4600
+	3425 4575 3425 4625
 $Comp
 L AquaHub-rescue:TCA9534-Interface_Expansion U?
 U 1 1 5BEAC03B
-P 2650 5250
+P 3425 5275
 AR Path="/5B8F2634/5BEAC03B" Ref="U?"  Part="1" 
 AR Path="/5BEAC03B" Ref="U6"  Part="1" 
-F 0 "U6" H 2750 5825 50  0000 C CNN
-F 1 "TCA9534" H 2875 5750 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 3600 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 2750 5150 50  0001 C CNN
-F 4 "Mouser" H -3100 825 50  0001 C CNN "Vendor"
-F 5 "TCA9534DWR" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
-	1    2650 5250
+F 0 "U6" H 3525 5850 50  0000 C CNN
+F 1 "TCA9534" H 3650 5775 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4375 4725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 3525 5175 50  0001 C CNN
+F 4 "Mouser" H -2325 850 50  0001 C CNN "Vendor"
+F 5 "TCA9534DWR" H 775 25  50  0001 C CNN "Mouser"
+F 6 "x" H 775 25  50  0001 C CNN "manf#"
+	1    3425 5275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5450 2200 5450
+	3025 5475 2975 5475
 Wire Wire Line
-	2200 5450 2200 5550
+	2975 5475 2975 5575
 Wire Wire Line
-	2200 5550 2250 5550
+	2975 5575 3025 5575
 Wire Wire Line
-	2200 5550 2200 5650
+	2975 5575 2975 5675
 Wire Wire Line
-	2200 5650 2250 5650
-Connection ~ 2200 5550
+	2975 5675 3025 5675
+Connection ~ 2975 5575
 Wire Wire Line
-	2200 5650 2200 6000
+	2975 5675 2975 6025
 Wire Wire Line
-	2200 6000 2650 6000
-Connection ~ 2200 5650
-Connection ~ 2650 6000
+	2975 6025 3425 6025
+Connection ~ 2975 5675
+Connection ~ 3425 6025
 Wire Wire Line
-	2650 6000 2650 6050
+	3425 6025 3425 6075
 Wire Wire Line
-	2250 4950 2150 4950
+	3025 4975 2925 4975
 Wire Wire Line
-	2250 5050 2150 5050
-$Comp
-L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
-U 1 1 5BEAC052
-P 3950 5900
-AR Path="/5B8F2634/5BEAC052" Ref="SW?"  Part="1" 
-AR Path="/5BEAC052" Ref="SW4"  Part="1" 
-F 0 "SW4" H 3950 6000 50  0000 C CNN
-F 1 "SW_Push" H 4250 5900 50  0001 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 3950 6100 50  0001 C CNN
-F 3 "" H 3950 6100 50  0001 C CNN
-F 4 "Mouser" H -3025 1200 50  0001 C CNN "Vendor"
-	1    3950 5900
-	0    1    1    0   
-$EndComp
+	3025 5075 2925 5075
 Wire Notes Line
-	1625 4300 4300 4300
+	2400 4325 4300 4325
 Wire Notes Line
-	4300 4300 4300 6425
+	4300 4325 4300 6300
 Wire Notes Line
-	4300 6425 1625 6425
+	4300 6300 2400 6300
 Wire Notes Line
-	1625 4300 1625 6425
-Text Notes 1625 4300 0    50   ~ 0
+	2400 4325 2400 6300
+Text Notes 2400 4325 0    50   ~ 0
 Input Buttons
-Text Notes 1650 4450 0    39   ~ 0
-This is a simple I2C port expander to reduce the number\nof connections back to the main board.
 Wire Wire Line
 	9000 4550 9000 4600
 Wire Wire Line
@@ -1589,97 +1391,6 @@ Wire Wire Line
 Connection ~ 9000 3000
 Wire Wire Line
 	9000 3000 9000 3150
-$Comp
-L Device:LED D1
-U 1 1 5BEAC07A
-P 10000 3125
-AR Path="/5BEAC07A" Ref="D1"  Part="1" 
-AR Path="/5B8F2634/5BEAC07A" Ref="D?"  Part="1" 
-F 0 "D1" H 10100 3175 50  0000 C CNN
-F 1 "LED" H 10125 3075 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 3125 50  0001 C CNN
-F 3 "~" H 10000 3125 50  0001 C CNN
-	1    10000 3125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5BEAC080
-P 10000 3375
-AR Path="/5BEAC080" Ref="D2"  Part="1" 
-AR Path="/5B8F2634/5BEAC080" Ref="D?"  Part="1" 
-F 0 "D2" H 10125 3425 50  0000 C CNN
-F 1 "LED" H 10125 3325 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 3375 50  0001 C CNN
-F 3 "~" H 10000 3375 50  0001 C CNN
-	1    10000 3375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5BEAC086
-P 10000 3625
-AR Path="/5BEAC086" Ref="D3"  Part="1" 
-AR Path="/5B8F2634/5BEAC086" Ref="D?"  Part="1" 
-F 0 "D3" H 10100 3675 50  0000 C CNN
-F 1 "LED" H 10125 3575 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 3625 50  0001 C CNN
-F 3 "~" H 10000 3625 50  0001 C CNN
-	1    10000 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 5BEAC08C
-P 10000 3875
-AR Path="/5BEAC08C" Ref="D4"  Part="1" 
-AR Path="/5B8F2634/5BEAC08C" Ref="D?"  Part="1" 
-F 0 "D4" H 10100 3925 50  0000 C CNN
-F 1 "LED" H 10125 3825 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 3875 50  0001 C CNN
-F 3 "~" H 10000 3875 50  0001 C CNN
-	1    10000 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D5
-U 1 1 5BEAC092
-P 10000 4125
-AR Path="/5BEAC092" Ref="D5"  Part="1" 
-AR Path="/5B8F2634/5BEAC092" Ref="D?"  Part="1" 
-F 0 "D5" H 10100 4175 50  0000 C CNN
-F 1 "LED" H 10125 4075 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 4125 50  0001 C CNN
-F 3 "~" H 10000 4125 50  0001 C CNN
-	1    10000 4125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D6
-U 1 1 5BEAC098
-P 10000 4375
-AR Path="/5BEAC098" Ref="D6"  Part="1" 
-AR Path="/5B8F2634/5BEAC098" Ref="D?"  Part="1" 
-F 0 "D6" H 10100 4425 50  0000 C CNN
-F 1 "LED" H 10125 4325 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 4375 50  0001 C CNN
-F 3 "~" H 10000 4375 50  0001 C CNN
-	1    10000 4375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D7
-U 1 1 5BEAC09E
-P 10000 4625
-AR Path="/5BEAC09E" Ref="D7"  Part="1" 
-AR Path="/5B8F2634/5BEAC09E" Ref="D?"  Part="1" 
-F 0 "D7" H 10100 4675 50  0000 C CNN
-F 1 "LED" H 10125 4575 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10000 4625 50  0001 C CNN
-F 3 "~" H 10000 4625 50  0001 C CNN
-	1    10000 4625
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9675 3375 9850 3375
 Wire Wire Line
@@ -1692,19 +1403,6 @@ Wire Wire Line
 	9625 4375 9850 4375
 Wire Wire Line
 	9550 4625 9850 4625
-$Comp
-L AquaHub-rescue:+5V-power #PWR022
-U 1 1 5BEAC0D3
-P 10700 2975
-AR Path="/5BEAC0D3" Ref="#PWR022"  Part="1" 
-AR Path="/5B8F2634/5BEAC0D3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR022" H 10700 2825 50  0001 C CNN
-F 1 "+5V" H 10715 3148 50  0000 C CNN
-F 2 "" H 10700 2975 50  0001 C CNN
-F 3 "" H 10700 2975 50  0001 C CNN
-	1    10700 2975
-	1    0    0    -1  
-$EndComp
 NoConn ~ 9500 4150
 $Comp
 L Device:C_Small C?
@@ -1776,9 +1474,9 @@ Wire Wire Line
 Connection ~ 8450 4050
 Wire Wire Line
 	8450 4050 8450 4150
-Text GLabel 2150 5050 0    50   BiDi ~ 0
+Text GLabel 2925 5075 0    50   BiDi ~ 0
 SDA
-Text GLabel 2150 4950 0    50   Input ~ 0
+Text GLabel 2925 4975 0    50   Input ~ 0
 SCL
 Wire Notes Line
 	7925 2675 10825 2675
@@ -1792,32 +1490,32 @@ Text Notes 7925 2675 0    50   ~ 0
 LEDs
 Text Notes 10800 2750 2    39   ~ 0
 I2C Address: 0x60 1100000
-Text Notes 4275 4375 2    39   ~ 0
+Text Notes 4225 4400 2    39   ~ 0
 I2C Address: 0x20 0100000
 Wire Wire Line
-	1800 5150 1800 4875
+	2575 5175 2575 4900
 Wire Wire Line
-	1800 5150 2250 5150
+	2575 5175 3025 5175
 $Comp
 L Device:R_Small R?
 U 1 1 5BEAC10A
-P 1800 4775
+P 2575 4800
 AR Path="/5B8F2634/5BEAC10A" Ref="R?"  Part="1" 
 AR Path="/5BEAC10A" Ref="R2"  Part="1" 
-F 0 "R2" H 1850 4850 50  0000 L CNN
-F 1 "4.7k" H 1850 4775 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 4775 50  0001 C CNN
-F 3 "~" H 1800 4775 50  0001 C CNN
-	1    1800 4775
+F 0 "R2" H 2625 4875 50  0000 L CNN
+F 1 "4.7k" H 2625 4800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2575 4800 50  0001 C CNN
+F 3 "~" H 2575 4800 50  0001 C CNN
+	1    2575 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 4675 1800 4600
+	2575 4700 2575 4625
 Wire Wire Line
-	1800 4600 2650 4600
-Connection ~ 2650 4600
+	2575 4625 3425 4625
+Connection ~ 3425 4625
 Wire Wire Line
-	2650 4600 2650 4650
+	3425 4625 3425 4675
 Wire Wire Line
 	9600 3125 9850 3125
 Text Label 3825 3000 2    50   ~ 0
@@ -1853,39 +1551,39 @@ Wire Wire Line
 $Comp
 L AquaHub-rescue:+5V-power #PWR0114
 U 1 1 5C263A43
-P 8675 5225
-F 0 "#PWR0114" H 8675 5075 50  0001 C CNN
-F 1 "+5V" H 8575 5300 50  0000 C CNN
-F 2 "" H 8675 5225 50  0001 C CNN
-F 3 "" H 8675 5225 50  0001 C CNN
-	1    8675 5225
+P 9025 5225
+F 0 "#PWR0114" H 9025 5075 50  0001 C CNN
+F 1 "+5V" H 8925 5300 50  0000 C CNN
+F 2 "" H 9025 5225 50  0001 C CNN
+F 3 "" H 9025 5225 50  0001 C CNN
+	1    9025 5225
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 5450 0    50   Input ~ 0
+Text GLabel 8550 5450 0    50   Input ~ 0
 SCL
-Text GLabel 8200 5600 0    50   BiDi ~ 0
+Text GLabel 8550 5600 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	8675 5450 8575 5450
+	9025 5450 8925 5450
 Wire Wire Line
-	8675 5600 8575 5600
+	9025 5600 8925 5600
 Wire Wire Line
-	8200 5600 8275 5600
+	8550 5600 8600 5600
 Wire Wire Line
-	8200 5450 8275 5450
+	8550 5450 8600 5450
 Wire Wire Line
-	8675 5600 8675 5450
+	9025 5600 9025 5450
 Wire Wire Line
-	8675 5450 8675 5225
-Connection ~ 8675 5450
+	9025 5450 9025 5225
+Connection ~ 9025 5450
 Wire Notes Line
-	8750 5075 7925 5075
+	9150 5075 7925 5075
 Wire Notes Line
 	7925 5075 7925 5850
 Wire Notes Line
-	7925 5850 8750 5850
+	7925 5850 9150 5850
 Wire Notes Line
-	8750 5850 8750 5075
+	9150 5850 9150 5075
 Text Notes 7925 5075 0    50   ~ 0
 I2C
 Wire Wire Line
@@ -1895,206 +1593,115 @@ Wire Wire Line
 Wire Wire Line
 	2550 3325 2650 3325
 Wire Wire Line
-	3050 5650 3250 5650
-NoConn ~ 3050 4950
-NoConn ~ 3050 5350
+	3825 5675 4025 5675
+NoConn ~ 3825 4975
+NoConn ~ 3825 5075
 Wire Wire Line
-	3050 5550 3425 5550
+	3825 5575 4025 5575
 Wire Wire Line
-	3425 5550 3425 5650
+	3825 5275 4025 5275
 Wire Wire Line
-	3600 5450 3600 5675
+	3825 5175 4025 5175
 Wire Wire Line
-	3950 5700 3950 5150
-Wire Wire Line
-	4100 5050 4100 5700
-Wire Wire Line
-	3050 5250 3775 5250
-Wire Wire Line
-	3775 5250 3775 5700
-Wire Wire Line
-	3050 5150 3950 5150
-Wire Wire Line
-	3050 5050 4100 5050
-Wire Wire Line
-	3050 5450 3600 5450
-Wire Wire Line
-	3250 6050 3250 6150
-Wire Wire Line
-	3250 6150 3425 6150
-Wire Wire Line
-	4100 6150 4100 6100
-Wire Wire Line
-	3950 6100 3950 6150
-Connection ~ 3950 6150
-Wire Wire Line
-	3950 6150 4100 6150
-Wire Wire Line
-	3775 6100 3775 6150
-Connection ~ 3775 6150
-Wire Wire Line
-	3775 6150 3950 6150
-Wire Wire Line
-	3600 6075 3600 6150
-Connection ~ 3600 6150
-Wire Wire Line
-	3600 6150 3700 6150
-Wire Wire Line
-	3425 6050 3425 6150
-Connection ~ 3425 6150
-Wire Wire Line
-	3425 6150 3600 6150
-Wire Wire Line
-	3700 6150 3700 6200
-Connection ~ 3700 6150
-Wire Wire Line
-	3700 6150 3775 6150
+	3825 5475 4025 5475
 $Comp
 L AquaHub-rescue:R-Device R14
 U 1 1 5BCD05D6
-P 10450 4125
-F 0 "R14" V 10600 4125 50  0000 C CNN
-F 1 "330R" V 10525 4125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4125 50  0001 C CNN
-F 3 "~" H 10450 4125 50  0001 C CNN
-F 4 "Mouser" H 650 2925 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 4125
+P 10000 4125
+F 0 "R14" V 10150 4125 50  0000 C CNN
+F 1 "330R" V 10075 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4125 50  0001 C CNN
+F 3 "~" H 10000 4125 50  0001 C CNN
+F 4 "Mouser" H 200 2925 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 4125
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R15
 U 1 1 5BCD4035
-P 10450 4375
-F 0 "R15" V 10600 4375 50  0000 C CNN
-F 1 "330R" V 10525 4375 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4375 50  0001 C CNN
-F 3 "~" H 10450 4375 50  0001 C CNN
-F 4 "Mouser" H 650 3175 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 4375
+P 10000 4375
+F 0 "R15" V 10150 4375 50  0000 C CNN
+F 1 "330R" V 10075 4375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4375 50  0001 C CNN
+F 3 "~" H 10000 4375 50  0001 C CNN
+F 4 "Mouser" H 200 3175 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 4375
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R16
 U 1 1 5BCD5C92
-P 10450 4625
-F 0 "R16" V 10600 4625 50  0000 C CNN
-F 1 "330R" V 10525 4625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 4625 50  0001 C CNN
-F 3 "~" H 10450 4625 50  0001 C CNN
-F 4 "Mouser" H 650 3425 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 4625
+P 10000 4625
+F 0 "R16" V 10150 4625 50  0000 C CNN
+F 1 "330R" V 10075 4625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4625 50  0001 C CNN
+F 3 "~" H 10000 4625 50  0001 C CNN
+F 4 "Mouser" H 200 3425 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 4625
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R13
 U 1 1 5BCD6B0C
-P 10450 3875
-F 0 "R13" V 10600 3875 50  0000 C CNN
-F 1 "330R" V 10525 3875 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3875 50  0001 C CNN
-F 3 "~" H 10450 3875 50  0001 C CNN
-F 4 "Mouser" H 650 2675 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 3875
+P 10000 3875
+F 0 "R13" V 10150 3875 50  0000 C CNN
+F 1 "330R" V 10075 3875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3875 50  0001 C CNN
+F 3 "~" H 10000 3875 50  0001 C CNN
+F 4 "Mouser" H 200 2675 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 3875
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R12
 U 1 1 5BCD8889
-P 10450 3625
-F 0 "R12" V 10600 3625 50  0000 C CNN
-F 1 "330R" V 10525 3625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3625 50  0001 C CNN
-F 3 "~" H 10450 3625 50  0001 C CNN
-F 4 "Mouser" H 650 2425 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 3625
+P 10000 3625
+F 0 "R12" V 10150 3625 50  0000 C CNN
+F 1 "330R" V 10075 3625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3625 50  0001 C CNN
+F 3 "~" H 10000 3625 50  0001 C CNN
+F 4 "Mouser" H 200 2425 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 3625
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R11
 U 1 1 5BCDA4EB
-P 10450 3375
-F 0 "R11" V 10600 3375 50  0000 C CNN
-F 1 "330R" V 10525 3375 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3375 50  0001 C CNN
-F 3 "~" H 10450 3375 50  0001 C CNN
-F 4 "Mouser" H 650 2175 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 3375
+P 10000 3375
+F 0 "R11" V 10150 3375 50  0000 C CNN
+F 1 "330R" V 10075 3375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3375 50  0001 C CNN
+F 3 "~" H 10000 3375 50  0001 C CNN
+F 4 "Mouser" H 200 2175 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 3375
 	0    -1   -1   0   
 $EndComp
 $Comp
 L AquaHub-rescue:R-Device R10
 U 1 1 5BCDC1D5
-P 10450 3125
-F 0 "R10" V 10600 3125 50  0000 C CNN
-F 1 "330R" V 10525 3125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10380 3125 50  0001 C CNN
-F 3 "~" H 10450 3125 50  0001 C CNN
-F 4 "Mouser" H 650 1925 50  0001 C CNN "Vendor"
-F 5 "RE07105" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
-	1    10450 3125
+P 10000 3125
+F 0 "R10" V 10150 3125 50  0000 C CNN
+F 1 "330R" V 10075 3125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3125 50  0001 C CNN
+F 3 "~" H 10000 3125 50  0001 C CNN
+F 4 "Mouser" H 200 1925 50  0001 C CNN "Vendor"
+F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
+F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+	1    10000 3125
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10150 3125 10300 3125
-Wire Wire Line
-	10150 3375 10300 3375
-Wire Wire Line
-	10150 3625 10300 3625
-Wire Wire Line
-	10150 3875 10300 3875
-Wire Wire Line
-	10150 4125 10300 4125
-Wire Wire Line
-	10300 4375 10150 4375
-Wire Wire Line
-	10150 4625 10300 4625
-Wire Wire Line
-	10600 4625 10700 4625
-Wire Wire Line
-	10700 4625 10700 4375
-Wire Wire Line
-	10700 3125 10600 3125
-Wire Wire Line
-	10600 3375 10700 3375
-Connection ~ 10700 3375
-Wire Wire Line
-	10700 3375 10700 3125
-Wire Wire Line
-	10600 3625 10700 3625
-Connection ~ 10700 3625
-Wire Wire Line
-	10700 3625 10700 3375
-Wire Wire Line
-	10600 3875 10700 3875
-Connection ~ 10700 3875
-Wire Wire Line
-	10700 3875 10700 3625
-Wire Wire Line
-	10600 4125 10700 4125
-Connection ~ 10700 4125
-Wire Wire Line
-	10700 4125 10700 3875
-Wire Wire Line
-	10600 4375 10700 4375
-Connection ~ 10700 4375
-Wire Wire Line
-	10700 4375 10700 4125
-Connection ~ 10700 3125
-Wire Wire Line
-	10700 2975 10700 3125
 NoConn ~ 5350 4000
 NoConn ~ 5350 3900
 $Comp
@@ -2102,10 +1709,10 @@ L AquaHub-rescue:SW_CK_D6R_SPST-Switch SW?
 U 1 1 5BD9B1CF
 P 5800 3450
 AR Path="/5B8F2634/5BD9B1CF" Ref="SW?"  Part="1" 
-AR Path="/5BD9B1CF" Ref="SW?"  Part="1" 
-F 0 "SW?" H 5800 3550 50  0000 C CNN
+AR Path="/5BD9B1CF" Ref="SW7"  Part="1" 
+F 0 "SW7" H 5800 3550 50  0000 C CNN
 F 1 "Reset" H 5700 3600 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_CK_D6R_SPST_12mm_H14.3mm" H 5800 3650 50  0001 C CNN
+F 2 "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" H 5800 3650 50  0001 C CNN
 F 3 "" H 5800 3650 50  0001 C CNN
 F 4 "Mouser" H -1175 -875 50  0001 C CNN "Vendor"
 	1    5800 3450
@@ -2118,12 +1725,188 @@ Wire Wire Line
 Connection ~ 6150 3450
 Wire Wire Line
 	6150 3450 6150 3500
-Wire Wire Line
-	5350 3400 5350 3450
-Wire Wire Line
-	5600 3450 5350 3450
-Connection ~ 5350 3450
-Wire Wire Line
-	5350 3450 5350 3500
 Connection ~ 6150 3050
+$Comp
+L AquaHub-rescue:TestPoint-Connector TP8
+U 1 1 5BDFB339
+P 8550 5725
+F 0 "TP8" V 8575 5900 50  0000 L CNN
+F 1 "TEST_SDA" V 8500 5900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 8750 5725 50  0001 C CNN
+F 3 "~" H 8750 5725 50  0001 C CNN
+F 4 "n/a" H -2025 625 50  0001 C CNN "Vendor"
+	1    8550 5725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AquaHub-rescue:TestPoint-Connector TP7
+U 1 1 5BE4BBBF
+P 8550 5325
+F 0 "TP7" V 8525 5500 50  0000 L CNN
+F 1 "TEST_SCL" V 8600 5500 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 8750 5325 50  0001 C CNN
+F 3 "~" H 8750 5325 50  0001 C CNN
+F 4 "n/a" H -2025 225 50  0001 C CNN "Vendor"
+	1    8550 5325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 5325 8600 5325
+Wire Wire Line
+	8600 5325 8600 5450
+Connection ~ 8600 5450
+Wire Wire Line
+	8600 5450 8625 5450
+Wire Wire Line
+	8600 5600 8600 5725
+Wire Wire Line
+	8600 5725 8550 5725
+Connection ~ 8600 5600
+Wire Wire Line
+	8600 5600 8625 5600
+Wire Wire Line
+	5075 3450 5075 3525
+Wire Wire Line
+	5450 3450 5600 3450
+Connection ~ 5450 3450
+Connection ~ 5250 3450
+Wire Wire Line
+	5250 3450 5450 3450
+Wire Wire Line
+	10150 4625 10300 4625
+Wire Wire Line
+	10300 4375 10150 4375
+Wire Wire Line
+	10150 4125 10300 4125
+Wire Wire Line
+	10150 3875 10300 3875
+Wire Wire Line
+	10150 3625 10300 3625
+Wire Wire Line
+	10150 3375 10300 3375
+Wire Wire Line
+	10150 3125 10300 3125
+Text GLabel 10300 3125 2    50   Input ~ 0
+LED_1
+Text GLabel 10300 3375 2    50   Input ~ 0
+LED_2
+Text GLabel 10300 3625 2    50   Input ~ 0
+LED_3
+Text GLabel 10300 3875 2    50   Input ~ 0
+LED_4
+Text GLabel 10300 4125 2    50   Input ~ 0
+LED_5
+Text GLabel 10300 4375 2    50   Input ~ 0
+LED_6
+Text GLabel 10300 4625 2    50   Input ~ 0
+LED_7
+$Comp
+L Connector:Conn_01x15_Female J8
+U 1 1 5C014B47
+P 1100 5425
+F 0 "J8" H 1100 6250 50  0000 C CNN
+F 1 "Conn_01x15_Female" V 1175 5350 50  0000 C CNN
+F 2 "Connector_Hirose:Hirose_DF52-15S-0.8H_1x15-1MP_P0.80mm_Horizontal" H 1100 5425 50  0001 C CNN
+F 3 "~" H 1100 5425 50  0001 C CNN
+	1    1100 5425
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1575 4825 2    50   Input ~ 0
+LED_1
+Text GLabel 1575 4925 2    50   Input ~ 0
+LED_2
+Text GLabel 1575 5025 2    50   Input ~ 0
+LED_3
+Text GLabel 1575 5125 2    50   Input ~ 0
+LED_4
+Text GLabel 1575 5225 2    50   Input ~ 0
+LED_5
+Text GLabel 1575 5325 2    50   Input ~ 0
+LED_6
+Text GLabel 1575 5425 2    50   Input ~ 0
+LED_7
+Wire Wire Line
+	1575 5425 1300 5425
+Wire Wire Line
+	1575 5225 1300 5225
+Wire Wire Line
+	1300 5125 1575 5125
+Wire Wire Line
+	1575 5025 1300 5025
+Wire Wire Line
+	1300 4925 1575 4925
+Wire Wire Line
+	1575 4825 1300 4825
+Wire Wire Line
+	1300 5325 1575 5325
+Wire Wire Line
+	1575 4725 1575 4600
+Wire Wire Line
+	1300 4725 1575 4725
+$Comp
+L AquaHub-rescue:+5V-power #PWR0115
+U 1 1 5C111810
+P 1575 4600
+F 0 "#PWR0115" H 1575 4450 50  0001 C CNN
+F 1 "+5V" H 1675 4700 50  0000 C CNN
+F 2 "" H 1575 4600 50  0001 C CNN
+F 3 "" H 1575 4600 50  0001 C CNN
+	1    1575 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1575 5525 2    50   Input ~ 0
+SW_1
+Text GLabel 1575 5625 2    50   Input ~ 0
+SW_2
+Text GLabel 1575 5725 2    50   Input ~ 0
+SW_3
+Text GLabel 1575 5825 2    50   Input ~ 0
+SW_4
+Text GLabel 1575 5925 2    50   Input ~ 0
+SW_5
+Text GLabel 1575 6025 2    50   Input ~ 0
+SW_6
+Wire Wire Line
+	1300 5525 1575 5525
+Wire Wire Line
+	1575 5625 1300 5625
+Wire Wire Line
+	1300 5725 1575 5725
+Wire Wire Line
+	1300 5825 1575 5825
+Wire Wire Line
+	1575 5925 1300 5925
+Wire Wire Line
+	1300 6025 1575 6025
+Wire Wire Line
+	1300 6125 1575 6125
+Wire Wire Line
+	1575 6125 1575 6200
+$Comp
+L AquaHub-rescue:GND-power #PWR0116
+U 1 1 5C1E7CC4
+P 1575 6200
+F 0 "#PWR0116" H 1575 5950 50  0001 C CNN
+F 1 "GND" H 1425 6125 50  0000 C CNN
+F 2 "" H 1575 6200 50  0001 C CNN
+F 3 "" H 1575 6200 50  0001 C CNN
+	1    1575 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4025 5675 2    50   Input ~ 0
+SW_1
+Text GLabel 4025 5575 2    50   Input ~ 0
+SW_2
+Text GLabel 4025 5375 2    50   Input ~ 0
+SW_4
+Text GLabel 4025 5175 2    50   Input ~ 0
+SW_6
+Text GLabel 4025 5275 2    50   Input ~ 0
+SW_5
+Text GLabel 4025 5475 2    50   Input ~ 0
+SW_3
+Text Label 6075 3450 2    39   ~ 0
+EN
+Wire Wire Line
+	4025 5375 3825 5375
 $EndSCHEMATC

@@ -120,6 +120,16 @@ void setup() {
 
   wifiControl.setup(sids, passwords);
   timeControl.setup();
+
+  for (int i=0; i < NUM_RELAYS; i++)
+  {
+      Serial.print("Sending in #"); 
+      Serial.print(i); 
+      Serial.print(" on pin ");
+      Serial.println(POW_PINS[i]);
+  }
+
+
   Relays.setup(POW_PINS);
   ledControl.setup();
   webControl.setup();

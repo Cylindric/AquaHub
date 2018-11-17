@@ -25,7 +25,7 @@ limitations under the License.
 class RelayControl
 {
 private:
-    bool _pins[NUM_RELAYS];
+    uint8_t _pins[NUM_RELAYS];
     bool _states[NUM_RELAYS];
 public:
     RelayControl();

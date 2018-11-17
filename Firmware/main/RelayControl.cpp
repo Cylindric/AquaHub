@@ -18,7 +18,7 @@ limitations under the License.
 #include "RelayControl.h"
 
 
-#define _DEBUG 0
+#define _DEBUG 1
 
 RelayControl::RelayControl()
 {
@@ -36,8 +36,15 @@ void RelayControl::setup(uint8_t pins[NUM_RELAYS])
 
     for (int i=0; i < NUM_RELAYS; i++)
     {
-        _pins[i] = pins[i];
+       _pins[i] = pins[i];
         _states[i] = 0;
+
+        #if _DEBUG
+        Serial.print("Relay setting up #"); 
+        Serial.print(i); 
+        Serial.print(" on pin ");
+        Serial.println(pins[i]);
+        #endif
     }
 
     for (int i=0; i < NUM_RELAYS; i++)
@@ -52,11 +59,11 @@ void RelayControl::setup(uint8_t pins[NUM_RELAYS])
 void RelayControl::loop()
 {
     #if _DEBUG
-    static unsigned long lastReportTime = millis();
-    if (millis() - lastReportTime > 5000) {
-        lastReportTime = millis();
-        printStates();
-    }
+    // static unsigned long lastReportTime = millis();
+    // if (millis() - lastReportTime > 5000) {
+    //     lastReportTime = millis();
+    //     printStates();
+    // }
     #endif
 }
 
@@ -66,11 +73,13 @@ void RelayControl::setState(int id, bool state)
     #if _DEBUG
     Serial.print("Relay "); 
     Serial.print(id); 
-    Serial.print(" switching ");
-    Serial.println(state ? "ON" : "OFF");
+    Serial.print(" switching pin ");
+    Serial.print(_pins[id]);
+    Serial.println(state ? " ON" : " OFF");
     #endif
 
     if(_states[id] == state) {
+        Serial.println("Skipping, already at state.");
         return;
     }
 

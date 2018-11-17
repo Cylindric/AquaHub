@@ -1,0 +1,51 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Mouser,Vendor,Farnell,RS
+1,b'',b'Battery_Cell-Device',b'BT1',b'CR2032',b'BatteryHolder_Multicomp_BC-2001_1x2032',b'1',b'~',b'534-1058',b'Mouser',b'',b''
+2,b'',b'C_Small-Device',b'C4 C10 C11',b'0.1uF',b'C_0805_2012Metric_Pad1.15x1.40mm_HandSolder',b'3',b'~',b'TAJB106K006SNJ',b'Mouser',b'',b''
+3,b'',b'C-Device',b'C1',b'100nF',b'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'1',b'~',b'710-885012206071',b'Mouser',b'CA07658',b''
+4,"b'Unpolarized capacitor, small symbol'",b'C_Small',b'C9',b'100nF',b'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'1',b'~',b'710-885012206071',b'',b'CA07658',b''
+5,b'',b'C-Device',b'C2',b'10nF',b'C_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'1',b'~',b'VJ0603A102GXAPW1BC',b'Mouser',b'',b''
+6,b'',b'C_Small-Device',b'C3',b'10uF',b'C_0805_2012Metric_Pad1.15x1.40mm_HandSolder',b'1',b'~',b'TAJB106K006SNJ',b'Mouser',b'',b''
+7,b'',b'CP_Small-Device',b'C5 C6',b'10uF',b'CP_Elec_6.3x5.4_Nichicon',b'2',b'~',b'UWX1H100MCL1GB',b'Mouser',b'CA07886',b''
+8,b'',b'CP_Small-Device',b'C7 C8',b'4.7uF',b'CP_Elec_5x5.4',b'2',b'~',b'UWX1H4R7MCL1GB',b'Mouser',b'',b''
+9,b'',b'Fuse-Device',b'F1',b'4A',b'Fuseholder_Glass_5mmx20mm',b'1',b'~',b'534-3512',b'Mouser',b'',b''
+10,"b'Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)'",b'Conn_01x15_Female',b'J8',b'Conn_01x15_Female',b'PinHeader_2x08_P2.00mm_Vertical',b'1',b'https://www.mouser.co.uk/datasheet/2/185/DF51_catalog-1274968.pdf',b'798-DF51A-16DP-2DSA',b'',b'',b''
+11,b'',b'Conn_01x03-Connector_Generic',b'J14',b'PinHeader3',b'PinHeader_1x03_P2.54mm_Vertical',b'1',b'~',b'710-61300311121',b'',b'',b''
+12,b'',b'Conn_01x06-Connector_Generic',b'J10',b'PinHeader6',b'PinHeader_1x06_P2.54mm_Vertical',b'1',b'~',b'710-61300611121',b'',b'',b''
+13,b'',b'Screw_Terminal_01x02-Connector',b'J1 J2 J3 J4 J5 J6 J7',b'Screw_Terminal_01x02',"b'TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal'",b'7',b'~',b'1935161',b'Mouser',b'',b''
+14,b'',b'Fujitsu_FTR-F1A-Relay',b'K1 K2 K3 K4 K5 K6',b'5A Relay',b'Relay_DPST_Fujitsu_FTR-F1A',b'6',b'',b'FTR-F1AA012V',b'Mouser',b'',b''
+15,b'Crystal speaker/transducer',b'Speaker_Crystal',b'LS1',b'Piezo',b'Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm',b'1',b'~',b'PS1240P02BT',b'Mouser',b'',b''
+16,b'',b'2SC1815-Transistor_BJT',b'Q2',b'2SC4738',b'SOT-416',b'1',b'http://www.semicon.toshiba.co.jp/info/lookup.jsp?pid=2SC4738&lang=en',b'757-2SC4738-YLF',b'Mouser',b'SC06581',b''
+17,b'Resistor',b'R',b'R17',b'1.5k',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'1',b'~',b'603-RC0603FR-101K5L',b'Mouser',b'',b''
+18,b'',b'R-Device',b'R1 R3 R7',b'10k',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'3',b'~',b'603-RC0603FR-0710KL',b'Mouser',b'',b''
+19,b'',b'R-Device',b'R8 R9',b'1K',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'2',b'~',b'603-RC0603FR-071KL',b'Mouser',b'RE07090',b''
+20,b'',b'R-Device',b'R10 R11 R12 R13 R14 R15 R16',b'330R',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'7',b'~',b'603-RC0603FR-07330RL',b'Mouser',b'RE07105',b''
+21,b'Resistor',b'R',b'R2 R4',b'4.7k',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'2',b'~',b'603-RC0603FR-074K7L',b'Mouser',b'',b''
+22,b'',b'R-Device',b'R5 R6',b'4.7k',b'R_0603_1608Metric_Pad1.05x0.95mm_HandSolder',b'2',b'~',b'603-RC0603FR-074K7L',b'Mouser',b'',b''
+23,b'',b'Varistor-Device',b'RV1',b'S14MOV',b'RV_Disc_D15.5mm_W6.1mm_P7.5mm',b'1',b'~',b'B72214P2251K101',b'Mouser',b'',b''
+24,b'',b'SW_CK_D6R_SPST-Switch',b'SW7',b'Reset',b'SW_SPST_PTS645',b'1',b'',b'611-PTS645SM43SMTR92',b'Mouser',b'',b''
+25,b'',b'NCP1117-3.3_TO252-Regulator_Linear',b'U3',b'1A 3.3V',b'TO-252-3_TabPin2',b'1',b'http://www.diodes.com/datasheets/AP1117.pdf',b'NCP1117DT33G',b'Mouser',b'',b''
+26,b'',b'NCP1117-5.0_TO252-Regulator_Linear',b'U5',b'1A 5V',b'TO-252-3_TabPin2',b'1',b'https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf',b'NCP1117DT50G',b'Mouser',b'',b''
+27,b'',b'DS1307+-Timer_RTC',b'U7',b'DS1307+',b'SOIC-8_3.9x4.9mm_P1.27mm',b'1',b'https://datasheets.maximintegrated.com/en/ds/DS1307.pdf',b'700-DS1307ZT&R',b'',b'',b''
+28,b'',b'ESP32-WROOM-32-MCU_Espressif',b'U1',b'ESP32-WROOM',b'Espressif_ESP32_WROOM_32_SMT',b'1',b'',b'ESP32-WROOM-32D',b'Mouser',b'',b''
+29,b'',b'MLX91210-AquaParts',b'U2',b'MLX91210',b'SOIC-8_3.9x4.9mm_P1.27mm',b'1',b'http://www.allegromicro.com/~/media/Files/Datasheets/ACS723-Datasheet.ashx?la=en',b'MLX91210KDC-CAS-102-SP',b'Mouser',b'',b''
+30,"b' Digital Temperature Sensor & Thermal Watchdog, SOIC-8 and VSSOP-8'",b'PCT2075-TSOP6',b'U9',b'PCT2075',b'TSOP-6_1.65x3.05mm_P0.95mm',b'1',b'https://www.mouser.co.uk/datasheet/2/302/PCT2075-1127732.pdf',b'771-PCT2075GVX',b'',b'',b''
+31,b'',b'TCA9534-Interface_Expansion',b'U6',b'TCA9534',b'SOIC-16W_7.5x10.3mm_P1.27mm',b'1',b'http://www.ti.com/lit/ds/symlink/tca9534.pdf',b'TCA9534DWR',b'Mouser',b'',b''
+32,b'8-bit LED driver with I2C interface',b'TPIC2810D',b'U8',b'TPIC2810D',b'SOIC-16_3.9x9.9mm_P1.27mm',b'1',b'http://www.ti.com/lit/ds/symlink/tpic2810.pdf',b'595-TPIC2810DR',b'',b'',b'660-7981'
+33,b'',b'TPL7407LA-AquaParts',b'U4',b'TPL7407LADR',b'SOIC-16_3.9x9.9mm_P1.27mm',b'1',b'http://www.ti.com/lit/ds/symlink/tpl7407la.pdf',b'595-TPL7407LADR',b'Mouser',b'',b''
+34,b'',b'RAC04-xxGA-Converter_ACDC',b'V1',b'4W AC-DC Converter',b'Converter_ACDC_RECOM_RAC04-xxSGx_THT',b'1',b'',b'RAC04-12SGB',b'',b'',b''
+35,"b'Four pin crystal, GND on pins 2 and 3'",b'Crystal_GND23',b'Y1',b'32.768KHz',b'Crystal_SMD_SeikoEpson_MC146-4Pin_6.7x1.5mm_HandSoldering',b'1',b'~',b'732-MC146-32.7KAA0R',b'',b'',b''
+
+
+
+
+
+Component Groups:,35
+Component Count:,61
+Fitted Components:,61
+Number of PCBs:,1
+Total components:,61
+Schematic Version:,2
+Schematic Date:,2018-08-28
+BoM Date:,b'17/11/2018 01:01:26'
+Schematic Source:,b'D:\\AquaHub\\Hardware\\AquaHub\\AquaHub.sch'
+KiCad Version:,b'Eeschema (6.0.0-rc1-dev-904-g29e0e6921)'

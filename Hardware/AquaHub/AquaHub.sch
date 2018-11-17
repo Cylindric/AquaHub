@@ -22,6 +22,7 @@ F 0 "J10" H 6350 2325 50  0000 C CNN
 F 1 "PinHeader6" V 6450 1975 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6350 2025 50  0001 C CNN
 F 3 "~" H 6350 2025 50  0001 C CNN
+F 4 "710-61300611121" H 0   0   50  0001 C CNN "Mouser"
 	1    6350 2025
 	-1   0    0    1   
 $EndComp
@@ -91,12 +92,11 @@ L AquaHub-rescue:TPL7407LA-AquaParts U4
 U 1 1 5B863B89
 P 7850 1700
 F 0 "U4" H 7850 2291 39  0000 C CNN
-F 1 "Low-Side Driver" H 7850 2216 39  0000 C CNN
+F 1 "TPL7407LADR" H 7850 2216 39  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7700 1950 39  0001 C CNN
-F 3 "" H 7700 1950 39  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpl7407la.pdf" H 7700 1950 39  0001 C CNN
 F 4 "Mouser" H 1100 -2875 50  0001 C CNN "Vendor"
-F 5 "TPL7407LADR" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
+F 5 "595-TPL7407LADR" H 0   0   50  0001 C CNN "Mouser"
 	1    7850 1700
 	1    0    0    -1  
 $EndComp
@@ -166,7 +166,6 @@ F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3475 1625 50  0001 L CIN
 F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 3425 1875 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "NCP1117DT50G" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3425 1875
 	1    0    0    -1  
 $EndComp
@@ -203,7 +202,6 @@ F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3425 1250 50  0001 C CNN
 F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 3525 800 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "NCP1117DT33G" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3425 1050
 	1    0    0    -1  
 $EndComp
@@ -249,7 +247,6 @@ F 2 "Module:Espressif_ESP32_WROOM_32_SMT" H 6600 6150 60  0001 C CNN
 F 3 "" H 5800 5250 60  0001 C CNN
 F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
 F 5 "ESP32-WROOM-32D" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    6250 4800
 	1    0    0    -1  
 $EndComp
@@ -278,80 +275,42 @@ $EndComp
 $Comp
 L AquaHub-rescue:C_Small-Device C3
 U 1 1 5BB06BF9
-P 5250 3250
-F 0 "C3" H 5125 3325 50  0000 L CNN
-F 1 "10uF" H 5050 3175 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5288 3100 50  0001 C CNN
-F 3 "~" H 5250 3250 50  0001 C CNN
-F 4 "Mouser" H 3700 2100 50  0001 C CNN "Vendor"
-F 5 "TAJB106K006SNJ" H -275 0   50  0001 C CNN "Mouser"
-	1    5250 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L AquaHub-rescue:CP_Small-Device C4
-U 1 1 5BB06BFF
-P 5450 3250
-F 0 "C4" H 5475 3325 50  0000 L CNN
-F 1 "100uF" H 5475 3175 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder" H 5488 3100 50  0001 C CNN
-F 3 "~" H 5450 3250 50  0001 C CNN
-F 4 "Mouser" H 3700 2100 50  0001 C CNN "Vendor"
-F 5 "CA06848" H -275 0   50  0001 C CNN "Farnell"
-F 6 "TAJD107K006SNJ" H -275 0   50  0001 C CNN "Mouser"
-	1    5450 3250
+P 5025 3250
+F 0 "C3" H 4900 3325 50  0000 L CNN
+F 1 "10uF" H 4825 3175 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5063 3100 50  0001 C CNN
+F 3 "~" H 5025 3250 50  0001 C CNN
+F 4 "Mouser" H 3475 2100 50  0001 C CNN "Vendor"
+F 5 "TAJB106K006SNJ" H -500 0   50  0001 C CNN "Mouser"
+	1    5025 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 3350 5250 3450
+	5025 3350 5025 3450
 Wire Wire Line
-	5250 3450 5075 3450
+	5025 3450 4825 3450
 Wire Wire Line
-	5450 3450 5450 3350
+	5275 3450 5275 3350
 Wire Wire Line
-	5250 3150 5250 3100
+	5025 3150 5025 3100
 Wire Wire Line
-	5250 3100 5350 3100
+	5025 3100 5150 3100
 Wire Wire Line
-	5450 3100 5450 3150
+	5275 3100 5275 3150
 Wire Wire Line
-	5350 3100 5350 3050
-Connection ~ 5350 3100
+	5150 3100 5150 3050
+Connection ~ 5150 3100
 Wire Wire Line
-	5350 3100 5450 3100
+	5150 3100 5275 3100
 $Comp
 L AquaHub-rescue:GND-power #PWR0106
 U 1 1 5BB06C11
-P 5075 3525
-F 0 "#PWR0106" H 5075 3275 50  0001 C CNN
-F 1 "GND" H 5080 3352 50  0000 C CNN
-F 2 "" H 5075 3525 50  0001 C CNN
-F 3 "" H 5075 3525 50  0001 C CNN
-	1    5075 3525
-	1    0    0    -1  
-$EndComp
-$Comp
-L AquaHub-rescue:Conn_01x02-Connector_Generic J13
-U 1 1 5BB4550C
-P 4675 5200
-F 0 "J13" H 4625 5300 50  0000 L CNN
-F 1 "PinHeader2" V 4775 4700 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4675 5200 50  0001 C CNN
-F 3 "~" H 4675 5200 50  0001 C CNN
-	1    4675 5200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 5300 4900 5400
-$Comp
-L AquaHub-rescue:GND-power #PWR0107
-U 1 1 5BB852AA
-P 4900 5400
-F 0 "#PWR0107" H 4900 5150 50  0001 C CNN
-F 1 "GND" H 4905 5227 50  0000 C CNN
-F 2 "" H 4900 5400 50  0001 C CNN
-F 3 "" H 4900 5400 50  0001 C CNN
-	1    4900 5400
+P 4825 3525
+F 0 "#PWR0106" H 4825 3275 50  0001 C CNN
+F 1 "GND" H 4830 3352 50  0000 C CNN
+F 2 "" H 4825 3525 50  0001 C CNN
+F 3 "" H 4825 3525 50  0001 C CNN
+	1    4825 3525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -390,7 +349,6 @@ F 3 "~" H 3075 1250 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "CA07886" H 0   0   50  0001 C CNN "Farnell"
 F 6 "UWX1H100MCL1GB" H 0   0   50  0001 C CNN "Mouser"
-F 7 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3075 1250
 	1    0    0    -1  
 $EndComp
@@ -416,7 +374,6 @@ F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3800 1250 50  0001 C CNN
 F 3 "~" H 3800 1250 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "UWX1H4R7MCL1GB" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3800 1250
 	1    0    0    -1  
 $EndComp
@@ -439,7 +396,6 @@ F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3775 2075 50  0001 C CNN
 F 3 "~" H 3775 2075 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "UWX1H4R7MCL1GB" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3775 2075
 	1    0    0    -1  
 $EndComp
@@ -480,7 +436,6 @@ F 3 "~" H 3075 2075 50  0001 C CNN
 F 4 "Mouser" H -6725 -2875 50  0001 C CNN "Vendor"
 F 5 "CA07886" H 0   0   50  0001 C CNN "Farnell"
 F 6 "UWX1H100MCL1GB" H 0   0   50  0001 C CNN "Mouser"
-F 7 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3075 2075
 	1    0    0    -1  
 $EndComp
@@ -513,10 +468,10 @@ F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
 	0    1    1    0   
 $EndComp
 $Comp
-L AquaHub-rescue:TestPoint-Connector TP1
+L AquaHub-rescue:TestPoint-Connector TP3
 U 1 1 5B9E07DA
 P 3850 1875
-F 0 "TP1" V 3804 2063 50  0000 L CNN
+F 0 "TP3" V 3804 2063 50  0000 L CNN
 F 1 "TEST_5V" V 3895 2063 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4050 1875 50  0001 C CNN
 F 3 "~" H 4050 1875 50  0001 C CNN
@@ -528,21 +483,6 @@ Wire Wire Line
 	3850 1875 3775 1875
 Wire Wire Line
 	3875 1050 3800 1050
-$Comp
-L AquaHub-rescue:TestPoint-Connector TP3
-U 1 1 5BA7E124
-P 3875 1400
-F 0 "TP3" V 3925 1600 50  0000 L CNN
-F 1 "Test_3V3_GND" V 4000 1425 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4075 1400 50  0001 C CNN
-F 3 "~" H 4075 1400 50  0001 C CNN
-F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
-	1    3875 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3875 1400 3800 1400
-Connection ~ 3800 1400
 $Comp
 L AquaHub-rescue:TestPoint-Connector TP4
 U 1 1 5BA8CCD1
@@ -563,6 +503,7 @@ F 0 "J14" H 4775 2325 50  0000 C CNN
 F 1 "PinHeader3" V 4875 2125 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4775 2125 50  0001 C CNN
 F 3 "~" H 4775 2125 50  0001 C CNN
+F 4 "710-61300311121" H 0   0   50  0001 C CNN "Mouser"
 	1    4775 2125
 	-1   0    0    1   
 $EndComp
@@ -605,7 +546,7 @@ Wire Notes Line
 Text Notes 4600 1500 0    50   ~ 0
 Temperature Sensor
 $Comp
-L AquaHub-rescue:R-Device R4
+L Device:R R4
 U 1 1 5B9C3454
 P 5250 1900
 F 0 "R4" H 5100 1850 50  0000 L CNN
@@ -613,6 +554,7 @@ F 1 "4.7k" H 5025 1925 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5180 1900 50  0001 C CNN
 F 3 "~" H 5250 1900 50  0001 C CNN
 F 4 "Mouser" H 4000 -3975 50  0001 C CNN "Vendor"
+F 5 "603-RC0603FR-074K7L" H 0   0   50  0001 C CNN "Mouser"
 	1    5250 1900
 	-1   0    0    1   
 $EndComp
@@ -672,7 +614,7 @@ F 1 "10k" H 6200 3275 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3275 50  0001 C CNN
 F 3 "~" H 6150 3275 50  0001 C CNN
 F 4 "Mouser" H 3975 2075 50  0001 C CNN "Vendor"
-F 5 "GWCR0603-10KFT5" H 0   -25 50  0001 C CNN "Mouser"
+F 5 "603-RC0603FR-0710KL" H 0   -25 50  0001 C CNN "Mouser"
 	1    6150 3275
 	1    0    0    -1  
 $EndComp
@@ -685,7 +627,7 @@ F 1 "10k" H 5100 4900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4980 4950 50  0001 C CNN
 F 3 "~" H 5050 4950 50  0001 C CNN
 F 4 "Mouser" H 3975 2100 50  0001 C CNN "Vendor"
-F 5 "GWCR0603-10KFT5" H 0   0   50  0001 C CNN "Mouser"
+F 5 "603-RC0603FR-0710KL" H 0   0   50  0001 C CNN "Mouser"
 	1    5050 4950
 	1    0    0    -1  
 $EndComp
@@ -723,8 +665,6 @@ Wire Wire Line
 	6350 3050 6350 2900
 Wire Wire Line
 	6150 3425 6150 3450
-Wire Wire Line
-	4875 5300 4900 5300
 NoConn ~ 7150 4500
 NoConn ~ 7150 5100
 NoConn ~ 5350 4200
@@ -804,7 +744,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10105 1775 50  
 F 3 "~" H 10175 1775 50  0001 C CNN
 F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
 F 5 "RE07090" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-071KL" H 0   0   50  0001 C CNN "Mouser"
 	1    10175 1775
 	0    -1   -1   0   
 $EndComp
@@ -815,11 +755,12 @@ L AquaHub-rescue:2SC1815-Transistor_BJT Q2
 U 1 1 5BC0ABAB
 P 9875 2125
 F 0 "Q2" H 10066 2171 50  0000 L CNN
-F 1 "2SC1815" H 10066 2080 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10075 2050 50  0001 L CIN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 9875 2125 50  0001 L CNN
+F 1 "2SC4738" H 10066 2080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-416" H 10075 2050 50  0001 L CIN
+F 3 "http://www.semicon.toshiba.co.jp/info/lookup.jsp?pid=2SC4738&lang=en" H 9875 2125 50  0001 L CNN
 F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
 F 5 "SC06581" H 0   0   50  0001 C CNN "Farnell"
+F 6 "757-2SC4738-YLF" H 0   0   50  0001 C CNN "Mouser"
 	1    9875 2125
 	1    0    0    -1  
 $EndComp
@@ -837,7 +778,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9405 2125 50  0
 F 3 "~" H 9475 2125 50  0001 C CNN
 F 4 "Mouser" H -325 925 50  0001 C CNN "Vendor"
 F 5 "RE07090" H 0   0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H 0   0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-071KL" H 0   0   50  0001 C CNN "Mouser"
 	1    9475 2125
 	0    -1   -1   0   
 $EndComp
@@ -876,40 +817,22 @@ F 0 "U7" H 3450 3950 50  0000 L CNN
 F 1 "DS1307+" H 3225 3875 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3150 3025 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 3150 3325 50  0001 C CNN
-F 4 "x" H 0   0   50  0001 C CNN "manf#"
+F 4 "700-DS1307ZT&R" H 0   0   50  0001 C CNN "Mouser"
 	1    3150 3525
 	1    0    0    -1  
 $EndComp
-$Comp
-L AquaHub-rescue:Crystal_Small-Device Y1
-U 1 1 5BBB28AA
-P 2425 3675
-F 0 "Y1" V 2400 3750 50  0000 L CNN
-F 1 "32.768KHz" V 2475 3750 50  0000 L CNN
-F 2 "Crystal:Crystal_C26-LF_D2.1mm_L6.5mm_Horizontal" H 2425 3675 50  0001 C CNN
-F 3 "~" H 2425 3675 50  0001 C CNN
-F 4 "Mouser" H -2450 1100 50  0001 C CNN "Vendor"
-F 5 "815-AB26T-32.768KHZ" H 0   0   50  0001 C CNN "Mouser"
-F 6 "z" H 0   0   50  0001 C CNN "manf#"
-	1    2425 3675
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
-	2425 3775 2425 3800
+	2175 3850 2175 3875
 Wire Wire Line
-	2425 3800 2600 3800
+	2175 3875 2600 3875
 Wire Wire Line
-	2600 3800 2600 3725
+	2600 3875 2600 3725
 Wire Wire Line
 	2600 3725 2650 3725
 Wire Wire Line
 	2650 3625 2600 3625
 Wire Wire Line
-	2600 3625 2600 3550
-Wire Wire Line
-	2600 3550 2425 3550
-Wire Wire Line
-	2425 3550 2425 3575
+	2600 3625 2600 3525
 $Comp
 L AquaHub-rescue:+5V-power #PWR08
 U 1 1 5BC2C96F
@@ -943,6 +866,7 @@ F 1 "4.7k" V 8600 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8705 5600 50  0001 C CNN
 F 3 "~" H 8775 5600 50  0001 C CNN
 F 4 "Mouser" H 3775 3625 50  0001 C CNN "Vendor"
+F 5 "603-RC0603FR-074K7L" H 0   0   50  0001 C CNN "Mouser"
 	1    8775 5600
 	0    -1   -1   0   
 $EndComp
@@ -955,6 +879,7 @@ F 1 "4.7k" V 8675 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8705 5450 50  0001 C CNN
 F 3 "~" H 8775 5450 50  0001 C CNN
 F 4 "Mouser" H 3950 3475 50  0001 C CNN "Vendor"
+F 5 "603-RC0603FR-074K7L" H 0   0   50  0001 C CNN "Mouser"
 	1    8775 5450
 	0    1    1    0   
 $EndComp
@@ -983,7 +908,6 @@ F 2 "Battery:BatteryHolder_Multicomp_BC-2001_1x2032" V 3875 3310 50  0001 C CNN
 F 3 "~" V 3875 3310 50  0001 C CNN
 F 4 "Mouser" H -2450 1100 50  0001 C CNN "Vendor"
 F 5 "534-1058" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3875 3250
 	1    0    0    -1  
 $EndComp
@@ -1117,30 +1041,6 @@ F 4 "n/a" H -875 0   50  0001 C CNN "Vendor"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H10
-U 1 1 5BC4783B
-P 5125 7600
-F 0 "H10" H 5200 7600 50  0000 L CNN
-F 1 "MountingHole" H 5225 7555 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 7600 50  0001 C CNN
-F 3 "~" H 5125 7600 50  0001 C CNN
-F 4 "n/a" H -1075 0   50  0001 C CNN "Vendor"
-	1    5125 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H9
-U 1 1 5BC47843
-P 5125 7400
-F 0 "H9" H 5200 7400 50  0000 L CNN
-F 1 "MountingHole" H 5225 7355 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 7400 50  0001 C CNN
-F 3 "~" H 5125 7400 50  0001 C CNN
-F 4 "n/a" H -1075 0   50  0001 C CNN "Vendor"
-	1    5125 7400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+BATT #PWR0122
 U 1 1 5BD1A50C
 P 3875 2925
@@ -1152,22 +1052,10 @@ F 3 "" H 3875 2925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AquaHub-rescue:TestPoint-Connector TP5
-U 1 1 5BDF9390
-P 2800 2225
-F 0 "TP5" V 2800 2475 50  0000 C CNN
-F 1 "Test_12V_GND" V 2725 2300 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 3000 2225 50  0001 C CNN
-F 3 "~" H 3000 2225 50  0001 C CNN
-F 4 "n/a" H -6725 -2875 50  0001 C CNN "Vendor"
-	1    2800 2225
-	0    -1   -1   0   
-$EndComp
-$Comp
-L AquaHub-rescue:TestPoint-Connector TP6
+L AquaHub-rescue:TestPoint-Connector TP1
 U 1 1 5BE5860A
 P 3850 2225
-F 0 "TP6" V 3875 2400 50  0000 L CNN
+F 0 "TP1" V 3875 2400 50  0000 L CNN
 F 1 "TEST_5V_GND" V 3950 2300 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 4050 2225 50  0001 C CNN
 F 3 "~" H 4050 2225 50  0001 C CNN
@@ -1181,9 +1069,6 @@ Connection ~ 3775 2225
 Wire Wire Line
 	2875 1025 2875 1050
 Connection ~ 2875 1050
-Wire Wire Line
-	3075 2225 2800 2225
-Connection ~ 3075 2225
 Text GLabel 2550 3325 0    50   Input ~ 0
 SCL
 Text GLabel 2550 3425 0    50   BiDi ~ 0
@@ -1312,7 +1197,6 @@ F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 4375 4725 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 3525 5175 50  0001 C CNN
 F 4 "Mouser" H -2325 850 50  0001 C CNN "Vendor"
 F 5 "TCA9534DWR" H 775 25  50  0001 C CNN "Mouser"
-F 6 "x" H 775 25  50  0001 C CNN "manf#"
 	1    3425 5275
 	1    0    0    -1  
 $EndComp
@@ -1415,6 +1299,7 @@ F 1 "100nF" H 7975 3075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 3150 50  0001 C CNN
 F 3 "~" H 8250 3150 50  0001 C CNN
 F 4 "CA07658" H 0   0   50  0001 C CNN "Farnell"
+F 5 "710-885012206071" H 0   0   50  0001 C CNN "Mouser"
 	1    8250 3150
 	1    0    0    -1  
 $EndComp
@@ -1452,6 +1337,7 @@ F 1 "TPIC2810D" H 9225 4500 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 9000 4550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpic2810.pdf" H 9000 4600 50  0001 C CNN
 F 4 "660-7981" H 0   0   50  0001 C CNN "RS"
+F 5 "595-TPIC2810DR" H 0   0   50  0001 C CNN "Mouser"
 	1    9000 3850
 	1    0    0    -1  
 $EndComp
@@ -1493,20 +1379,21 @@ I2C Address: 0x60 1100000
 Text Notes 4225 4400 2    39   ~ 0
 I2C Address: 0x20 0100000
 Wire Wire Line
-	2575 5175 2575 4900
+	2575 5175 2575 5000
 Wire Wire Line
 	2575 5175 3025 5175
 $Comp
-L Device:R_Small R?
+L Device:R R?
 U 1 1 5BEAC10A
-P 2575 4800
+P 2575 4850
 AR Path="/5B8F2634/5BEAC10A" Ref="R?"  Part="1" 
 AR Path="/5BEAC10A" Ref="R2"  Part="1" 
-F 0 "R2" H 2625 4875 50  0000 L CNN
-F 1 "4.7k" H 2625 4800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2575 4800 50  0001 C CNN
-F 3 "~" H 2575 4800 50  0001 C CNN
-	1    2575 4800
+F 0 "R2" H 2625 4925 50  0000 L CNN
+F 1 "4.7k" H 2625 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2575 4850 50  0001 C CNN
+F 3 "~" H 2575 4850 50  0001 C CNN
+F 4 "603-RC0603FR-074K7L" H 0   50  50  0001 C CNN "Mouser"
+	1    2575 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1614,7 +1501,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4125 50  0
 F 3 "~" H 10000 4125 50  0001 C CNN
 F 4 "Mouser" H 200 2925 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 4125
 	0    -1   -1   0   
 $EndComp
@@ -1628,7 +1515,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4375 50  0
 F 3 "~" H 10000 4375 50  0001 C CNN
 F 4 "Mouser" H 200 3175 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 4375
 	0    -1   -1   0   
 $EndComp
@@ -1642,7 +1529,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 4625 50  0
 F 3 "~" H 10000 4625 50  0001 C CNN
 F 4 "Mouser" H 200 3425 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 4625
 	0    -1   -1   0   
 $EndComp
@@ -1656,7 +1543,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3875 50  0
 F 3 "~" H 10000 3875 50  0001 C CNN
 F 4 "Mouser" H 200 2675 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 3875
 	0    -1   -1   0   
 $EndComp
@@ -1670,7 +1557,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3625 50  0
 F 3 "~" H 10000 3625 50  0001 C CNN
 F 4 "Mouser" H 200 2425 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 3625
 	0    -1   -1   0   
 $EndComp
@@ -1684,7 +1571,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3375 50  0
 F 3 "~" H 10000 3375 50  0001 C CNN
 F 4 "Mouser" H 200 2175 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 3375
 	0    -1   -1   0   
 $EndComp
@@ -1698,7 +1585,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9930 3125 50  0
 F 3 "~" H 10000 3125 50  0001 C CNN
 F 4 "Mouser" H 200 1925 50  0001 C CNN "Vendor"
 F 5 "RE07105" H -450 0   50  0001 C CNN "Farnell"
-F 6 "GWCR0603-4K7FT5" H -450 0   50  0001 C CNN "Mouser"
+F 6 "603-RC0603FR-07330RL" H -450 0   50  0001 C CNN "Mouser"
 	1    10000 3125
 	0    -1   -1   0   
 $EndComp
@@ -1712,14 +1599,15 @@ AR Path="/5B8F2634/5BD9B1CF" Ref="SW?"  Part="1"
 AR Path="/5BD9B1CF" Ref="SW7"  Part="1" 
 F 0 "SW7" H 5800 3550 50  0000 C CNN
 F 1 "Reset" H 5700 3600 50  0000 L CNN
-F 2 "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA" H 5800 3650 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 5800 3650 50  0001 C CNN
 F 3 "" H 5800 3650 50  0001 C CNN
 F 4 "Mouser" H -1175 -875 50  0001 C CNN "Vendor"
+F 5 "611-PTS645SM43SMTR92" H 0   0   50  0001 C CNN "Mouser"
 	1    5800 3450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5350 3050 6150 3050
+	5150 3050 6150 3050
 Wire Wire Line
 	6150 3450 6000 3450
 Connection ~ 6150 3450
@@ -1765,13 +1653,10 @@ Connection ~ 8600 5600
 Wire Wire Line
 	8600 5600 8625 5600
 Wire Wire Line
-	5075 3450 5075 3525
+	4825 3450 4825 3525
+Connection ~ 5025 3450
 Wire Wire Line
-	5450 3450 5600 3450
-Connection ~ 5450 3450
-Connection ~ 5250 3450
-Wire Wire Line
-	5250 3450 5450 3450
+	5025 3450 5275 3450
 Wire Wire Line
 	10150 4625 10300 4625
 Wire Wire Line
@@ -1806,8 +1691,9 @@ U 1 1 5C014B47
 P 1100 5425
 F 0 "J8" H 1100 6250 50  0000 C CNN
 F 1 "Conn_01x15_Female" V 1175 5350 50  0000 C CNN
-F 2 "Connector_Hirose:Hirose_DF52-15S-0.8H_1x15-1MP_P0.80mm_Horizontal" H 1100 5425 50  0001 C CNN
-F 3 "~" H 1100 5425 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x08_P2.00mm_Vertical" H 1100 5425 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/185/DF51_catalog-1274968.pdf" H 1100 5425 50  0001 C CNN
+F 4 "798-DF51A-16DP-2DSA" H 0   0   50  0001 C CNN "Mouser"
 	1    1100 5425
 	-1   0    0    -1  
 $EndComp
@@ -1909,4 +1795,179 @@ Text Label 6075 3450 2    39   ~ 0
 EN
 Wire Wire Line
 	4025 5375 3825 5375
+$Comp
+L AquaHub-rescue:C_Small-Device C4
+U 1 1 5BE756D1
+P 5275 3250
+F 0 "C4" H 5300 3325 50  0000 L CNN
+F 1 "0.1uF" H 5300 3175 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5313 3100 50  0001 C CNN
+F 3 "~" H 5275 3250 50  0001 C CNN
+F 4 "Mouser" H 3725 2100 50  0001 C CNN "Vendor"
+F 5 "TAJB106K006SNJ" H -250 0   50  0001 C CNN "Mouser"
+	1    5275 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 5200 3025 0    39   ~ 0
+C1-C3\non the DS
+Text Notes 5900 3275 0    39   ~ 0
+R1 on\nthe DS
+$Comp
+L AquaHub-rescue:C_Small-Device C10
+U 1 1 5BF4FBD6
+P 5425 3450
+F 0 "C10" V 5600 3400 50  0000 L CNN
+F 1 "0.1uF" V 5525 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5463 3300 50  0001 C CNN
+F 3 "~" H 5425 3450 50  0001 C CNN
+F 4 "Mouser" H 3875 2300 50  0001 C CNN "Vendor"
+F 5 "TAJB106K006SNJ" H -100 200 50  0001 C CNN "Mouser"
+	1    5425 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3450 5525 3450
+Wire Wire Line
+	5325 3450 5275 3450
+Connection ~ 5275 3450
+Text GLabel 1125 1775 0    50   Input ~ 0
+SCL
+Text GLabel 1125 1675 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	1125 1675 1250 1675
+Wire Wire Line
+	1125 1775 1250 1775
+Wire Wire Line
+	1650 2275 1650 2300
+$Comp
+L AquaHub-rescue:GND-power #PWR026
+U 1 1 5BF64095
+P 1650 2325
+F 0 "#PWR026" H 1650 2075 50  0001 C CNN
+F 1 "GND" H 1800 2275 50  0000 C CNN
+F 2 "" H 1650 2325 50  0001 C CNN
+F 3 "" H 1650 2325 50  0001 C CNN
+	1    1650 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L AquaHub-rescue:C_Small-Device C11
+U 1 1 5BF66A53
+P 1075 1300
+F 0 "C11" H 1175 1300 50  0000 L CNN
+F 1 "0.1uF" H 800 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1113 1150 50  0001 C CNN
+F 3 "~" H 1075 1300 50  0001 C CNN
+F 4 "Mouser" H -475 150 50  0001 C CNN "Vendor"
+F 5 "TAJB106K006SNJ" H -4450 -1950 50  0001 C CNN "Mouser"
+	1    1075 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L AquaHub-rescue:GND-power #PWR022
+U 1 1 5BF70EDA
+P 1075 1425
+F 0 "#PWR022" H 1075 1175 50  0001 C CNN
+F 1 "GND" H 950 1375 50  0000 C CNN
+F 2 "" H 1075 1425 50  0001 C CNN
+F 3 "" H 1075 1425 50  0001 C CNN
+	1    1075 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 1400 1075 1425
+Wire Wire Line
+	1075 1200 1075 1175
+Wire Wire Line
+	1075 1175 1650 1175
+Wire Wire Line
+	1650 1125 1650 1175
+Connection ~ 1650 1175
+Wire Wire Line
+	1650 1175 1650 1275
+Text Notes 2175 950  2    50   ~ 0
+I2C Address: 0x48 1001000
+Wire Wire Line
+	2050 1675 2100 1675
+Wire Wire Line
+	2100 2300 1650 2300
+Connection ~ 1650 2300
+Wire Wire Line
+	1650 2300 1650 2325
+$Comp
+L Device:R R17
+U 1 1 5C02612A
+P 1025 1875
+F 0 "R17" V 850 1900 50  0000 L CNN
+F 1 "1.5k" V 925 1875 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 955 1875 50  0001 C CNN
+F 3 "~" H 1025 1875 50  0001 C CNN
+F 4 "Mouser" H -225 -4000 50  0001 C CNN "Vendor"
+F 5 "603-RC0603FR-101K5L" H 0   0   50  0001 C CNN "Mouser"
+	1    1025 1875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1175 1875 1250 1875
+Wire Wire Line
+	875  1875 750  1875
+Wire Wire Line
+	750  1875 750  1175
+Wire Wire Line
+	750  1175 1075 1175
+Connection ~ 1075 1175
+Wire Notes Line
+	2225 2500 2225 850 
+Wire Notes Line
+	2225 850  650  850 
+Wire Notes Line
+	650  850  650  2500
+Wire Notes Line
+	650  2500 2225 2500
+Text Notes 650  850  0    50   ~ 0
+Temperature Sense
+$Comp
+L Device:Crystal_GND23 Y1
+U 1 1 5C2BF599
+P 2175 3700
+F 0 "Y1" V 2250 3875 50  0000 L CNN
+F 1 "32.768KHz" V 2400 3550 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_MC146-4Pin_6.7x1.5mm_HandSoldering" H 2175 3700 50  0001 C CNN
+F 3 "~" H 2175 3700 50  0001 C CNN
+F 4 "732-MC146-32.7KAA0R" H 625 -150 50  0001 C CNN "Mouser"
+	1    2175 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2175 3525 2175 3550
+Wire Wire Line
+	2600 3525 2175 3525
+NoConn ~ 2375 3700
+NoConn ~ 1975 3700
+$Comp
+L Sensor_Temperature:PCT2075-TSOP6 U9
+U 1 1 5BF041BA
+P 1650 1775
+F 0 "U9" H 1900 2250 50  0000 C CNN
+F 1 "PCT2075" H 1975 2325 50  0000 C CNN
+F 2 "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" H 1650 1775 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/302/PCT2075-1127732.pdf" H 1650 1775 50  0001 C CNN
+F 4 "771-PCT2075GVX" H 0   0   50  0001 C CNN "Mouser"
+	1    1650 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1675 2100 2300
+$Comp
+L AquaHub-rescue:+5V-power #PWR0107
+U 1 1 5C422DFD
+P 1650 1125
+F 0 "#PWR0107" H 1650 975 50  0001 C CNN
+F 1 "+5V" H 1750 1225 50  0000 C CNN
+F 2 "" H 1650 1125 50  0001 C CNN
+F 3 "" H 1650 1125 50  0001 C CNN
+	1    1650 1125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

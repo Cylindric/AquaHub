@@ -70,7 +70,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 4650 5475 39  0001 C CNN
 F 3 "" H 4650 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    3450 5525
 	1    0    0    -1  
 $EndComp
@@ -92,7 +91,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 6150 5475 39  0001 C CNN
 F 3 "" H 6150 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    4950 5525
 	1    0    0    -1  
 $EndComp
@@ -114,7 +112,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 7650 5475 39  0001 C CNN
 F 3 "" H 7650 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    6450 5525
 	1    0    0    -1  
 $EndComp
@@ -136,7 +133,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 9150 5475 39  0001 C CNN
 F 3 "" H 9150 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    7950 5525
 	1    0    0    -1  
 $EndComp
@@ -154,7 +150,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 10650 5475 39  0001 C CNN
 F 3 "" H 10650 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    9450 5525
 	1    0    0    -1  
 $EndComp
@@ -246,7 +241,6 @@ F 2 "Relay_THT:Relay_DPST_Fujitsu_FTR-F1A" H 3150 5475 39  0001 C CNN
 F 3 "" H 3150 5475 39  0001 C CNN
 F 4 "Mouser" H -900 -450 50  0001 C CNN "Vendor"
 F 5 "FTR-F1AA012V" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    1950 5525
 	1    0    0    -1  
 $EndComp
@@ -362,7 +356,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 4575 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 4575
 	-1   0    0    1   
 $EndComp
@@ -400,7 +393,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 4350 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 4350
 	-1   0    0    1   
 $EndComp
@@ -416,7 +408,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 4125 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 4125
 	-1   0    0    1   
 $EndComp
@@ -432,7 +423,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 3900 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 3900
 	-1   0    0    1   
 $EndComp
@@ -448,7 +438,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 3675 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 3675
 	-1   0    0    1   
 $EndComp
@@ -464,7 +453,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 8200 3450 50  0001 C CNN
 F 4 "Mouser" H 325 1175 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    8200 3450
 	-1   0    0    1   
 $EndComp
@@ -520,7 +508,6 @@ F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Hor
 F 3 "~" H 4675 2675 50  0001 C CNN
 F 4 "Mouser" H 1500 -4450 50  0001 C CNN "Vendor"
 F 5 "1935161" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    4675 2675
 	-1   0    0    -1  
 $EndComp
@@ -554,9 +541,10 @@ AR Path="/5BCFC432" Ref="F?"  Part="1"
 AR Path="/5B8F2634/5BCFC432" Ref="F1"  Part="1" 
 F 0 "F1" V 5550 2625 50  0000 C CNN
 F 1 "4A" V 5550 2900 50  0000 C CNN
-F 2 "AquaFootprints:Fuse_Clip_5mm" H 5525 2575 50  0001 L CNN
+F 2 "Fuse:Fuseholder_Glass_5mmx20mm" H 5525 2575 50  0001 L CNN
 F 3 "~" H 5475 2775 50  0001 C CNN
 F 4 "Mouser" H 1500 -4450 50  0001 C CNN "Vendor"
+F 5 "534-3512" H 0   0   50  0001 C CNN "Mouser"
 	1    5475 2775
 	0    1    1    0   
 $EndComp
@@ -595,12 +583,11 @@ P 5400 4175
 AR Path="/5BD289CE" Ref="U?"  Part="1" 
 AR Path="/5B8F2634/5BD289CE" Ref="U2"  Part="1" 
 F 0 "U2" H 5125 4625 50  0000 C CNN
-F 1 "Current Sense" H 5025 3725 50  0000 C CNN
+F 1 "MLX91210" H 5025 3725 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3825 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS723-Datasheet.ashx?la=en" H 5400 4175 50  0001 C CNN
 F 4 "Mouser" H -4100 1375 50  0001 C CNN "Vendor"
 F 5 "MLX91210KDC-CAS-102-SP" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    5400 4175
 	1    0    0    -1  
 $EndComp
@@ -616,7 +603,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6013 4025 50  
 F 3 "~" H 5975 4175 50  0001 C CNN
 F 4 "Mouser" H -4100 1375 50  0001 C CNN "Vendor"
 F 5 "VJ0603A102GXAPW1BC" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
 	1    5975 4175
 	1    0    0    -1  
 $EndComp
@@ -650,6 +636,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 3375 50  
 F 3 "~" H 5650 3525 50  0001 C CNN
 F 4 "Mouser" H -4100 1375 50  0001 C CNN "Vendor"
 F 5 "CA07658" H 0   0   50  0001 C CNN "Farnell"
+F 6 "710-885012206071" H 0   0   50  0001 C CNN "Mouser"
 	1    5650 3525
 	0    1    1    0   
 $EndComp
@@ -680,7 +667,7 @@ F 1 "10k" H 6445 4155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6305 4200 50  0001 C CNN
 F 3 "~" H 6375 4200 50  0001 C CNN
 F 4 "Mouser" H -4100 1375 50  0001 C CNN "Vendor"
-F 5 "GWCR0603-10KFT5" H 0   0   50  0001 C CNN "Mouser"
+F 5 "603-RC0603FR-0710KL" H 0   0   50  0001 C CNN "Mouser"
 	1    6375 4200
 	1    0    0    -1  
 $EndComp
@@ -756,86 +743,85 @@ Power_Sense
 $Comp
 L AquaHub-rescue:RAC04-xxGA-Converter_ACDC V?
 U 1 1 5BD6ED98
-P 3850 2800
+P 3850 2775
 AR Path="/5BD6ED98" Ref="V?"  Part="1" 
 AR Path="/5B8F2634/5BD6ED98" Ref="V1"  Part="1" 
-F 0 "V1" H 3850 3050 50  0000 C CNN
-F 1 "4W AC-DC Converter" H 3850 2550 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_RECOM_RAC04-xxSGx_THT" H 3700 2800 50  0001 C CNN
-F 3 "" H 3700 2800 50  0001 C CNN
-F 4 "RAC04-12SGB" H 0   0   50  0001 C CNN "Mouser"
-	1    3850 2800
+F 0 "V1" H 3850 3025 50  0000 C CNN
+F 1 "4W AC-DC Converter" H 3850 2525 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_RECOM_RAC04-xxSGx_THT" H 3700 2775 50  0001 C CNN
+F 3 "" H 3700 2775 50  0001 C CNN
+F 4 "RAC04-12SGB" H 0   -25 50  0001 C CNN "Mouser"
+	1    3850 2775
 	1    0    0    -1  
 $EndComp
 $Comp
 L AquaHub-rescue:+12V-power #PWR?
 U 1 1 5BD6ED9E
-P 4300 2650
+P 4300 2625
 AR Path="/5BD6ED9E" Ref="#PWR?"  Part="1" 
 AR Path="/5B8F2634/5BD6ED9E" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 4300 2500 50  0001 C CNN
-F 1 "+12V" H 4250 2800 50  0000 C CNN
-F 2 "" H 4300 2650 50  0001 C CNN
-F 3 "" H 4300 2650 50  0001 C CNN
-	1    4300 2650
+F 0 "#PWR021" H 4300 2475 50  0001 C CNN
+F 1 "+12V" H 4250 2775 50  0000 C CNN
+F 2 "" H 4300 2625 50  0001 C CNN
+F 3 "" H 4300 2625 50  0001 C CNN
+	1    4300 2625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 2650 4300 2700
+	4300 2625 4300 2675
 $Comp
 L AquaHub-rescue:Varistor-Device RV?
 U 1 1 5BD6EDA8
-P 3250 2800
+P 3250 2775
 AR Path="/5BD6EDA8" Ref="RV?"  Part="1" 
 AR Path="/5B8F2634/5BD6EDA8" Ref="RV1"  Part="1" 
-F 0 "RV1" H 3150 2850 50  0000 R CNN
-F 1 "S14MOV" H 3150 2775 50  0000 R CNN
-F 2 "Varistor:RV_Disc_D15.5mm_W6.1mm_P7.5mm" V 3180 2800 50  0001 C CNN
-F 3 "~" H 3250 2800 50  0001 C CNN
-F 4 "Mouser" H -5150 -1625 50  0001 C CNN "Vendor"
-F 5 "B72214P2251K101" H 0   0   50  0001 C CNN "Mouser"
-F 6 "x" H 0   0   50  0001 C CNN "manf#"
-	1    3250 2800
+F 0 "RV1" H 3150 2825 50  0000 R CNN
+F 1 "S14MOV" H 3150 2750 50  0000 R CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W6.1mm_P7.5mm" V 3180 2775 50  0001 C CNN
+F 3 "~" H 3250 2775 50  0001 C CNN
+F 4 "Mouser" H -5150 -1650 50  0001 C CNN "Vendor"
+F 5 "B72214P2251K101" H 0   -25 50  0001 C CNN "Mouser"
+	1    3250 2775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3375 2700 3375 2650
+	3375 2675 3375 2625
 Wire Wire Line
-	3375 2650 3250 2650
+	3375 2625 3250 2625
 Wire Wire Line
-	3375 2900 3375 2950
+	3375 2875 3375 2925
 Wire Wire Line
-	3375 2950 3250 2950
-Connection ~ 3250 2650
-Connection ~ 3250 2950
+	3375 2925 3250 2925
+Connection ~ 3250 2625
+Connection ~ 3250 2925
 Wire Wire Line
-	3250 2950 2800 2950
+	3250 2925 2800 2925
 Wire Wire Line
-	3375 2700 3450 2700
+	3375 2675 3450 2675
 Wire Wire Line
-	3375 2900 3450 2900
+	3375 2875 3450 2875
 Wire Wire Line
-	4350 2900 4250 2900
+	4350 2875 4250 2875
 Wire Wire Line
-	4300 2700 4250 2700
+	4300 2675 4250 2675
 Wire Wire Line
-	4350 2900 4350 3150
-Text Label 4350 3150 1    39   ~ 0
+	4350 2875 4350 3125
+Text Label 4350 3125 1    39   ~ 0
 GND
 Wire Wire Line
-	2800 2650 3250 2650
-Text Label 2800 2650 0    39   ~ 0
+	2800 2625 3250 2625
+Text Label 2800 2625 0    39   ~ 0
 LIVE
-Text Label 2800 2950 0    39   ~ 0
+Text Label 2800 2925 0    39   ~ 0
 NEUTRAL
 Wire Notes Line
-	2725 2400 4425 2400
+	2725 2375 4425 2375
 Wire Notes Line
-	4425 2400 4425 3250
+	4425 2375 4425 3225
 Wire Notes Line
-	4425 3250 2725 3250
+	4425 3225 2725 3225
 Wire Notes Line
-	2725 3250 2725 2400
+	2725 3225 2725 2375
 $Comp
 L AquaHub-rescue:PWR_FLAG-power #FLG?
 U 1 1 5BDEB3BA

@@ -144,25 +144,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# AquaHub-rescue_Conn_01x02-Connector_Generic
-#
-DEF AquaHub-rescue_Conn_01x02-Connector_Generic J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "AquaHub-rescue_Conn_01x02-Connector_Generic" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # AquaHub-rescue_Conn_01x03-Connector_Generic
 #
 DEF AquaHub-rescue_Conn_01x03-Connector_Generic J 0 40 Y N 1 F N
@@ -208,25 +189,6 @@ X Pin_3 3 -200 0 150 R 50 50 1 1 P
 X Pin_4 4 -200 -100 150 R 50 50 1 1 P
 X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 X Pin_6 6 -200 -300 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# AquaHub-rescue_Crystal_Small-Device
-#
-DEF AquaHub-rescue_Crystal_Small-Device Y 0 40 N N 1 F N
-F0 "Y" 0 100 50 H V C CNN
-F1 "AquaHub-rescue_Crystal_Small-Device" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -30 -60 30 60 0 1 0 N
-P 2 0 1 15 -50 -30 -50 30 N
-P 2 0 1 15 50 -30 50 30 N
-X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -727,20 +689,47 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Small
+# Device_Crystal_GND23
 #
-DEF Device_R_Small R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
+DEF Device_Crystal_GND23 Y 0 40 Y N 1 F N
+F0 "Y" 125 200 50 H V L CNN
+F1 "Device_Crystal_GND23" 125 125 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 20 -80 -50 -80 50 N
+P 2 0 1 0 0 -150 0 -140 N
+P 2 0 1 0 0 140 0 150 N
+P 2 0 1 20 80 -50 80 50 N
+P 2 0 1 0 80 0 100 0 N
+P 4 0 1 0 -100 -90 -100 -140 100 -140 100 -90 N
+P 4 0 1 0 -100 90 -100 140 100 140 100 90 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 0 200 50 D 50 50 1 1 P
+X 3 3 0 -200 50 U 50 50 1 1 P
+X 4 4 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  R_*
 $ENDFPLIST
 DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -820,6 +809,39 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Sensor_Temperature_PCT2075-TSOP6
+#
+DEF Sensor_Temperature_PCT2075-TSOP6 U 0 40 Y Y 1 F N
+F0 "U" -250 450 50 H V C CNN
+F1 "Sensor_Temperature_PCT2075-TSOP6" 0 450 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS LM75B_copy
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+ VSSOP*3.0x3.0mm*P0.65mm*
+$ENDFPLIST
+DRAW
+A -5 125 25 1 1799 0 1 10 N 20 125 -30 125
+C -5 -100 50 0 1 10 F
+S -300 400 300 -400 0 1 10 f
+S 20 -75 -30 0 0 1 10 F
+P 2 0 1 10 -30 25 -5 25 N
+P 2 0 1 10 -30 50 -5 50 N
+P 2 0 1 10 -30 75 -5 75 N
+P 2 0 1 10 -30 100 -5 100 N
+P 2 0 1 10 -30 125 -30 0 N
+P 2 0 1 10 -30 125 -5 125 N
+P 2 0 1 10 20 125 20 0 N
+X A0 1 400 100 100 L 50 50 1 1 I
+X GND 2 0 -500 100 U 50 50 1 1 W
+X +Vs 3 0 500 100 D 50 50 1 1 W
+X SCL 4 -400 0 100 R 50 50 1 1 I
+X O.S. 5 -400 -100 100 R 50 50 1 1 C
+X SDA 6 -400 100 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
